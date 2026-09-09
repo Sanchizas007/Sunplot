@@ -86,9 +86,22 @@ struct Paywall: View {
             Label("Unlocked", systemImage: "checkmark.circle.fill")
                 .foregroundStyle(.green)
         case .unavailable:
-            // A bad connection, not a refusal, and worth saying so.
-            Label("Can't reach the App Store just now", systemImage: "wifi.exclamationmark")
-                .foregroundStyle(.secondary)
+            // A bad connection, not a refusal, and worth saying so — with a way out. This app
+            // is used standing in a garden at the edge of a signal, which is exactly where the
+            // store is hardest to reach, and until now a single failed request left the paywall
+            // dead until somebody thought to close and reopen it.
+            VStack(spacing: 12) {
+                Label("Can't reach the App Store just now", systemImage: "wifi.exclamationmark")
+                    .foregroundStyle(.secondary)
+                Button {
+                    Task { await purchases.load() }
+                } label: {
+                    Text(purchases.state == .loading ? "One moment…" : "Try again")
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.bordered)
+                .controlSize(.large)
+            }
         }
     }
 

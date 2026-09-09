@@ -110,14 +110,29 @@ final class Purchases {
         do {
             let products = try await Product.products(for: [Self.productID])
             guard let found = products.first else {
+                // Both failures below land the person on the same "can't reach the store"
+                // message, and from the screen they are indistinguishable — but they mean
+                // opposite things. An empty list is the store answering that it has never
+                // heard of this product; a thrown error is not reaching the store at all.
+                // Worth saying out loud where a developer can read it.
+                log("вернулся пустой список: магазин не знает товар \(Self.productID)")
                 state = .unavailable
                 return
             }
             product = found
             state = .locked(price: found.displayPrice)
+            log("товар получен: \(found.id) за \(found.displayPrice)")
         } catch {
+            log("запрос к магазину не прошёл: \(error)")
             state = .unavailable
         }
+    }
+
+    /// Only in a debug build, and only to the console — nothing is collected or sent.
+    private nonisolated func log(_ message: String) {
+        #if DEBUG
+        print("[Purchases] \(message)")
+        #endif
     }
 
     func buy() async {
