@@ -107,6 +107,21 @@ enum Demo {
         #endif
     }
 
+    /// Tells the screenshot script the screen is up, and what today's figure says here.
+    ///
+    /// Two things the script cannot work out for itself. Watching the pixels is not enough —
+    /// under load the launch screen gets captured instead of the app — and the headline above
+    /// the frame has to carry the same number as the screen inside it, in a language whose
+    /// hours are not written the English way. The app knows both, so the app says both.
+    static func report(hours: String) {
+        #if DEBUG
+        guard isRunning else { return }
+        let url = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("sunplot-shot.json")
+        let payload: [String: String] = ["ready": "yes", "hours": hours]
+        try? JSONSerialization.data(withJSONObject: payload).write(to: url)
+        #endif
+    }
+
     #if DEBUG
 
     private static var arguments: [String] { ProcessInfo.processInfo.arguments }
@@ -272,6 +287,65 @@ enum Demo {
                           GeoCoordinate(latitude: 48.9549, longitude: 2.1431),
                           GeoCoordinate(latitude: 48.9557, longitude: 2.1435)],
                   timeZone: TimeZone(identifier: "Europe/Paris") ?? .current)
+        // The rest: a garden quarter in a city where that language is spoken, so the map in
+        // the frame shows streets and roofs somebody there recognises rather than a London
+        // suburb with English street names. All of them are real residential blocks with
+        // plots big enough for a bed; the figures come out of the same engine either way.
+        case "es":
+            Place(spots: [GeoCoordinate(latitude: 40.4352, longitude: -3.8125),   // Pozuelo de Alarcón, Madrid
+                          GeoCoordinate(latitude: 40.4349, longitude: -3.8118),
+                          GeoCoordinate(latitude: 40.4357, longitude: -3.8114)],
+                  timeZone: TimeZone(identifier: "Europe/Madrid") ?? .current)
+        case "it":
+            Place(spots: [GeoCoordinate(latitude: 45.5205, longitude: 9.1830),    // Bresso, Milan
+                          GeoCoordinate(latitude: 45.5202, longitude: 9.1837),
+                          GeoCoordinate(latitude: 45.5210, longitude: 9.1841)],
+                  timeZone: TimeZone(identifier: "Europe/Rome") ?? .current)
+        case "nl":
+            Place(spots: [GeoCoordinate(latitude: 52.2797, longitude: 5.1600),    // Bussum, Het Gooi
+                          GeoCoordinate(latitude: 52.2794, longitude: 5.1607),
+                          GeoCoordinate(latitude: 52.2802, longitude: 5.1611)],
+                  timeZone: TimeZone(identifier: "Europe/Amsterdam") ?? .current)
+        case "pl":
+            Place(spots: [GeoCoordinate(latitude: 52.1700, longitude: 21.0900),   // Wilanów, Warsaw
+                          GeoCoordinate(latitude: 52.1697, longitude: 21.0907),
+                          GeoCoordinate(latitude: 52.1705, longitude: 21.0911)],
+                  timeZone: TimeZone(identifier: "Europe/Warsaw") ?? .current)
+        case "pt-BR":
+            Place(spots: [GeoCoordinate(latitude: -23.5440, longitude: -46.7010), // Alto de Pinheiros, São Paulo
+                          GeoCoordinate(latitude: -23.5443, longitude: -46.7003),
+                          GeoCoordinate(latitude: -23.5435, longitude: -46.6999)],
+                  timeZone: TimeZone(identifier: "America/Sao_Paulo") ?? .current)
+        case "ru":
+            Place(spots: [GeoCoordinate(latitude: 55.6490, longitude: 37.3340),   // Peredelkino, Moscow
+                          GeoCoordinate(latitude: 55.6487, longitude: 37.3347),
+                          GeoCoordinate(latitude: 55.6495, longitude: 37.3351)],
+                  timeZone: TimeZone(identifier: "Europe/Moscow") ?? .current)
+        case "tr":
+            Place(spots: [GeoCoordinate(latitude: 41.1200, longitude: 29.0900),   // Beykoz, Istanbul
+                          GeoCoordinate(latitude: 41.1197, longitude: 29.0907),
+                          GeoCoordinate(latitude: 41.1205, longitude: 29.0911)],
+                  timeZone: TimeZone(identifier: "Europe/Istanbul") ?? .current)
+        case "ja":
+            Place(spots: [GeoCoordinate(latitude: 35.6420, longitude: 139.6390),  // Setagaya, Tokyo
+                          GeoCoordinate(latitude: 35.6417, longitude: 139.6397),
+                          GeoCoordinate(latitude: 35.6425, longitude: 139.6401)],
+                  timeZone: TimeZone(identifier: "Asia/Tokyo") ?? .current)
+        case "ko":
+            Place(spots: [GeoCoordinate(latitude: 37.6060, longitude: 126.9680),  // Pyeongchang-dong, Seoul
+                          GeoCoordinate(latitude: 37.6057, longitude: 126.9687),
+                          GeoCoordinate(latitude: 37.6065, longitude: 126.9691)],
+                  timeZone: TimeZone(identifier: "Asia/Seoul") ?? .current)
+        case "zh-Hans":
+            Place(spots: [GeoCoordinate(latitude: 31.1500, longitude: 121.1100),  // Qingpu, Shanghai
+                          GeoCoordinate(latitude: 31.1497, longitude: 121.1107),
+                          GeoCoordinate(latitude: 31.1505, longitude: 121.1111)],
+                  timeZone: TimeZone(identifier: "Asia/Shanghai") ?? .current)
+        case "zh-Hant":
+            Place(spots: [GeoCoordinate(latitude: 25.1180, longitude: 121.5300),  // Tianmu, Taipei
+                          GeoCoordinate(latitude: 25.1177, longitude: 121.5307),
+                          GeoCoordinate(latitude: 25.1185, longitude: 121.5311)],
+                  timeZone: TimeZone(identifier: "Asia/Taipei") ?? .current)
         default:
             Place(spots: [GeoCoordinate(latitude: 51.5590, longitude: -0.1720),
                           GeoCoordinate(latitude: 51.5587, longitude: -0.1713),
@@ -285,14 +359,30 @@ enum Demo {
     /// looks exactly like the half-translated app it is trying not to be.
     private static func names() -> [String] {
         switch language() {
-        case "de": ["Beet hinterm Haus", "Streifen an der Wand", "Balkon"]
-        case "fr": ["Planche du fond", "Bordure du mur", "Balcon"]
-        default:   ["Back bed", "Wall border", "Balcony"]
+        case "de":      ["Beet hinterm Haus", "Streifen an der Wand", "Balkon"]
+        case "es":      ["Bancal del fondo", "Arriate del muro", "Balcón"]
+        case "fr":      ["Planche du fond", "Bordure du mur", "Balcon"]
+        case "it":      ["Aiuola in fondo", "Bordura del muro", "Balcone"]
+        case "ja":      ["奥の花壇", "塀ぎわの列", "ベランダ"]
+        case "ko":      ["안쪽 화단", "담장 옆 화단", "베란다"]
+        case "nl":      ["Bed achterin", "Rand bij de muur", "Balkon"]
+        case "pl":      ["Grządka z tyłu", "Pas przy ścianie", "Balkon"]
+        case "pt-BR":   ["Canteiro do fundo", "Bordadura do muro", "Varanda"]
+        case "ru":      ["Дальняя грядка", "Полоса у стены", "Балкон"]
+        case "tr":      ["Arka tarh", "Duvar kenarı", "Balkon"]
+        case "zh-Hans": ["后院的地", "墙边一条", "阳台"]
+        case "zh-Hant": ["後院的地", "牆邊一條", "陽台"]
+        default:        ["Back bed", "Wall border", "Balcony"]
         }
     }
 
+    /// The catalogue the app is actually running in — "pt-BR" and "zh-Hant" included.
+    ///
+    /// Not `Locale.language.languageCode`, which flattens both Chinese scripts to "zh" and
+    /// Brazilian Portuguese to "pt": the demo garden is picked per catalogue, and those three
+    /// want different cities.
     private static func language() -> String {
-        Locale.current.language.languageCode?.identifier ?? "en"
+        Bundle.main.preferredLocalizations.first ?? "en"
     }
 
     #endif
@@ -327,6 +417,8 @@ private struct DemoState: ViewModifier {
                 case .compare, .paywall: sheet = Demo.screen
                 default: break
                 }
+                let minutes = store.spot?.sunDay(on: store.viewedDate).directMinutes ?? 0
+                Demo.report(hours: Format.duration(minutes: minutes))
             }
             .sheet(item: $sheet) { screen in
                 switch screen {

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Privacidad",
+    "support": "Soporte",
+    "terms": "Términos"
+  },
+  "updated": "Última actualización",
+  "home": {
+    "title": "¿Cuánto sol recibe este punto?",
+    "lede": "Cada sobre de semillas y cada etiqueta vienen en horas de sol directo. Casi nadie sabe cuántas recibe de verdad su jardín, su balcón o su tejado.",
+    "body": "<p>Sunplot responde con un número. No dónde está el sol —esa es la mitad fácil— sino cuánto llega a <em>este punto</em> cuando la valla, el garaje y el tilo del vecino ya se han llevado su parte.</p><div class=\"card\"><p>Apunta la cámara al horizonte y recorre con el dedo las copas de los árboles y los bordes de los tejados. Sunplot recorre el día minuto a minuto y cuenta solo la luz que pasa.</p></div><h2>Qué te dice</h2><ul><li>Las horas de sol directo de hoy, clasificadas como en las etiquetas: sol pleno, sol parcial, media sombra, sombra total.</li><li>Cuándo llega el sol y cuándo se va, y cómo se parte el día.</li><li>Todo el año: cuándo empieza y acaba el sol pleno y las semanas sin nada.</li></ul><h2>Qué no hace</h2><ul><li>Sin cuenta. No hay nada que registrar.</li><li>Sin servidores. Todo se calcula en el teléfono y funciona sin cobertura.</li><li>Sin suscripción. Un pago desbloquea la vista del año y el widget para siempre.</li></ul>"
+  },
+  "privacy": {
+    "title": "Privacidad",
+    "lede": "Sunplot no tiene servidores, ni cuentas, ni analítica. Nada de lo que haces en la app se recoge y nada sale de tu dispositivo.",
+    "body": "<h2>Qué se queda en el dispositivo</h2><ul><li><strong>Ubicación.</strong> Sirve para calcular por dónde pasa el sol, porque la respuesta cambia con la latitud. Se lee en el dispositivo y nunca se transmite.</li><li><strong>La cámara.</strong> La vista en directo permite trazar el horizonte. No se graba, guarda ni envía ninguna foto ni vídeo.</li><li><strong>Movimiento.</strong> La brújula indica hacia dónde apunta el teléfono para que el recorrido del sol encaje con lo que ve la cámara.</li><li><strong>Tus puntos.</strong> Los lugares que guardas y los horizontes que trazas se almacenan en el espacio propio de la app, en el dispositivo.</li></ul><h2>Qué no se recoge</h2><p>Ningún identificador, ninguna estadística de uso, ningún informe de fallos, ninguna publicidad, ningún kit de terceros. No hay servidor al que enviar nada.</p><h2>Compras</h2><p>La compra única la gestiona Apple por completo. Sunplot nunca ve tus datos de pago; esa transacción se rige por la política de privacidad de Apple.</p><h2>Menores</h2><p>Sunplot no recoge nada de nadie, sea cual sea su edad.</p><h2>Borrar tus datos</h2><p>Al eliminar la app se borra todo lo que había guardado. No queda nada en otro sitio que reclamar o borrar.</p><h2>Cambios</h2><p>Si esta política cambia, cambia con ella la fecha del pie de esta página.</p>"
+  },
+  "support": {
+    "title": "Soporte",
+    "lede": "Escribe a {EMAIL}. Lo lee una persona, normalmente en uno o dos días.",
+    "body": "<div class=\"card\"><p>Ayuda indicar qué iPhone tienes, qué versión de iOS y qué estabas haciendo cuando falló. Una captura vale más que un párrafo.</p></div><h2>Cosas que probar primero</h2><h3>El arco del sol no cuadra con el cielo</h3><p>Es la brújula, no el cálculo. Dibuja un ocho en el aire con el teléfono y aléjate de altavoces, imanes y salpicaderos. Sunplot avisa en pantalla cuando no se fía de su lectura.</p><h3>Dice que mi horizonte no basta</h3><p>Un toque no es un horizonte. Recorre con el dedo los tejados mientras giras sobre ti mismo; el contador muestra cuánto has cubierto.</p><h3>Lo compré y me lo vuelve a pedir</h3><p>Pulsa <em>¿Ya lo compraste? Restaurar</em> en la pantalla de compra. Las compras van ligadas a la cuenta de Apple que las hizo.</p><h3>¿Por qué quiere mi ubicación?</h3><p>El recorrido del sol depende de la latitud mucho más de lo que parece. La posición se usa en el dispositivo y no va a ninguna parte.</p>"
+  }
+}

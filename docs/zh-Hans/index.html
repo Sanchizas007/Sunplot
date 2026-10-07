@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>这块地能晒到多少太阳？ — Sunplot</title>
+<meta name="description" content="每个种子袋和植物标签都写着直射阳光的小时数。可是自家院子、阳台或屋顶到底能晒到几小时，几乎没人说得清。">
+<link rel="canonical" href="https://sanchizas007.github.io/Sunplot/zh-Hans/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/Sunplot/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/Sunplot/de/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/Sunplot/es/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/Sunplot/fr/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/Sunplot/it/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/Sunplot/ja/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/Sunplot/ko/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/Sunplot/nl/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/Sunplot/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/Sunplot/pt-BR/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/Sunplot/ru/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/Sunplot/tr/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/Sunplot/zh-Hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/Sunplot/zh-Hant/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/Sunplot/">
+<style>
+:root {
+  --ink: #241a12; --muted: #6b5a4c; --rule: #e8ddd2;
+  --page: #fffaf4; --card: #ffffff; --accent: #f36511;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f6ece2; --muted: #b3a294; --rule: #33291f;
+    --page: #16110c; --card: #1f1811; --accent: #fda43a;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--page); color: var(--ink);
+  font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .95rem; margin-bottom: 2.5rem; }
+nav a { color: var(--muted); text-decoration: none; }
+nav a[aria-current] { color: var(--ink); font-weight: 600; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.4rem 0 .3rem; }
+p { margin: 0 0 1rem; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+a { color: var(--accent); }
+.card {
+  background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+  padding: 1rem 1.2rem; margin: 1.5rem 0;
+}
+.card p:last-child { margin-bottom: 0; }
+.langs { margin: 2.5rem 0 0; font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .6rem; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs strong { color: var(--ink); font-weight: 600; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .9rem; }
+ul { padding-left: 1.2rem; }
+li { margin-bottom: .45rem; }
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a href="https://sanchizas007.github.io/Sunplot/zh-Hans/" aria-current="page">Sunplot</a>
+  <a href="https://sanchizas007.github.io/Sunplot/zh-Hans/privacy/">隐私</a>
+  <a href="https://sanchizas007.github.io/Sunplot/zh-Hans/support/">支持</a>
+  <a href="https://sanchizas007.github.io/Sunplot/terms/">条款</a>
+  <a href="https://github.com/Sanchizas007/Sunplot">Source</a>
+</nav>
+<h1>这块地能晒到多少太阳？</h1>
+<p class="lede">每个种子袋和植物标签都写着直射阳光的小时数。可是自家院子、阳台或屋顶到底能晒到几小时，几乎没人说得清。</p>
+<p>Sunplot 用一个数字回答。不是太阳在哪里——那是容易的一半——而是围墙、车库和邻居家的树各自拿走一份之后，还有多少落到<em>这块地</em>上。</p><div class="card"><p>把相机对准天际线，用手指沿着屋顶和树梢划过去。Sunplot 把一天一分钟一分钟地走一遍，只数穿过来的光。</p></div><h2>它告诉你什么</h2><ul><li>今天的直射阳光小时数，按植物标签的说法分级：全日照、半日照、半阴、全阴。</li><li>太阳何时照到、何时离开，以及一天被切成几段。</li><li>全年情况：全日照何时开始、何时结束，哪几周完全没有。</li></ul><h2>它不做什么</h2><ul><li>没有账户，不需要注册。</li><li>没有服务器，一切在手机上计算，没网也能用。</li><li>没有订阅。一次付费永久解锁全年视图和小组件。</li></ul>
+<p class="langs"><a href="https://sanchizas007.github.io/Sunplot/" hreflang="en">English</a> <a href="https://sanchizas007.github.io/Sunplot/de/" hreflang="de">Deutsch</a> <a href="https://sanchizas007.github.io/Sunplot/es/" hreflang="es">Español</a> <a href="https://sanchizas007.github.io/Sunplot/fr/" hreflang="fr">Français</a> <a href="https://sanchizas007.github.io/Sunplot/it/" hreflang="it">Italiano</a> <a href="https://sanchizas007.github.io/Sunplot/ja/" hreflang="ja">日本語</a> <a href="https://sanchizas007.github.io/Sunplot/ko/" hreflang="ko">한국어</a> <a href="https://sanchizas007.github.io/Sunplot/nl/" hreflang="nl">Nederlands</a> <a href="https://sanchizas007.github.io/Sunplot/pl/" hreflang="pl">Polski</a> <a href="https://sanchizas007.github.io/Sunplot/pt-BR/" hreflang="pt-BR">Português</a> <a href="https://sanchizas007.github.io/Sunplot/ru/" hreflang="ru">Русский</a> <a href="https://sanchizas007.github.io/Sunplot/tr/" hreflang="tr">Türkçe</a> <strong>简体中文</strong> <a href="https://sanchizas007.github.io/Sunplot/zh-Hant/" hreflang="zh-Hant">繁體中文</a></p>
+<footer>
+  <p>Sunplot · 最后更新 7 October 2026 · <a href="mailto:zhvnir1345@yahoo.com">zhvnir1345@yahoo.com</a></p>
+  <p>© 2026 Olexandr Zhovnir. All rights reserved.</p>
+</footer>
+</div>
+</body>
+</html>

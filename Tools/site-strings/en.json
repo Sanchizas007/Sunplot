@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Privacy",
+    "support": "Support",
+    "terms": "Terms"
+  },
+  "updated": "Last updated",
+  "home": {
+    "title": "How much sun does this spot get?",
+    "lede": "Every seed packet and plant label is written in hours of direct sun. Almost nobody knows what their own garden, balcony or roof actually gets.",
+    "body": "<p>Sunplot answers it with a number. Not where the sun is — that is the easy half — but how much of it reaches <em>this spot</em>, once the fence, the garage and next door's lime tree have taken their share.</p><div class=\"card\"><p>Point the camera at the skyline and sweep a finger along the tops of the roofs and trees. Sunplot walks the day a minute at a time and counts only the light that gets through.</p></div><h2>What it tells you</h2><ul><li>Hours of direct sun today, graded the way plant labels are: full sun, part sun, part shade, full shade.</li><li>When the sun arrives and when it leaves, and how the day is broken up.</li><li>The whole year: when full sun starts and ends, and the weeks that get none at all.</li></ul><h2>What it does not do</h2><ul><li>No account. There is nothing to sign up for.</li><li>No servers. Everything is worked out on the phone and works with no signal.</li><li>No subscription. One payment unlocks the year view and the widget, for good.</li></ul>"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lede": "Sunplot has no servers, no accounts and no analytics. Nothing you do in the app is collected, and nothing leaves your device.",
+    "body": "<h2>What stays on the device</h2><ul><li><strong>Location.</strong> Used to work out where the sun travels overhead, because the answer changes with latitude. It is read on the device and never transmitted.</li><li><strong>The camera.</strong> The live view lets you trace the skyline. No photo or video is recorded, saved or sent.</li><li><strong>Motion.</strong> The compass tells the app which way the phone points, so the sun's path lines up with what the camera sees.</li><li><strong>Your spots.</strong> The places you save and the skylines you trace are stored in the app's own storage on the device.</li></ul><h2>What is not collected</h2><p>No identifiers, no usage statistics, no crash reporting, no advertising, no third-party kits of any kind. There is no server to send anything to.</p><h2>Purchases</h2><p>The one-time purchase is handled entirely by Apple. Sunplot never sees your payment details, and Apple's own privacy policy covers that transaction.</p><h2>Children</h2><p>Sunplot collects nothing from anybody, of any age.</p><h2>Deleting your data</h2><p>Deleting the app removes everything it has stored. There is nothing held elsewhere to request or erase.</p><h2>Changes</h2><p>If this policy ever changes, the date at the foot of this page changes with it.</p>"
+  },
+  "support": {
+    "title": "Support",
+    "lede": "Write to {EMAIL}. One person reads it, usually within a day or two.",
+    "body": "<div class=\"card\"><p>It helps to say which iPhone you have, which version of iOS, and what you were doing when it went wrong. A screenshot is worth a paragraph.</p></div><h2>Things worth trying first</h2><h3>The sun's arc does not line up with the sky</h3><p>That is the compass, not the maths. Wave the phone in a figure of eight, and keep away from speakers, magnets and car dashboards. Sunplot says so on screen when it does not trust its own reading.</p><h3>It says my skyline is not enough</h3><p>A single tap is not a skyline. Sweep the finger along the rooftops and turn on the spot as you go; the counter shows how much of the horizon you have covered.</p><h3>I bought it and it asks me to buy it again</h3><p>Tap <em>Already bought it? Restore</em> on the purchase screen. Purchases are tied to the Apple Account that made them.</p><h3>Why does it want my location?</h3><p>The sun's path depends on latitude far more than people expect. The position is used on the device and goes nowhere.</p>"
+  }
+}

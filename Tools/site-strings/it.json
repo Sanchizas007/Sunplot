@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Privacy",
+    "support": "Assistenza",
+    "terms": "Termini"
+  },
+  "updated": "Ultimo aggiornamento",
+  "home": {
+    "title": "Quanto sole prende questo punto?",
+    "lede": "Ogni bustina di semi e ogni etichetta parlano di ore di sole diretto. Quasi nessuno sa quante ne riceva davvero il proprio giardino, balcone o tetto.",
+    "body": "<p>Sunplot risponde con un numero. Non dov'è il sole — quella è la metà facile — ma quanto ne arriva <em>in questo punto</em> dopo che recinzione, garage e il tiglio del vicino si sono presi la loro parte.</p><div class=\"card\"><p>Punta la fotocamera verso l'orizzonte e fai scorrere il dito lungo tetti e chiome. Sunplot percorre la giornata minuto per minuto e conta solo la luce che passa.</p></div><h2>Che cosa ti dice</h2><ul><li>Le ore di sole diretto di oggi, classificate come sulle etichette: pieno sole, sole parziale, mezz'ombra, ombra piena.</li><li>Quando il sole arriva e quando se ne va, e come si spezza la giornata.</li><li>L'anno intero: quando comincia e finisce il pieno sole e le settimane senza niente.</li></ul><h2>Che cosa non fa</h2><ul><li>Nessun account. Non c'è niente da registrare.</li><li>Nessun server. Tutto è calcolato sul telefono e funziona senza segnale.</li><li>Nessun abbonamento. Un pagamento sblocca la vista dell'anno e il widget, per sempre.</li></ul>"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lede": "Sunplot non ha server, né account, né analisi. Nulla di ciò che fai nell'app viene raccolto e nulla esce dal tuo dispositivo.",
+    "body": "<h2>Che cosa resta sul dispositivo</h2><ul><li><strong>Posizione.</strong> Serve a calcolare il percorso del sole, perché la risposta cambia con la latitudine. Viene letta sul dispositivo e mai trasmessa.</li><li><strong>La fotocamera.</strong> L'immagine dal vivo serve a tracciare l'orizzonte. Nessuna foto o video viene registrato, salvato o inviato.</li><li><strong>Movimento.</strong> La bussola dice dove punta il telefono, così il percorso del sole combacia con l'immagine.</li><li><strong>I tuoi punti.</strong> I luoghi salvati e gli orizzonti tracciati stanno nell'archivio dell'app, sul dispositivo.</li></ul><h2>Che cosa non viene raccolto</h2><p>Nessun identificativo, nessuna statistica d'uso, nessun rapporto di crash, nessuna pubblicità, nessun kit di terze parti. Non c'è alcun server a cui mandare qualcosa.</p><h2>Acquisti</h2><p>L'acquisto una tantum è gestito interamente da Apple. Sunplot non vede mai i dati di pagamento; quella transazione segue l'informativa di Apple.</p><h2>Bambini</h2><p>Sunplot non raccoglie nulla da nessuno, a qualsiasi età.</p><h2>Cancellare i dati</h2><p>Eliminando l'app si cancella tutto ciò che aveva salvato. Altrove non resta nulla da richiedere o cancellare.</p><h2>Modifiche</h2><p>Se questa informativa cambia, cambia con essa la data in fondo alla pagina.</p>"
+  },
+  "support": {
+    "title": "Assistenza",
+    "lede": "Scrivi a {EMAIL}. Legge una persona, di solito entro un giorno o due.",
+    "body": "<div class=\"card\"><p>Aiuta sapere quale iPhone hai, quale versione di iOS e che cosa stavi facendo. Uno screenshot vale più di un paragrafo.</p></div><h2>Da provare per primo</h2><h3>L'arco del sole non combacia con il cielo</h3><p>È la bussola, non il calcolo. Disegna un otto nell'aria con il telefono e stai lontano da casse, magneti e cruscotti. Sunplot lo scrive sullo schermo quando non si fida della propria lettura.</p><h3>Dice che il mio orizzonte non basta</h3><p>Un tocco non è un orizzonte. Fai scorrere il dito lungo i tetti girando su te stesso; il contatore mostra quanta parte hai coperto.</p><h3>L'ho comprato e me lo richiede</h3><p>Tocca <em>Già acquistato? Ripristina</em> nella schermata d'acquisto. Gli acquisti sono legati all'account Apple che li ha fatti.</p><h3>Perché vuole la posizione?</h3><p>Il percorso del sole dipende dalla latitudine molto più di quanto si creda. La posizione è usata sul dispositivo e non va da nessuna parte.</p>"
+  }
+}

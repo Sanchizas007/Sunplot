@@ -79,8 +79,10 @@ PYEOF
 if [[ $? -eq 0 ]]; then print -n "$(tail -1 "$LOG")  "; ok; else bad "конфигурация покупок"; cat "$LOG"; fi
 
 step "локализация          "
-if python3 Tools/check-localisation.py > "$LOG" 2>&1; then
-  print -n "$(tail -1 "$LOG")  "; ok
+# Каталоги пишутся из Tools/strings/, поэтому проверка одна: совпадают ли они с таблицами.
+# Сами таблицы проверяются при генерации — подстановки, переносы, письменность, пропуски.
+if python3 Tools/strings.py --check > "$LOG" 2>&1 && python3 Tools/check-localisation.py >> "$LOG" 2>&1; then
+  print -n "$(grep -m1 'catalogs match' "$LOG" | sed 's/catalogs match Tools\/strings\/ — //')  "; ok
 else
   bad "локализация"; cat "$LOG"
 fi
@@ -96,8 +98,11 @@ for rt in sorted(d, reverse=True):
 ")
 if [[ -z "$UDID" ]]; then
   print "⚠ нет симулятора iPhone — пропущено"
+# Язык тестов задан явно: они сверяют английские строки, а симулятор берёт язык системы —
+# с четырнадцатью языками в сборке тот же тест падал бы на русской машине и проходил на
+# английской.
 elif xcodebuild -project Sunspot.xcodeproj -scheme Sunspot \
-       -destination "id=$UDID" test > "$LOG" 2>&1; then
+       -destination "id=$UDID" -testLanguage en -testRegion GB test > "$LOG" 2>&1; then
   print -n "$(grep -oE 'Test run with [0-9]+ tests' "$LOG" | tail -1)  "; ok
 else
   bad "тесты приложения"; grep -E "error:|✘|failed" "$LOG" | sort -u | head -10

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Datenschutz",
+    "support": "Hilfe",
+    "terms": "Nutzungsbedingungen"
+  },
+  "updated": "Zuletzt geändert",
+  "home": {
+    "title": "Wie viel Sonne bekommt diese Stelle?",
+    "lede": "Auf jeder Samentüte und jedem Pflanzenschild stehen Stunden direkter Sonne. Kaum jemand weiß, wie viele der eigene Garten, Balkon oder das eigene Dach wirklich bekommt.",
+    "body": "<p>Sunplot antwortet mit einer Zahl. Nicht, wo die Sonne steht — das ist die leichte Hälfte — sondern wie viel davon <em>an dieser Stelle</em> ankommt, wenn Zaun, Garage und die Linde nebenan ihren Teil genommen haben.</p><div class=\"card\"><p>Richte die Kamera auf den Horizont und fahre mit dem Finger die Dächer und Baumkronen entlang. Sunplot geht den Tag Minute für Minute durch und zählt nur das Licht, das durchkommt.</p></div><h2>Was es dir sagt</h2><ul><li>Stunden direkter Sonne heute, eingeteilt wie auf Pflanzenschildern: volle Sonne, Halbsonne, Halbschatten, voller Schatten.</li><li>Wann die Sonne ankommt und wann sie geht, und wie der Tag zerstückelt ist.</li><li>Das ganze Jahr: wann volle Sonne beginnt und endet und in welchen Wochen es gar keine gibt.</li></ul><h2>Was es nicht tut</h2><ul><li>Kein Konto. Es gibt nichts anzumelden.</li><li>Keine Server. Alles wird auf dem Telefon berechnet und funktioniert ohne Empfang.</li><li>Kein Abo. Eine Zahlung schaltet Jahresansicht und Widget dauerhaft frei.</li></ul>"
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "lede": "Sunplot hat keine Server, keine Konten und keine Analyse. Nichts, was du in der App tust, wird erfasst, und nichts verlässt dein Gerät.",
+    "body": "<h2>Was auf dem Gerät bleibt</h2><ul><li><strong>Standort.</strong> Dient dazu, den Lauf der Sonne zu berechnen, denn die Antwort hängt vom Breitengrad ab. Er wird auf dem Gerät gelesen und nie übertragen.</li><li><strong>Die Kamera.</strong> Das Livebild dient dem Nachzeichnen der Silhouette. Es wird kein Foto und kein Video aufgenommen, gespeichert oder gesendet.</li><li><strong>Bewegung.</strong> Der Kompass sagt der App, wohin das Telefon zeigt, damit der Sonnenlauf zum Kamerabild passt.</li><li><strong>Deine Stellen.</strong> Gespeicherte Stellen und nachgezeichnete Silhouetten liegen im eigenen Speicher der App auf dem Gerät.</li></ul><h2>Was nicht erfasst wird</h2><p>Keine Kennungen, keine Nutzungsstatistik, keine Absturzberichte, keine Werbung, keine fremden SDKs. Es gibt keinen Server, an den etwas gehen könnte.</p><h2>Käufe</h2><p>Der einmalige Kauf läuft vollständig über Apple. Sunplot sieht deine Zahlungsdaten nie; dafür gilt Apples eigene Datenschutzerklärung.</p><h2>Kinder</h2><p>Sunplot erhebt von niemandem Daten, in keinem Alter.</p><h2>Daten löschen</h2><p>Das Löschen der App entfernt alles Gespeicherte. Anderswo liegt nichts, das man anfordern oder löschen lassen müsste.</p><h2>Änderungen</h2><p>Ändert sich diese Erklärung, ändert sich das Datum unten auf dieser Seite mit.</p>"
+  },
+  "support": {
+    "title": "Hilfe",
+    "lede": "Schreib an {EMAIL}. Es liest ein Mensch, meist innerhalb von ein, zwei Tagen.",
+    "body": "<div class=\"card\"><p>Hilfreich ist: welches iPhone, welche iOS-Version und was du gerade getan hast. Ein Screenshot sagt mehr als ein Absatz.</p></div><h2>Was zuerst zu versuchen ist</h2><h3>Der Sonnenbogen passt nicht zum Himmel</h3><p>Das ist der Kompass, nicht die Rechnung. Beschreibe mit dem Telefon eine Acht und halte Abstand zu Lautsprechern, Magneten und Armaturenbrettern. Sunplot sagt auf dem Bildschirm, wenn es der eigenen Messung nicht traut.</p><h3>Es sagt, meine Silhouette reiche nicht</h3><p>Ein einzelnes Antippen ist keine Silhouette. Fahre mit dem Finger die Dächer entlang und drehe dich dabei; der Zähler zeigt, wie viel Horizont du erfasst hast.</p><h3>Ich habe gekauft und werde erneut zur Kasse gebeten</h3><p>Tippe auf dem Kaufbildschirm auf <em>Schon gekauft? Wiederherstellen</em>. Käufe hängen an dem Apple Account, der sie getätigt hat.</p><h3>Warum will es meinen Standort?</h3><p>Der Sonnenlauf hängt stärker vom Breitengrad ab, als man denkt. Die Position wird auf dem Gerät benutzt und geht nirgendwohin.</p>"
+  }
+}

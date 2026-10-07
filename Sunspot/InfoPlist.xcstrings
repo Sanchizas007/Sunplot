@@ -1,75 +1,273 @@
 {
-  "sourceLanguage": "en",
-  "version": "1.0",
-  "strings": {
-    "NSCameraUsageDescription": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot uses the camera so you can trace the roofs and trees around a spot."
+  "sourceLanguage" : "en",
+  "strings" : {
+    "NSCameraUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot nutzt die Kamera, damit du Dächer und Bäume rund um eine Stelle nachzeichnen kannst."
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot nutzt die Kamera, damit du Dächer und Bäume rund um eine Stelle nachzeichnen kannst."
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot uses the camera so you can trace the roofs and trees around a spot."
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot utilise l’appareil photo pour vous permettre de tracer les toits et les arbres autour d’un emplacement."
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot usa la cámara para que puedas trazar los tejados y árboles alrededor de un punto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot utilise l’appareil photo pour vous permettre de tracer les toits et les arbres autour d’un emplacement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot usa la fotocamera per farti tracciare tetti e alberi attorno a un punto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplotは、場所のまわりの屋根や木立をなぞれるようにカメラを使います。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot은 자리 주변의 지붕과 나무를 그릴 수 있도록 카메라를 사용합니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot gebruikt de camera zodat je de daken en bomen rond een plek kunt natekenen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot używa aparatu, żebyś mógł obrysować dachy i drzewa wokół miejsca."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Sunplot usa a câmera para você traçar os telhados e as árvores em volta de um ponto."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot использует камеру, чтобы вы могли обвести крыши и деревья вокруг точки."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot, bir noktanın çevresindeki çatıları ve ağaçları çizebilmen için kamerayı kullanır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 使用相机，让你描出地点周围的屋顶和树。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 使用相機，讓你描出地點周圍的屋頂和樹。"
           }
         }
       }
     },
-    "NSLocationWhenInUseUsageDescription": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot needs your location to work out where the sun travels over this spot."
+    "NSLocationWhenInUseUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot braucht deinen Standort, um den Sonnenlauf über dieser Stelle zu berechnen."
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot braucht deinen Standort, um den Sonnenlauf über dieser Stelle zu berechnen."
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot needs your location to work out where the sun travels over this spot."
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot a besoin de votre position pour calculer la course du soleil au-dessus de cet endroit."
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot necesita tu ubicación para calcular por dónde pasa el sol sobre este punto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot a besoin de votre position pour calculer la course du soleil au-dessus de cet endroit."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot ha bisogno della tua posizione per calcolare dove passa il sole sopra questo punto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplotは、この場所の上を太陽がどう通るか計算するために位置情報を使います。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot은 이 자리 위로 해가 지나는 길을 계산하기 위해 위치가 필요합니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot heeft je locatie nodig om te berekenen waar de zon over deze plek loopt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot potrzebuje twojej lokalizacji, żeby wyliczyć drogę słońca nad tym miejscem."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Sunplot precisa da sua localização para calcular por onde o sol passa sobre este ponto."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot нужна ваша геопозиция, чтобы рассчитать путь солнца над этой точкой."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot, güneşin bu noktanın üstünden nereden geçtiğini hesaplamak için konumunu kullanır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 需要你的位置，才能算出太阳从这个地点上空怎么走。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 需要你的位置，才能算出太陽從這個地點上空怎麼走。"
           }
         }
       }
     },
-    "NSMotionUsageDescription": {
-      "extractionState": "manual",
-      "localizations": {
-        "en": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot reads which way the phone is pointing so the sun's path lines up with what the camera sees."
+    "NSMotionUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot liest aus, wohin das Telefon zeigt, damit der Sonnenlauf zum Kamerabild passt."
           }
         },
-        "de": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot liest aus, wohin das Telefon zeigt, damit der Sonnenlauf zum Kamerabild passt."
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot reads which way the phone is pointing so the sun's path lines up with what the camera sees."
           }
         },
-        "fr": {
-          "stringUnit": {
-            "state": "translated",
-            "value": "Sunplot lit l’orientation du téléphone pour aligner la course du soleil sur ce que voit l’appareil photo."
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot lee hacia dónde apunta el teléfono para que el recorrido del sol coincida con lo que ve la cámara."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot lit l’orientation du téléphone pour aligner la course du soleil sur ce que voit l’appareil photo."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot rileva dove è puntato il telefono così il percorso del sole combacia con ciò che vede la fotocamera."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplotは、太陽の通り道をカメラの映像と合わせるため、端末の向きを読み取ります。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot은 해의 경로를 카메라 화면과 맞추기 위해 기기가 향한 방향을 읽습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot leest af welke kant de telefoon op wijst, zodat de zonnebaan klopt met wat de camera ziet."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot odczytuje, w którą stronę skierowany jest telefon, żeby droga słońca zgadzała się z obrazem z aparatu."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Sunplot lê para onde o telefone aponta, assim o caminho do sol coincide com o que a câmera vê."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot определяет, куда направлен телефон, чтобы путь солнца совпал с тем, что видит камера."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot, güneşin yolu kameranın gördüğüyle örtüşsün diye telefonun hangi yöne baktığını okur."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 读取手机朝向，让太阳的轨迹和相机看到的画面对齐。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 讀取手機朝向，讓太陽的軌跡和相機看到的畫面對齊。"
           }
         }
       }
     }
-  }
+  },
+  "version" : "1.0"
 }

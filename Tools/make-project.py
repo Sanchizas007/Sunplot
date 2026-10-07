@@ -14,7 +14,7 @@ APP = "Sunspot"
 BUNDLE_ID = "app.sunplot"
 DEPLOYMENT_TARGET = "17.0"
 SWIFT_VERSION = "6.0"
-MARKETING_VERSION = "1.0"
+MARKETING_VERSION = "1.1"
 # Apple developer team, needed to sign for a real device. Same account as Sunfold.
 DEVELOPMENT_TEAM = "3M856J997X"
 
@@ -58,7 +58,7 @@ PROJECT_COMMON = {
 APP_COMMON = {
     "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
     "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
-    "CURRENT_PROJECT_VERSION": "1",
+    "CURRENT_PROJECT_VERSION": "2",
     "MARKETING_VERSION": MARKETING_VERSION,
     "GENERATE_INFOPLIST_FILE": "YES",
     "INFOPLIST_KEY_UIApplicationSceneManifest_Generation": "YES",
@@ -100,7 +100,7 @@ APP_COMMON = {
 
 WIDGET_COMMON = {
     "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
-    "CURRENT_PROJECT_VERSION": "1",
+    "CURRENT_PROJECT_VERSION": "2",
     "MARKETING_VERSION": MARKETING_VERSION,
     # A widget extension needs a real Info.plist: its NSExtension entry is a nested
     # dictionary, and the generated-plist build settings cannot express one.
@@ -346,7 +346,18 @@ pbxproj = f"""// !$*UTF8*$!
 			knownRegions = (
 				en,
 				de,
+				es,
 				fr,
+				it,
+				ja,
+				ko,
+				nl,
+				pl,
+				"pt-BR",
+				ru,
+				tr,
+				"zh-Hans",
+				"zh-Hant",
 				Base,
 			);
 			mainGroup = {I['mainGroup']};

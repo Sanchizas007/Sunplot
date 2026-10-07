@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Gizlilik",
+    "support": "Destek",
+    "terms": "Koşullar"
+  },
+  "updated": "Son güncelleme",
+  "home": {
+    "title": "Bu nokta ne kadar güneş alıyor?",
+    "lede": "Her tohum paketinde ve her bitki etiketinde doğrudan güneş saatleri yazar. Kendi bahçesinin, balkonunun ya da çatısının gerçekte kaç saat aldığını ise neredeyse kimse bilmez.",
+    "body": "<p>Sunplot bunu bir sayıyla yanıtlar. Güneşin nerede olduğunu değil — kolay olan yarısı budur — çit, garaj ve komşunun ıhlamuru payını aldıktan sonra <em>bu noktaya</em> ne kadarının ulaştığını.</p><div class=\"card\"><p>Kamerayı ufka doğrult ve parmağını çatıların, ağaçların tepesi boyunca kaydır. Sunplot günü dakika dakika tarar ve yalnızca geçebilen ışığı sayar.</p></div><h2>Sana ne söyler</h2><ul><li>Bugünkü doğrudan güneş saatleri, etiketlerdeki gibi ayrılmış halde: tam güneş, kısmi güneş, yarı gölge, tam gölge.</li><li>Güneş ne zaman geliyor, ne zaman gidiyor ve gün nasıl bölünüyor.</li><li>Bütün bir yıl: tam güneş ne zaman başlıyor, ne zaman bitiyor ve hiç olmadığı haftalar.</li></ul><h2>Ne yapmaz</h2><ul><li>Hesap yok. Kaydolunacak bir şey yok.</li><li>Sunucu yok. Her şey telefonda hesaplanır, şebeke olmadan da çalışır.</li><li>Abonelik yok. Tek ödeme yıl görünümünü ve widget'ı kalıcı olarak açar.</li></ul>"
+  },
+  "privacy": {
+    "title": "Gizlilik",
+    "lede": "Sunplot'un sunucusu, hesabı ve analizi yoktur. Uygulamada yaptığın hiçbir şey toplanmaz ve cihazından hiçbir şey çıkmaz.",
+    "body": "<h2>Cihazda kalanlar</h2><ul><li><strong>Konum.</strong> Güneşin yolunu hesaplamak için gerekir, çünkü yanıt enleme göre değişir. Cihazda okunur, hiçbir yere gönderilmez.</li><li><strong>Kamera.</strong> Canlı görüntü ufku çizmek içindir. Hiçbir fotoğraf ya da video kaydedilmez, saklanmaz, gönderilmez.</li><li><strong>Hareket.</strong> Pusula telefonun hangi yöne baktığını söyler; böylece güneşin yolu görüntüyle örtüşür.</li><li><strong>Noktaların.</strong> Kaydettiğin yerler ve çizdiğin ufuklar uygulamanın kendi deposunda, cihazda durur.</li></ul><h2>Toplanmayanlar</h2><p>Hiçbir tanımlayıcı, kullanım istatistiği, çökme raporu, reklam ya da üçüncü taraf kiti yok. Bir şeyin gönderilebileceği bir sunucu da yok.</p><h2>Satın alma</h2><p>Tek seferlik satın almayı tamamen Apple yürütür. Sunplot ödeme bilgilerini hiç görmez; bu işlem Apple'ın gizlilik politikasına tabidir.</p><h2>Çocuklar</h2><p>Sunplot hiç kimseden, hiçbir yaşta veri toplamaz.</p><h2>Verilerini silmek</h2><p>Uygulamayı silmek sakladığı her şeyi kaldırır. Başka bir yerde istenecek ya da sildirilecek bir şey yoktur.</p><h2>Değişiklikler</h2><p>Bu metin değişirse sayfanın altındaki tarih de onunla birlikte değişir.</p>"
+  },
+  "support": {
+    "title": "Destek",
+    "lede": "{EMAIL} adresine yaz. Okuyan bir insan, genelde bir iki gün içinde.",
+    "body": "<div class=\"card\"><p>Hangi iPhone'u kullandığını, iOS sürümünü ve sorun çıktığında ne yaptığını yazman işe yarar. Bir ekran görüntüsü bir paragraf eder.</p></div><h2>Önce şunları dene</h2><h3>Güneşin yayı gökyüzüyle örtüşmüyor</h3><p>Sorun pusulada, hesapta değil. Telefonla havada sekiz çiz, hoparlörlerden, mıknatıslardan ve araç torpidosundan uzak dur. Sunplot kendi ölçümüne güvenmediğinde bunu ekranda yazar.</p><h3>Çizdiğim ufuk yetmiyor diyor</h3><p>Tek bir dokunuş ufuk değildir. Olduğun yerde dönerek parmağını çatılar boyunca kaydır; sayaç ne kadarını kapsadığını gösterir.</p><h3>Satın aldım, yine satın almamı istiyor</h3><p>Satın alma ekranında <em>Daha önce aldın mı? Geri yükle</em> seçeneğine dokun. Satın almalar onu yapan Apple Hesabına bağlıdır.</p><h3>Konumumu neden istiyor?</h3><p>Güneşin yolu enleme sanıldığından çok daha bağlıdır. Konum cihazda kullanılır ve hiçbir yere gitmez.</p>"
+  }
+}

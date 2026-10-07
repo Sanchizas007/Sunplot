@@ -4,8 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy — Sunplot</title>
-<meta name="description" content="Sunplot collects nothing, sends nothing, and has no servers.">
+<meta name="description" content="Sunplot has no servers, no accounts and no analytics. Nothing you do in the app is collected, and nothing leaves your device.">
 <link rel="canonical" href="https://sanchizas007.github.io/Sunplot/privacy/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/Sunplot/privacy/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/Sunplot/de/privacy/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/Sunplot/es/privacy/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/Sunplot/fr/privacy/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/Sunplot/it/privacy/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/Sunplot/ja/privacy/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/Sunplot/ko/privacy/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/Sunplot/nl/privacy/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/Sunplot/pl/privacy/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/Sunplot/pt-BR/privacy/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/Sunplot/ru/privacy/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/Sunplot/tr/privacy/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/Sunplot/zh-Hans/privacy/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/Sunplot/zh-Hant/privacy/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/Sunplot/privacy/">
 <style>
 :root {
   --ink: #241a12; --muted: #6b5a4c; --rule: #e8ddd2;
@@ -23,69 +38,45 @@ body {
   font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
-a { color: var(--accent); }
-h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 .4rem; letter-spacing: -.02em; }
-h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
-h3 { font-size: 1.02rem; margin: 1.8rem 0 .4rem; }
-p, li { color: var(--ink); }
-.lede { font-size: 1.12rem; color: var(--muted); margin: 0 0 2rem; }
-.card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 1.25rem 1.4rem; margin: 1.5rem 0; }
-nav { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 2.5rem; font-size: .95rem; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .95rem; margin-bottom: 2.5rem; }
 nav a { color: var(--muted); text-decoration: none; }
-nav a:hover, nav a[aria-current] { color: var(--accent); }
-footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
-ul { padding-left: 1.15rem; }
+nav a[aria-current] { color: var(--ink); font-weight: 600; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.4rem 0 .3rem; }
+p { margin: 0 0 1rem; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+a { color: var(--accent); }
+.card {
+  background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+  padding: 1rem 1.2rem; margin: 1.5rem 0;
+}
+.card p:last-child { margin-bottom: 0; }
+.langs { margin: 2.5rem 0 0; font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .6rem; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs strong { color: var(--ink); font-weight: 600; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .9rem; }
+ul { padding-left: 1.2rem; }
 li { margin-bottom: .45rem; }
-code { background: var(--rule); padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav>
-  <a href="/Sunplot/">Sunplot</a>
-  <a href="/Sunplot/privacy/" aria-current="page">Privacy</a>
-  <a href="/Sunplot/support/">Support</a>
-  <a href="/Sunplot/terms/">Terms</a>
+  <a href="https://sanchizas007.github.io/Sunplot/">Sunplot</a>
+  <a href="https://sanchizas007.github.io/Sunplot/privacy/" aria-current="page">Privacy</a>
+  <a href="https://sanchizas007.github.io/Sunplot/support/">Support</a>
+  <a href="https://sanchizas007.github.io/Sunplot/terms/">Terms</a>
   <a href="https://github.com/Sanchizas007/Sunplot">Source</a>
 </nav>
-
 <h1>Privacy</h1>
-<p class="lede">Sunplot has no servers, no accounts and no analytics. Nothing you do in the
-app is collected, and nothing leaves your device.</p>
-
-<h2>What stays on the device</h2>
-<ul>
-<li><strong>Location.</strong> Used to work out where the sun travels overhead, because the
-answer changes with latitude. It is read on the device and never transmitted anywhere.</li>
-<li><strong>The camera.</strong> The live view is used so you can trace the skyline. No photo
-or video is recorded, saved or sent.</li>
-<li><strong>Motion.</strong> The compass and motion sensors tell the app which way the phone
-is pointing, so the sun's path lines up with what the camera sees.</li>
-<li><strong>Your spots.</strong> The places you save and the skylines you trace are stored in
-the app's own storage on the device.</li>
-</ul>
-
-<h2>What is not collected</h2>
-<p>No identifiers, no usage statistics, no crash reporting, no advertising, no third-party
-software development kits of any kind. There is no server to send anything to.</p>
-
-<h2>Purchases</h2>
-<p>The one-time purchase is handled entirely by Apple. Sunplot never sees your payment
-details, and Apple's own privacy policy covers that transaction.</p>
-
-<h2>Children</h2>
-<p>Sunplot collects nothing from anybody, of any age.</p>
-
-<h2>Deleting your data</h2>
-<p>Deleting the app removes everything it has stored. There is nothing held elsewhere to
-request or erase.</p>
-
-<h2>Changes</h2>
-<p>If this policy ever changes, the date at the foot of this page changes with it.</p>
-
+<p class="lede">Sunplot has no servers, no accounts and no analytics. Nothing you do in the app is collected, and nothing leaves your device.</p>
+<h2>What stays on the device</h2><ul><li><strong>Location.</strong> Used to work out where the sun travels overhead, because the answer changes with latitude. It is read on the device and never transmitted.</li><li><strong>The camera.</strong> The live view lets you trace the skyline. No photo or video is recorded, saved or sent.</li><li><strong>Motion.</strong> The compass tells the app which way the phone points, so the sun's path lines up with what the camera sees.</li><li><strong>Your spots.</strong> The places you save and the skylines you trace are stored in the app's own storage on the device.</li></ul><h2>What is not collected</h2><p>No identifiers, no usage statistics, no crash reporting, no advertising, no third-party kits of any kind. There is no server to send anything to.</p><h2>Purchases</h2><p>The one-time purchase is handled entirely by Apple. Sunplot never sees your payment details, and Apple's own privacy policy covers that transaction.</p><h2>Children</h2><p>Sunplot collects nothing from anybody, of any age.</p><h2>Deleting your data</h2><p>Deleting the app removes everything it has stored. There is nothing held elsewhere to request or erase.</p><h2>Changes</h2><p>If this policy ever changes, the date at the foot of this page changes with it.</p>
+<p class="langs"><strong>English</strong> <a href="https://sanchizas007.github.io/Sunplot/de/privacy/" hreflang="de">Deutsch</a> <a href="https://sanchizas007.github.io/Sunplot/es/privacy/" hreflang="es">Español</a> <a href="https://sanchizas007.github.io/Sunplot/fr/privacy/" hreflang="fr">Français</a> <a href="https://sanchizas007.github.io/Sunplot/it/privacy/" hreflang="it">Italiano</a> <a href="https://sanchizas007.github.io/Sunplot/ja/privacy/" hreflang="ja">日本語</a> <a href="https://sanchizas007.github.io/Sunplot/ko/privacy/" hreflang="ko">한국어</a> <a href="https://sanchizas007.github.io/Sunplot/nl/privacy/" hreflang="nl">Nederlands</a> <a href="https://sanchizas007.github.io/Sunplot/pl/privacy/" hreflang="pl">Polski</a> <a href="https://sanchizas007.github.io/Sunplot/pt-BR/privacy/" hreflang="pt-BR">Português</a> <a href="https://sanchizas007.github.io/Sunplot/ru/privacy/" hreflang="ru">Русский</a> <a href="https://sanchizas007.github.io/Sunplot/tr/privacy/" hreflang="tr">Türkçe</a> <a href="https://sanchizas007.github.io/Sunplot/zh-Hans/privacy/" hreflang="zh-Hans">简体中文</a> <a href="https://sanchizas007.github.io/Sunplot/zh-Hant/privacy/" hreflang="zh-Hant">繁體中文</a></p>
 <footer>
-  <p>Sunplot · last updated 29 August 2026 · <a href="mailto:zhvnir1345@yahoo.com">zhvnir1345@yahoo.com</a></p>
+  <p>Sunplot · Last updated 7 October 2026 · <a href="mailto:zhvnir1345@yahoo.com">zhvnir1345@yahoo.com</a></p>
   <p>© 2026 Olexandr Zhovnir. All rights reserved.</p>
 </footer>
 </div>

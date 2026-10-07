@@ -4,8 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>How much sun does this spot get? — Sunplot</title>
-<meta name="description" content="Sunplot works out the hours of direct sun a spot gets on any day of the year, counting the roofs and trees in the way.">
+<meta name="description" content="Every seed packet and plant label is written in hours of direct sun. Almost nobody knows what their own garden, balcony or roof actually gets.">
 <link rel="canonical" href="https://sanchizas007.github.io/Sunplot/">
+<link rel="alternate" hreflang="en" href="https://sanchizas007.github.io/Sunplot/">
+<link rel="alternate" hreflang="de" href="https://sanchizas007.github.io/Sunplot/de/">
+<link rel="alternate" hreflang="es" href="https://sanchizas007.github.io/Sunplot/es/">
+<link rel="alternate" hreflang="fr" href="https://sanchizas007.github.io/Sunplot/fr/">
+<link rel="alternate" hreflang="it" href="https://sanchizas007.github.io/Sunplot/it/">
+<link rel="alternate" hreflang="ja" href="https://sanchizas007.github.io/Sunplot/ja/">
+<link rel="alternate" hreflang="ko" href="https://sanchizas007.github.io/Sunplot/ko/">
+<link rel="alternate" hreflang="nl" href="https://sanchizas007.github.io/Sunplot/nl/">
+<link rel="alternate" hreflang="pl" href="https://sanchizas007.github.io/Sunplot/pl/">
+<link rel="alternate" hreflang="pt-BR" href="https://sanchizas007.github.io/Sunplot/pt-BR/">
+<link rel="alternate" hreflang="ru" href="https://sanchizas007.github.io/Sunplot/ru/">
+<link rel="alternate" hreflang="tr" href="https://sanchizas007.github.io/Sunplot/tr/">
+<link rel="alternate" hreflang="zh-Hans" href="https://sanchizas007.github.io/Sunplot/zh-Hans/">
+<link rel="alternate" hreflang="zh-Hant" href="https://sanchizas007.github.io/Sunplot/zh-Hant/">
+<link rel="alternate" hreflang="x-default" href="https://sanchizas007.github.io/Sunplot/">
 <style>
 :root {
   --ink: #241a12; --muted: #6b5a4c; --rule: #e8ddd2;
@@ -23,62 +38,45 @@ body {
   font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
-a { color: var(--accent); }
-h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 .4rem; letter-spacing: -.02em; }
-h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
-h3 { font-size: 1.02rem; margin: 1.8rem 0 .4rem; }
-p, li { color: var(--ink); }
-.lede { font-size: 1.12rem; color: var(--muted); margin: 0 0 2rem; }
-.card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 1.25rem 1.4rem; margin: 1.5rem 0; }
-nav { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 2.5rem; font-size: .95rem; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .95rem; margin-bottom: 2.5rem; }
 nav a { color: var(--muted); text-decoration: none; }
-nav a:hover, nav a[aria-current] { color: var(--accent); }
-footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
-ul { padding-left: 1.15rem; }
+nav a[aria-current] { color: var(--ink); font-weight: 600; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.4rem 0 .3rem; }
+p { margin: 0 0 1rem; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+a { color: var(--accent); }
+.card {
+  background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+  padding: 1rem 1.2rem; margin: 1.5rem 0;
+}
+.card p:last-child { margin-bottom: 0; }
+.langs { margin: 2.5rem 0 0; font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .6rem; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs strong { color: var(--ink); font-weight: 600; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .9rem; }
+ul { padding-left: 1.2rem; }
 li { margin-bottom: .45rem; }
-code { background: var(--rule); padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
 </style>
 </head>
 <body>
 <div class="wrap">
 <nav>
-  <a href="/Sunplot/" aria-current="page">Sunplot</a>
-  <a href="/Sunplot/privacy/">Privacy</a>
-  <a href="/Sunplot/support/">Support</a>
-  <a href="/Sunplot/terms/">Terms</a>
+  <a href="https://sanchizas007.github.io/Sunplot/" aria-current="page">Sunplot</a>
+  <a href="https://sanchizas007.github.io/Sunplot/privacy/">Privacy</a>
+  <a href="https://sanchizas007.github.io/Sunplot/support/">Support</a>
+  <a href="https://sanchizas007.github.io/Sunplot/terms/">Terms</a>
   <a href="https://github.com/Sanchizas007/Sunplot">Source</a>
 </nav>
-
 <h1>How much sun does this spot get?</h1>
-<p class="lede">Every seed packet and plant label is written in hours of direct sun. Almost
-nobody knows what their own garden, balcony or roof actually gets.</p>
-
-<p>Sunplot answers it with a number. Not where the sun is — that is the easy half — but how
-much of it reaches <em>this spot</em>, once the fence, the garage and next door's lime tree
-have taken their share.</p>
-
-<div class="card">
-<p>Point the camera at the skyline and sweep a finger along the tops of the roofs and trees.
-Sunplot walks the day a minute at a time and counts only the light that gets through.</p>
-</div>
-
-<h2>What it tells you</h2>
-<ul>
-<li>Hours of direct sun today, graded the way plant labels are: full sun, part sun, part shade, full shade.</li>
-<li>When the sun arrives at the spot and when it leaves, and how the day is broken up.</li>
-<li>The whole year: when full sun starts and ends, and the weeks that get none at all.</li>
-</ul>
-
-<h2>What it does not do</h2>
-<ul>
-<li>No account. There is nothing to sign up for.</li>
-<li>No servers. Every calculation happens on the phone, and works with no signal at all.</li>
-<li>No subscription. One payment unlocks the year view and the widget, for good.</li>
-</ul>
-
+<p class="lede">Every seed packet and plant label is written in hours of direct sun. Almost nobody knows what their own garden, balcony or roof actually gets.</p>
+<p>Sunplot answers it with a number. Not where the sun is — that is the easy half — but how much of it reaches <em>this spot</em>, once the fence, the garage and next door's lime tree have taken their share.</p><div class="card"><p>Point the camera at the skyline and sweep a finger along the tops of the roofs and trees. Sunplot walks the day a minute at a time and counts only the light that gets through.</p></div><h2>What it tells you</h2><ul><li>Hours of direct sun today, graded the way plant labels are: full sun, part sun, part shade, full shade.</li><li>When the sun arrives and when it leaves, and how the day is broken up.</li><li>The whole year: when full sun starts and ends, and the weeks that get none at all.</li></ul><h2>What it does not do</h2><ul><li>No account. There is nothing to sign up for.</li><li>No servers. Everything is worked out on the phone and works with no signal.</li><li>No subscription. One payment unlocks the year view and the widget, for good.</li></ul>
+<p class="langs"><strong>English</strong> <a href="https://sanchizas007.github.io/Sunplot/de/" hreflang="de">Deutsch</a> <a href="https://sanchizas007.github.io/Sunplot/es/" hreflang="es">Español</a> <a href="https://sanchizas007.github.io/Sunplot/fr/" hreflang="fr">Français</a> <a href="https://sanchizas007.github.io/Sunplot/it/" hreflang="it">Italiano</a> <a href="https://sanchizas007.github.io/Sunplot/ja/" hreflang="ja">日本語</a> <a href="https://sanchizas007.github.io/Sunplot/ko/" hreflang="ko">한국어</a> <a href="https://sanchizas007.github.io/Sunplot/nl/" hreflang="nl">Nederlands</a> <a href="https://sanchizas007.github.io/Sunplot/pl/" hreflang="pl">Polski</a> <a href="https://sanchizas007.github.io/Sunplot/pt-BR/" hreflang="pt-BR">Português</a> <a href="https://sanchizas007.github.io/Sunplot/ru/" hreflang="ru">Русский</a> <a href="https://sanchizas007.github.io/Sunplot/tr/" hreflang="tr">Türkçe</a> <a href="https://sanchizas007.github.io/Sunplot/zh-Hans/" hreflang="zh-Hans">简体中文</a> <a href="https://sanchizas007.github.io/Sunplot/zh-Hant/" hreflang="zh-Hant">繁體中文</a></p>
 <footer>
-  <p>Sunplot · last updated 29 August 2026 · <a href="mailto:zhvnir1345@yahoo.com">zhvnir1345@yahoo.com</a></p>
+  <p>Sunplot · Last updated 7 October 2026 · <a href="mailto:zhvnir1345@yahoo.com">zhvnir1345@yahoo.com</a></p>
   <p>© 2026 Olexandr Zhovnir. All rights reserved.</p>
 </footer>
 </div>

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Privacy",
+    "support": "Hulp",
+    "terms": "Voorwaarden"
+  },
+  "updated": "Laatst bijgewerkt",
+  "home": {
+    "title": "Hoeveel zon krijgt deze plek?",
+    "lede": "Op elk zaadzakje en elk plantenlabel staan uren directe zon. Bijna niemand weet hoeveel zijn eigen tuin, balkon of dak er werkelijk krijgt.",
+    "body": "<p>Sunplot antwoordt met een getal. Niet waar de zon staat — dat is de makkelijke helft — maar hoeveel ervan <em>deze plek</em> bereikt nadat de schutting, de garage en de lindeboom van de buren hun deel hebben genomen.</p><div class=\"card\"><p>Richt de camera op de horizon en veeg met je vinger langs de daken en boomtoppen. Sunplot loopt de dag minuut voor minuut af en telt alleen het licht dat erdoor komt.</p></div><h2>Wat het je vertelt</h2><ul><li>De uren directe zon van vandaag, ingedeeld zoals op plantenlabels: volle zon, halve zon, halfschaduw, volle schaduw.</li><li>Wanneer de zon komt en weer gaat, en hoe de dag opgeknipt is.</li><li>Het hele jaar: wanneer volle zon begint en eindigt, en de weken zonder iets.</li></ul><h2>Wat het niet doet</h2><ul><li>Geen account. Er valt niets aan te melden.</li><li>Geen servers. Alles wordt op de telefoon berekend en werkt zonder bereik.</li><li>Geen abonnement. Eén betaling ontgrendelt het jaaroverzicht en de widget, voorgoed.</li></ul>"
+  },
+  "privacy": {
+    "title": "Privacy",
+    "lede": "Sunplot heeft geen servers, geen accounts en geen analyse. Niets van wat je in de app doet wordt verzameld en niets verlaat je toestel.",
+    "body": "<h2>Wat op het toestel blijft</h2><ul><li><strong>Locatie.</strong> Nodig om de baan van de zon te berekenen, want het antwoord hangt van de breedtegraad af. Hij wordt op het toestel gelezen en nooit verstuurd.</li><li><strong>De camera.</strong> Het live beeld dient om de horizon na te tekenen. Er wordt geen foto of video opgenomen, bewaard of verstuurd.</li><li><strong>Beweging.</strong> Het kompas zegt waar de telefoon heen wijst, zodat de zonnebaan klopt met het camerabeeld.</li><li><strong>Je plekken.</strong> Bewaarde plekken en getekende horizonnen staan in de eigen opslag van de app, op het toestel.</li></ul><h2>Wat niet wordt verzameld</h2><p>Geen identificatoren, geen gebruiksstatistiek, geen crashrapporten, geen advertenties, geen kits van derden. Er is geen server om iets naartoe te sturen.</p><h2>Aankopen</h2><p>De eenmalige aankoop loopt volledig via Apple. Sunplot ziet je betaalgegevens nooit; daarvoor geldt het privacybeleid van Apple.</p><h2>Kinderen</h2><p>Sunplot verzamelt niets van wie dan ook, op welke leeftijd dan ook.</p><h2>Gegevens verwijderen</h2><p>De app verwijderen wist alles wat zij had bewaard. Elders ligt niets om op te vragen of te laten wissen.</p><h2>Wijzigingen</h2><p>Verandert dit beleid, dan verandert de datum onderaan deze pagina mee.</p>"
+  },
+  "support": {
+    "title": "Hulp",
+    "lede": "Schrijf naar {EMAIL}. Eén persoon leest het, meestal binnen een dag of twee.",
+    "body": "<div class=\"card\"><p>Handig om te vermelden: welke iPhone, welke iOS-versie en wat je deed toen het misging. Een schermafbeelding zegt meer dan een alinea.</p></div><h2>Eerst dit proberen</h2><h3>De zonnebaan klopt niet met de lucht</h3><p>Dat is het kompas, niet de rekensom. Beweeg de telefoon in een acht en blijf weg bij speakers, magneten en dashboards. Sunplot zegt op het scherm wanneer het zijn eigen meting niet vertrouwt.</p><h3>Het zegt dat mijn horizon niet genoeg is</h3><p>Eén tik is geen horizon. Veeg met je vinger langs de daken terwijl je om je as draait; de teller laat zien hoeveel je hebt gedekt.</p><h3>Ik heb het gekocht en het vraagt opnieuw</h3><p>Tik op <em>Al gekocht? Herstellen</em> in het koopscherm. Aankopen horen bij het Apple Account dat ze deed.</p><h3>Waarom wil het mijn locatie?</h3><p>De baan van de zon hangt veel sterker van de breedtegraad af dan mensen denken. De positie wordt op het toestel gebruikt en gaat nergens heen.</p>"
+  }
+}

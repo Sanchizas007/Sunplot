@@ -1,20 +1,28 @@
 #!/usr/bin/env python3
-"""Builds the pages that must exist before Sunplot can be submitted.
+"""Builds the pages that must exist before Sunplot can be submitted — in fourteen languages.
 
     python3 Tools/build-site.py
 
 Output goes to docs/, which is what GitHub Pages serves from this repository:
 
-    docs/index.html            what the app is
-    docs/privacy/index.html    privacy policy   (App Review will not accept a submission
-                               without a reachable one)
-    docs/support/index.html    support contact
-    docs/terms/index.html      terms, pointing at Apple's standard licence
+    docs/index.html                 what the app is           (English)
+    docs/privacy/index.html         privacy policy            (App Review will not accept a
+    docs/support/index.html         support contact            submission without reachable
+    docs/terms/index.html           terms, Apple's licence     privacy and support URLs)
+    docs/<language>/…               the same three pages in each of the other thirteen
 
-Generated rather than hand-written so the four pages cannot drift apart in wording or
-appearance, and so the support address lives in exactly one place.
+Texts live one file per language in `Tools/site-strings/`; the addresses are wired into
+store/listing.py, which points every store locale at its own language.
+
+Terms are published in English only and linked from every language: they restate Apple's
+standard licence, which is itself English, and a translation of a licence is a licence
+nobody can rely on.
+
+Generated rather than hand-written so the pages cannot drift apart in wording or appearance,
+and so the support address lives in exactly one place.
 """
 
+import json
 from pathlib import Path
 
 APP = "Sunplot"
@@ -24,7 +32,22 @@ REPO = "https://github.com/Sanchizas007/Sunplot"
 # the store listing, the licence in the repository and these pages must all name the same one.
 LICENSOR = "Olexandr Zhovnir"
 SITE = "https://sanchizas007.github.io/Sunplot"
-UPDATED = "29 August 2026"
+UPDATED = "7 October 2026"
+
+ROOT = Path(__file__).resolve().parent.parent
+STRINGS = ROOT / "Tools" / "site-strings"
+# English sits at the root; every other language gets a folder named after it, and those
+# folder names are what store/listing.py points each store locale at.
+LANGUAGES = ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt-BR", "ru", "tr", "zh-Hans", "zh-Hant"]
+ENDONYM = {
+    "en": "English", "de": "Deutsch", "es": "Español", "fr": "Français", "it": "Italiano",
+    "ja": "日本語", "ko": "한국어", "nl": "Nederlands", "pl": "Polski", "pt-BR": "Português",
+    "ru": "Русский", "tr": "Türkçe", "zh-Hans": "简体中文", "zh-Hant": "繁體中文",
+}
+PREFIX = {language: ("" if language == "en" else f"{language}/") for language in LANGUAGES}
+TEXT = {language: json.loads((STRINGS / f"{language}.json").read_text(encoding="utf-8"))
+        for language in LANGUAGES}
+PAGES = ["", "privacy", "support"]  # terms is English-only, see the note above
 
 # Sampled from the app's own icon.
 STYLE = """
@@ -44,164 +67,90 @@ body {
   font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   -webkit-text-size-adjust: 100%;
 }
-.wrap { max-width: 44rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
-a { color: var(--accent); }
-h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); line-height: 1.15; margin: 0 0 .4rem; letter-spacing: -.02em; }
-h2 { font-size: 1.2rem; margin: 2.4rem 0 .6rem; letter-spacing: -.01em; }
-h3 { font-size: 1.02rem; margin: 1.8rem 0 .4rem; }
-p, li { color: var(--ink); }
-.lede { font-size: 1.12rem; color: var(--muted); margin: 0 0 2rem; }
-.card { background: var(--card); border: 1px solid var(--rule); border-radius: 14px; padding: 1.25rem 1.4rem; margin: 1.5rem 0; }
-nav { display: flex; gap: 1.1rem; flex-wrap: wrap; margin-bottom: 2.5rem; font-size: .95rem; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+nav { display: flex; flex-wrap: wrap; gap: 1.1rem; font-size: .95rem; margin-bottom: 2.5rem; }
 nav a { color: var(--muted); text-decoration: none; }
-nav a:hover, nav a[aria-current] { color: var(--accent); }
-footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .9rem; }
-ul { padding-left: 1.15rem; }
+nav a[aria-current] { color: var(--ink); font-weight: 600; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 1rem; letter-spacing: -0.01em; }
+h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; }
+h3 { font-size: 1rem; margin: 1.4rem 0 .3rem; }
+p { margin: 0 0 1rem; }
+.lede { font-size: 1.15rem; color: var(--muted); }
+a { color: var(--accent); }
+.card {
+  background: var(--card); border: 1px solid var(--rule); border-radius: 14px;
+  padding: 1rem 1.2rem; margin: 1.5rem 0;
+}
+.card p:last-child { margin-bottom: 0; }
+.langs { margin: 2.5rem 0 0; font-size: .85rem; color: var(--muted); display: flex; flex-wrap: wrap; gap: .6rem; }
+.langs a { color: var(--muted); text-decoration: none; }
+.langs strong { color: var(--ink); font-weight: 600; }
+footer { margin-top: 3rem; padding-top: 1.2rem; border-top: 1px solid var(--rule);
+  color: var(--muted); font-size: .9rem; }
+ul { padding-left: 1.2rem; }
 li { margin-bottom: .45rem; }
-code { background: var(--rule); padding: .1rem .35rem; border-radius: 4px; font-size: .9em; }
 """
 
-def page(slug, title, description, body):
-    here = "index.html" if slug == "" else f"{slug}/index.html"
-    def link(target, label):
-        href = "/Sunplot/" + (f"{target}/" if target else "")
+
+def url(language, slug):
+    return f"{SITE}/{PREFIX[language]}{slug + '/' if slug else ''}"
+
+
+def page(language, slug, title, description, body):
+    text = TEXT[language]
+    here = f"{PREFIX[language]}{slug + '/' if slug else ''}index.html"
+
+    def link(target, label, english=False):
+        href = f"{SITE}/" + ("" if english else PREFIX[language]) + (f"{target}/" if target else "")
         current = ' aria-current="page"' if target == slug else ""
         return f'<a href="{href}"{current}>{label}</a>'
 
+    switcher = " ".join(
+        f"<strong>{ENDONYM[other]}</strong>" if other == language
+        else f'<a href="{url(other, slug)}" hreflang="{other}">{ENDONYM[other]}</a>'
+        for other in LANGUAGES
+    )
+    alternates = "\n".join(
+        f'<link rel="alternate" hreflang="{other}" href="{url(other, slug)}">' for other in LANGUAGES
+    ) + f'\n<link rel="alternate" hreflang="x-default" href="{url("en", slug)}">'
+
     html = f"""<!doctype html>
-<html lang="en">
+<html lang="{language}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} — {APP}</title>
 <meta name="description" content="{description}">
-<link rel="canonical" href="{SITE}/{slug + '/' if slug else ''}">
+<link rel="canonical" href="{url(language, slug)}">
+{alternates}
 <style>{STYLE}</style>
 </head>
 <body>
 <div class="wrap">
 <nav>
-  {link("", APP)}
-  {link("privacy", "Privacy")}
-  {link("support", "Support")}
-  {link("terms", "Terms")}
+  {link("", text["nav"]["home"])}
+  {link("privacy", text["nav"]["privacy"])}
+  {link("support", text["nav"]["support"])}
+  {link("terms", text["nav"]["terms"], english=True)}
   <a href="{REPO}">Source</a>
 </nav>
 {body}
+<p class="langs">{switcher}</p>
 <footer>
-  <p>{APP} · last updated {UPDATED} · <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></p>
+  <p>{APP} · {text["updated"]} {UPDATED} · <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></p>
   <p>© 2026 {LICENSOR}. All rights reserved.</p>
 </footer>
 </div>
 </body>
 </html>
 """
-    out = Path("docs") / here
+    out = ROOT / "docs" / here
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html, encoding="utf-8")
     return here
 
 
-PAGES = [
-    ("", "How much sun does this spot get?", "Sunplot works out the hours of direct sun a spot gets on any day of the year, counting the roofs and trees in the way.", """
-<h1>How much sun does this spot get?</h1>
-<p class="lede">Every seed packet and plant label is written in hours of direct sun. Almost
-nobody knows what their own garden, balcony or roof actually gets.</p>
-
-<p>Sunplot answers it with a number. Not where the sun is — that is the easy half — but how
-much of it reaches <em>this spot</em>, once the fence, the garage and next door's lime tree
-have taken their share.</p>
-
-<div class="card">
-<p>Point the camera at the skyline and sweep a finger along the tops of the roofs and trees.
-Sunplot walks the day a minute at a time and counts only the light that gets through.</p>
-</div>
-
-<h2>What it tells you</h2>
-<ul>
-<li>Hours of direct sun today, graded the way plant labels are: full sun, part sun, part shade, full shade.</li>
-<li>When the sun arrives at the spot and when it leaves, and how the day is broken up.</li>
-<li>The whole year: when full sun starts and ends, and the weeks that get none at all.</li>
-</ul>
-
-<h2>What it does not do</h2>
-<ul>
-<li>No account. There is nothing to sign up for.</li>
-<li>No servers. Every calculation happens on the phone, and works with no signal at all.</li>
-<li>No subscription. One payment unlocks the year view and the widget, for good.</li>
-</ul>
-"""),
-
-    ("privacy", "Privacy", "Sunplot collects nothing, sends nothing, and has no servers.", """
-<h1>Privacy</h1>
-<p class="lede">Sunplot has no servers, no accounts and no analytics. Nothing you do in the
-app is collected, and nothing leaves your device.</p>
-
-<h2>What stays on the device</h2>
-<ul>
-<li><strong>Location.</strong> Used to work out where the sun travels overhead, because the
-answer changes with latitude. It is read on the device and never transmitted anywhere.</li>
-<li><strong>The camera.</strong> The live view is used so you can trace the skyline. No photo
-or video is recorded, saved or sent.</li>
-<li><strong>Motion.</strong> The compass and motion sensors tell the app which way the phone
-is pointing, so the sun's path lines up with what the camera sees.</li>
-<li><strong>Your spots.</strong> The places you save and the skylines you trace are stored in
-the app's own storage on the device.</li>
-</ul>
-
-<h2>What is not collected</h2>
-<p>No identifiers, no usage statistics, no crash reporting, no advertising, no third-party
-software development kits of any kind. There is no server to send anything to.</p>
-
-<h2>Purchases</h2>
-<p>The one-time purchase is handled entirely by Apple. Sunplot never sees your payment
-details, and Apple's own privacy policy covers that transaction.</p>
-
-<h2>Children</h2>
-<p>Sunplot collects nothing from anybody, of any age.</p>
-
-<h2>Deleting your data</h2>
-<p>Deleting the app removes everything it has stored. There is nothing held elsewhere to
-request or erase.</p>
-
-<h2>Changes</h2>
-<p>If this policy ever changes, the date at the foot of this page changes with it.</p>
-"""),
-
-    ("support", "Support", "How to get help with Sunplot.", f"""
-<h1>Support</h1>
-<p class="lede">Write to <a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>. One person reads
-it, usually within a day or two.</p>
-
-<div class="card">
-<p>It helps to say which iPhone you have, which version of iOS, and what you were doing when
-it went wrong. A screenshot is worth a paragraph.</p>
-</div>
-
-<h2>Things worth trying first</h2>
-
-<h3>The sun's arc does not line up with the sky</h3>
-<p>That is the compass, not the maths. Wave the phone in a figure of eight, and keep away from
-speakers, magnets and car dashboards — all of them pull a magnetometer off true. Sunplot tells
-you when it does not trust its own reading rather than drawing a confident line anyway.</p>
-
-<h3>It says my skyline is not enough</h3>
-<p>A single tap is not a skyline. Sweep the finger along the rooftops and turn on the spot as
-you go; the counter shows how much of the horizon you have covered. Below thirty degrees the
-reading would say more about the sky you did not look at than the sky you did, so it is set
-aside rather than used.</p>
-
-<h3>I bought it and it is asking me to buy it again</h3>
-<p>Tap <em>Already bought it? Restore</em> on the purchase screen. Purchases are tied to the
-Apple Account that made them, so make sure you are signed in with the same one.</p>
-
-<h3>Why does it want my location?</h3>
-<p>The sun's path depends on latitude far more than people expect — an hour's drive north
-changes the answer. The position is used on the device and goes nowhere. See the
-<a href="/Sunplot/privacy/">privacy policy</a>.</p>
-"""),
-
-    ("terms", "Terms", "Terms of use for Sunplot.", f"""
+TERMS = f"""
 <h1>Terms</h1>
 <p class="lede">Sunplot is licensed, not sold, under Apple's standard licence for applications.</p>
 
@@ -242,20 +191,26 @@ that repository sets out the whole of what is and is not permitted.</p>
 
 <h2>Contact</h2>
 <p><a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a></p>
-"""),
-]
+"""
 
-written = [page(slug, title, description, body) for slug, title, description, body in PAGES]
+written = []
+for language in LANGUAGES:
+    text = TEXT[language]
+    for slug in PAGES:
+        section = text["home"] if slug == "" else text[slug]
+        lede = section["lede"].replace("{EMAIL}", f'<a href="mailto:{SUPPORT_EMAIL}">{SUPPORT_EMAIL}</a>')
+        body = f'<h1>{section["title"]}</h1>\n<p class="lede">{lede}</p>\n{section["body"]}'
+        description = section["lede"].replace("{EMAIL}", SUPPORT_EMAIL)
+        written.append(page(language, slug, section["title"], description, body))
+written.append(page("en", "terms", "Terms", "Terms of use for Sunplot.", TERMS))
 
-Path("docs/robots.txt").write_text(
+(ROOT / "docs" / "robots.txt").write_text(
     f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n", encoding="utf-8"
 )
 
-urls = "".join(
-    f"  <url><loc>{SITE}/{slug + '/' if slug else ''}</loc></url>\n"
-    for slug, _, _, _ in PAGES
-)
-Path("docs/sitemap.xml").write_text(
+locations = [url(language, slug) for language in LANGUAGES for slug in PAGES] + [f"{SITE}/terms/"]
+urls = "".join(f"  <url><loc>{location}</loc></url>\n" for location in locations)
+(ROOT / "docs" / "sitemap.xml").write_text(
     f'<?xml version="1.0" encoding="UTF-8"?>\n'
     f'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{urls}</urlset>\n',
     encoding="utf-8",
@@ -263,8 +218,7 @@ Path("docs/sitemap.xml").write_text(
 
 # GitHub Pages otherwise runs the output through Jekyll, which ignores folders it does not
 # recognise and quietly drops files beginning with an underscore.
-Path("docs/.nojekyll").write_text("", encoding="utf-8")
+(ROOT / "docs" / ".nojekyll").write_text("", encoding="utf-8")
 
-for path in written:
-    print(f"docs/{path}")
+print(f"{len(written)} pages in docs/ — {len(LANGUAGES)} languages")
 print("docs/robots.txt\ndocs/sitemap.xml\ndocs/.nojekyll")

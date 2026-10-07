@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Prywatność",
+    "support": "Pomoc",
+    "terms": "Warunki"
+  },
+  "updated": "Ostatnia zmiana",
+  "home": {
+    "title": "Ile słońca dostaje to miejsce?",
+    "lede": "Na każdej saszetce nasion i każdej etykiecie podane są godziny bezpośredniego słońca. Prawie nikt nie wie, ile naprawdę dostaje jego ogród, balkon czy dach.",
+    "body": "<p>Sunplot odpowiada liczbą. Nie gdzie jest słońce — to łatwiejsza połowa — lecz ile go dociera <em>do tego miejsca</em>, kiedy płot, garaż i lipa sąsiada wezmą już swoje.</p><div class=\"card\"><p>Skieruj aparat na horyzont i poprowadź palcem po dachach i koronach drzew. Sunplot przechodzi dzień minuta po minucie i liczy tylko to światło, które się przedostaje.</p></div><h2>Co ci powie</h2><ul><li>Dzisiejsze godziny bezpośredniego słońca, w podziale jak na etykietach: pełne słońce, częściowe słońce, półcień, pełny cień.</li><li>Kiedy słońce przychodzi i kiedy odchodzi oraz jak dzień jest pocięty.</li><li>Cały rok: kiedy pełne słońce się zaczyna i kończy oraz tygodnie zupełnie bez niego.</li></ul><h2>Czego nie robi</h2><ul><li>Bez konta. Nie ma czego zakładać.</li><li>Bez serwerów. Wszystko liczy się na telefonie i działa bez zasięgu.</li><li>Bez abonamentu. Jedna płatność odblokowuje widok roku i widżet na stałe.</li></ul>"
+  },
+  "privacy": {
+    "title": "Prywatność",
+    "lede": "Sunplot nie ma serwerów, kont ani analityki. Nic z tego, co robisz w aplikacji, nie jest zbierane i nic nie opuszcza twojego urządzenia.",
+    "body": "<h2>Co zostaje na urządzeniu</h2><ul><li><strong>Lokalizacja.</strong> Służy do wyliczenia drogi słońca, bo odpowiedź zależy od szerokości geograficznej. Jest odczytywana na urządzeniu i nigdy nie jest przesyłana.</li><li><strong>Aparat.</strong> Podgląd na żywo służy do obrysowania horyzontu. Żadne zdjęcie ani wideo nie jest nagrywane, zapisywane ani wysyłane.</li><li><strong>Ruch.</strong> Kompas mówi, w którą stronę skierowany jest telefon, żeby droga słońca zgadzała się z obrazem.</li><li><strong>Twoje miejsca.</strong> Zapisane miejsca i obrysy horyzontu leżą we własnej pamięci aplikacji, na urządzeniu.</li></ul><h2>Czego nie zbieramy</h2><p>Żadnych identyfikatorów, statystyk użycia, raportów awarii, reklam ani obcych bibliotek. Nie ma serwera, do którego cokolwiek mogłoby pójść.</p><h2>Zakupy</h2><p>Jednorazowy zakup obsługuje w całości Apple. Sunplot nigdy nie widzi danych płatności; tę transakcję obejmuje polityka prywatności Apple.</p><h2>Dzieci</h2><p>Sunplot nie zbiera niczego od nikogo, w żadnym wieku.</p><h2>Usunięcie danych</h2><p>Usunięcie aplikacji kasuje wszystko, co zapisała. Nigdzie indziej nie ma czego żądać ani usuwać.</p><h2>Zmiany</h2><p>Jeśli ta polityka się zmieni, zmieni się z nią data na dole strony.</p>"
+  },
+  "support": {
+    "title": "Pomoc",
+    "lede": "Napisz na {EMAIL}. Czyta człowiek, zwykle w ciągu dnia lub dwóch.",
+    "body": "<div class=\"card\"><p>Pomaga podać model iPhone'a, wersję iOS i to, co robiłeś, gdy coś poszło nie tak. Zrzut ekranu mówi więcej niż akapit.</p></div><h2>Co sprawdzić najpierw</h2><h3>Łuk słońca nie zgadza się z niebem</h3><p>To kompas, nie obliczenia. Zatocz telefonem ósemkę i trzymaj się z dala od głośników, magnesów i deski rozdzielczej. Sunplot pisze na ekranie, kiedy nie ufa własnemu odczytowi.</p><h3>Pisze, że mój horyzont to za mało</h3><p>Jedno dotknięcie to nie horyzont. Prowadź palcem po dachach, obracając się w miejscu; licznik pokazuje, ile już obrysowałeś.</p><h3>Kupiłem, a aplikacja znów prosi o zakup</h3><p>Dotknij <em>Masz już zakup? Przywróć</em> na ekranie zakupu. Zakupy są przypisane do konta Apple, które ich dokonało.</p><h3>Po co jej moja lokalizacja?</h3><p>Droga słońca zależy od szerokości geograficznej o wiele bardziej, niż się wydaje. Pozycja jest używana na urządzeniu i nigdzie nie wędruje.</p>"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "home": "Sunplot",
+    "privacy": "Confidentialité",
+    "support": "Aide",
+    "terms": "Conditions"
+  },
+  "updated": "Dernière mise à jour",
+  "home": {
+    "title": "Combien de soleil reçoit cet endroit ?",
+    "lede": "Chaque sachet de graines et chaque étiquette sont écrits en heures de soleil direct. Presque personne ne sait combien son jardin, son balcon ou son toit en reçoit vraiment.",
+    "body": "<p>Sunplot répond par un chiffre. Pas où est le soleil — c'est la moitié facile — mais combien en atteint <em>cet endroit</em> une fois que la clôture, le garage et le tilleul du voisin ont pris leur part.</p><div class=\"card\"><p>Pointez la caméra vers l'horizon et faites glisser le doigt le long des toits et des arbres. Sunplot parcourt la journée minute par minute et ne compte que la lumière qui passe.</p></div><h2>Ce qu'il vous dit</h2><ul><li>Les heures de soleil direct du jour, classées comme sur les étiquettes : plein soleil, soleil partiel, mi-ombre, ombre complète.</li><li>Quand le soleil arrive et quand il s'en va, et comment la journée est découpée.</li><li>L'année entière : quand le plein soleil commence et finit, et les semaines sans rien.</li></ul><h2>Ce qu'il ne fait pas</h2><ul><li>Pas de compte. Il n'y a rien à créer.</li><li>Pas de serveur. Tout est calculé sur le téléphone et fonctionne sans réseau.</li><li>Pas d'abonnement. Un paiement débloque la vue de l'année et le widget, définitivement.</li></ul>"
+  },
+  "privacy": {
+    "title": "Confidentialité",
+    "lede": "Sunplot n'a ni serveur, ni compte, ni analyse. Rien de ce que vous faites dans l'app n'est collecté et rien ne quitte votre appareil.",
+    "body": "<h2>Ce qui reste sur l'appareil</h2><ul><li><strong>La position.</strong> Sert à calculer la course du soleil, car la réponse dépend de la latitude. Elle est lue sur l'appareil et n'est jamais transmise.</li><li><strong>La caméra.</strong> L'image en direct permet de tracer l'horizon. Aucune photo ni vidéo n'est enregistrée, conservée ou envoyée.</li><li><strong>Le mouvement.</strong> La boussole indique où pointe le téléphone, pour que la course du soleil coïncide avec l'image.</li><li><strong>Vos endroits.</strong> Les lieux enregistrés et les horizons tracés sont stockés dans l'espace propre de l'app, sur l'appareil.</li></ul><h2>Ce qui n'est pas collecté</h2><p>Aucun identifiant, aucune statistique d'usage, aucun rapport de plantage, aucune publicité, aucun kit tiers. Il n'y a aucun serveur où envoyer quoi que ce soit.</p><h2>Achats</h2><p>L'achat unique est entièrement géré par Apple. Sunplot ne voit jamais vos informations de paiement ; cette transaction relève de la politique de confidentialité d'Apple.</p><h2>Enfants</h2><p>Sunplot ne collecte rien, de personne, à aucun âge.</p><h2>Supprimer vos données</h2><p>Supprimer l'app efface tout ce qu'elle avait enregistré. Rien n'est conservé ailleurs.</p><h2>Modifications</h2><p>Si cette politique change, la date en bas de page change avec elle.</p>"
+  },
+  "support": {
+    "title": "Aide",
+    "lede": "Écrivez à {EMAIL}. Une personne lit, en général sous un ou deux jours.",
+    "body": "<div class=\"card\"><p>Précisez votre modèle d'iPhone, la version d'iOS et ce que vous faisiez au moment du problème. Une capture vaut un paragraphe.</p></div><h2>À essayer d'abord</h2><h3>La courbe du soleil ne colle pas au ciel</h3><p>C'est la boussole, pas le calcul. Dessinez un huit avec le téléphone et éloignez-vous des enceintes, des aimants et des tableaux de bord. Sunplot le dit à l'écran quand il ne se fie pas à sa mesure.</p><h3>Il dit que mon horizon ne suffit pas</h3><p>Une simple pression n'est pas un horizon. Faites glisser le doigt le long des toits en tournant sur vous-même ; le compteur indique la part d'horizon couverte.</p><h3>J'ai acheté et on me redemande de payer</h3><p>Touchez <em>Déjà acheté ? Restaurer</em> sur l'écran d'achat. Les achats sont liés au compte Apple qui les a faits.</p><h3>Pourquoi ma position ?</h3><p>La course du soleil dépend de la latitude bien plus qu'on ne le croit. La position est utilisée sur l'appareil et ne va nulle part.</p>"
+  }
+}
