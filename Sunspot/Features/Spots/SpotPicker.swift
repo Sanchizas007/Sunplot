@@ -10,6 +10,7 @@ struct SpotPicker: ToolbarContent {
     @Environment(SpotStore.self) private var store
     @Environment(Purchases.self) private var purchases
     @Environment(LocationProvider.self) private var location
+    @Environment(IntroductionFlow.self) private var introduction
 
     @Binding var renaming: Spot?
     @Binding var showingPaywall: Bool
@@ -69,6 +70,15 @@ struct SpotPicker: ToolbarContent {
                                 Label("Delete \(current.name)", systemImage: "trash")
                             }
                         }
+                    }
+                }
+
+                // Last, and apart: it is about the app rather than about any spot.
+                Section {
+                    Button {
+                        introduction.replay()
+                    } label: {
+                        Label("How Sunplot works", systemImage: "questionmark.circle")
                     }
                 }
             } label: {

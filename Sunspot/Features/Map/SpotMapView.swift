@@ -16,11 +16,7 @@ struct SpotMapView: View {
                 if let spot = store.spot {
                     map(for: spot)
                 } else {
-                    ContentUnavailableView(
-                        "No spot yet",
-                        systemImage: "mappin.slash",
-                        description: Text("Once Sunplot knows where you are, the sun's path appears here.")
-                    )
+                    FirstSpotMap()
                 }
             }
             // No navigation bar: the tab already says "Map", and every point of screen
@@ -98,6 +94,49 @@ struct SpotMapView: View {
         switch kind {
         case .now: StrokeStyle(lineWidth: 5, lineCap: .round)
         default: StrokeStyle(lineWidth: 3, lineCap: .round, dash: [8, 6])
+        }
+    }
+}
+
+/// The map for somebody who has no spot yet — which is everybody for the first few seconds,
+/// and, for anybody who says no to the question about location, for good.
+///
+/// Every message the app shows such a person ends "pick a spot on the map instead", and for a
+/// long time the Map tab answered that with a notice and no map: nothing to press and hold on,
+/// so no way to place a first spot and no way out. A person who declines to share where they
+/// are is exactly who needs this screen to work.
+private struct FirstSpotMap: View {
+    @Environment(SpotStore.self) private var store
+
+    @State private var camera: MapCameraPosition = .userLocation(fallback: .automatic)
+
+    var body: some View {
+        MapReader { proxy in
+            Map(position: $camera)
+                .mapStyle(.hybrid(elevation: .flat))
+                // The same long press as on the map that has a spot: a tap while panning
+                // must not put a pin somewhere nobody meant.
+                .gesture(
+                    LongPressGesture(minimumDuration: 0.4)
+                        .sequenced(before: DragGesture(minimumDistance: 0, coordinateSpace: .local))
+                        .onEnded { value in
+                            guard case let .second(_, drag?) = value,
+                                  let picked = proxy.convert(drag.location, from: .local)
+                            else { return }
+                            store.move(to: GeoCoordinate(
+                                latitude: picked.latitude, longitude: picked.longitude
+                            ))
+                        }
+                )
+        }
+        .overlay(alignment: .top) {
+            Label("Press and hold the map to place your spot.", systemImage: "hand.tap")
+                .font(.subheadline.weight(.medium))
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14))
+                .padding(.horizontal, 16)
+                .padding(.top, 12)
         }
     }
 }

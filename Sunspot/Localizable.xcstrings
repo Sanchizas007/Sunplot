@@ -4400,6 +4400,172 @@
         }
       }
     },
+    "How Sunplot works" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "So funktioniert Sunplot"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo funciona Sunplot"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Comment fonctionne Sunplot"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come funziona Sunplot"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplotの使い方"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 사용법"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoe Sunplot werkt"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak działa Sunplot"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como o Sunplot funciona"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как работает Sunplot"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot nasıl çalışır"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 怎么用"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 怎麼用"
+          }
+        }
+      }
+    },
+    "How much sun does this spot get?" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Wie viel Sonne bekommt diese Stelle?"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "¿Cuánto sol recibe este punto?"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Combien de soleil reçoit cet emplacement ?"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quanto sole prende questo punto?"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "この場所にはどれだけ日が当たりますか？"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "이 자리는 햇빛을 얼마나 받나요?"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hoeveel zon krijgt deze plek?"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ile słońca dostaje to miejsce?"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quanto sol este ponto recebe?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сколько солнца получает эта точка?"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bu nokta ne kadar güneş alıyor?"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "这个地点能晒到多少太阳？"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "這個地點曬得到多少太陽？"
+          }
+        }
+      }
+    },
     "Hydrangea" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -4894,6 +5060,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "羽衣甘藍和牛皮菜"
+          }
+        }
+      }
+    },
+    "Keep a finger on the tops of the roofs and trees and turn on the spot. Only the sun above that line counts." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halte den Finger an den Kanten der Dächer und Bäume und drehe dich auf der Stelle. Nur die Sonne über dieser Linie zählt."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén el dedo sobre el borde de los tejados y los árboles y gira sobre ti mismo. Solo cuenta el sol que queda por encima de esa línea."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gardez le doigt sur le sommet des toits et des arbres et tournez sur place. Seul le soleil au-dessus de cette ligne compte."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni il dito sulle cime di tetti e alberi e gira su te stesso. Conta solo il sole sopra quella linea."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "屋根や木のてっぺんに指をあてたまま、その場で体を回してください。線より上の太陽だけが数えられます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지붕과 나무 꼭대기에 손가락을 대고 제자리에서 도세요. 그 선보다 위에 있는 해만 계산됩니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Houd je vinger op de toppen van daken en bomen en draai om je as. Alleen de zon boven die lijn telt."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trzymaj palec na szczytach dachów i drzew i obracaj się w miejscu. Liczy się tylko słońce nad tą linią."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantenha o dedo no topo dos telhados e das árvores e gire no lugar. Só conta o sol acima dessa linha."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Держите палец на верхушках крыш и деревьев и поворачивайтесь на месте. Считается только солнце над этой линией."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Parmağını çatıların ve ağaçların tepesinde tut ve olduğun yerde dön. Yalnızca bu çizginin üstündeki güneş sayılır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手指按在屋顶和树梢上，原地转身。只有这条线以上的阳光才算数。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "手指按在屋頂和樹梢上，原地轉身。只有這條線以上的陽光才算數。"
           }
         }
       }
@@ -6305,6 +6554,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "一天從沒有六小時。四季豆、胡蘿蔔和香草還行，結果的作物不行。"
+          }
+        }
+      }
+    },
+    "Next" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Weiter"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Siguiente"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Suivant"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avanti"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "次へ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "다음"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volgende"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dalej"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Avançar"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Далее"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "İleri"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一步"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "下一步"
           }
         }
       }
@@ -7803,6 +8135,89 @@
         }
       }
     },
+    "Orange is where the sun arrives from, pink is where it leaves, yellow is where it is now. Slide the time to move through the day." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Orange zeigt, woher die Sonne kommt, Pink, wohin sie geht, Gelb, wo sie jetzt steht. Verschiebe die Zeit, um durch den Tag zu gehen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "El naranja es por donde llega el sol, el rosa por donde se va y el amarillo dónde está ahora. Desliza la hora para recorrer el día."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L’orange montre d’où le soleil arrive, le rose où il s’en va, le jaune où il se trouve maintenant. Faites glisser l’heure pour parcourir la journée."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "L'arancione è da dove arriva il sole, il rosa dove se ne va, il giallo dove si trova adesso. Fai scorrere l'ora per attraversare la giornata."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "オレンジは太陽が昇る方角、ピンクは沈む方角、黄色は今の位置です。時刻を動かすと一日をたどれます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "주황색은 해가 들어오는 방향, 분홍색은 지는 방향, 노란색은 지금 해가 있는 방향입니다. 시간을 밀어 하루를 따라가 보세요."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Oranje is waar de zon vandaan komt, roze waar ze heen gaat en geel waar ze nu staat. Schuif de tijd om door de dag te gaan."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pomarańczowa pokazuje, skąd słońce przychodzi, różowa, dokąd odchodzi, żółta, gdzie jest teraz. Przesuń czas, by przejść przez dzień."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laranja é de onde o sol chega, rosa é para onde ele vai e amarelo é onde ele está agora. Deslize a hora para percorrer o dia."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оранжевая — откуда солнце приходит, розовая — куда уходит, жёлтая — где оно сейчас. Двигайте время, чтобы пройти весь день."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Turuncu güneşin geldiği yönü, pembe gittiği yönü, sarı şu an bulunduğu yeri gösterir. Günü gezmek için saati kaydır."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "橙色是太阳升起的方向，粉色是它离开的方向，黄色是它此刻所在的方向。滑动时间就能走完一天。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "橙色是太陽升起的方向，粉色是它離開的方向，黃色是它此刻所在的方向。滑動時間就能走完一天。"
+          }
+        }
+      }
+    },
     "Oregano" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8135,6 +8550,89 @@
         }
       }
     },
+    "Point the phone at the sky. The line is where the sun travels today, and the disc is where it is right now." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Richte das Telefon auf den Himmel. Die Linie zeigt, wo die Sonne heute entlangzieht, die Scheibe, wo sie gerade steht."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Apunta el teléfono al cielo. La línea es por donde pasa el sol hoy y el disco es donde está ahora mismo."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dirigez le téléphone vers le ciel. La ligne montre où passe le soleil aujourd’hui, et le disque où il se trouve en ce moment."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Punta il telefono verso il cielo. La linea è il percorso del sole oggi, il disco è dove si trova in questo momento."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "端末を空に向けてください。線は今日の太陽の通り道、円は今この瞬間の太陽の位置です。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "기기를 하늘로 향하세요. 선은 오늘 해가 지나는 길이고, 원은 지금 해가 있는 곳입니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Richt de telefoon op de lucht. De lijn is waar de zon vandaag langs trekt en de schijf is waar ze nu staat."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Skieruj telefon na niebo. Linia to droga słońca dziś, a tarcza to miejsce, w którym jest teraz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aponte o telefone para o céu. A linha é por onde o sol passa hoje, e o disco é onde ele está agora."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Направьте телефон на небо. Линия — это путь солнца сегодня, а диск — то место, где оно сейчас."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Telefonu gökyüzüne doğrult. Çizgi güneşin bugün izlediği yol, daire ise şu anda bulunduğu yerdir."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把手机对准天空。线是今天太阳走过的路径，圆盘是它此刻所在的位置。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "把手機對準天空。線是今天太陽走過的路徑，圓盤是它此刻所在的位置。"
+          }
+        }
+      }
+    },
     "Potatoes" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -8214,6 +8712,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "馬鈴薯"
+          }
+        }
+      }
+    },
+    "Press and hold the map to place your spot." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Halte die Karte gedrückt, um deine Stelle zu setzen."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mantén pulsado el mapa para colocar tu punto."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Appuyez longuement sur la carte pour placer votre emplacement."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tieni premuta la mappa per collocare il tuo punto."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地図を長押しして、場所を置いてください。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지도를 길게 눌러 자리를 정하세요."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Houd de kaart ingedrukt om je plek te plaatsen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Przytrzymaj mapę, aby ustawić swoje miejsce."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toque e segure o mapa para colocar o seu ponto."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нажмите и держите на карте, чтобы поставить точку."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Noktanı yerleştirmek için haritaya basılı tut."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "长按地图来放置你的地点。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "長按地圖來放置你的地點。"
           }
         }
       }
@@ -8546,6 +9127,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "覆盆子"
+          }
+        }
+      }
+    },
+    "Read the lines on the map" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die Linien auf der Karte lesen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cómo leer las líneas del mapa"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lire les lignes de la carte"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Come leggere le linee della mappa"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "地図の線の見方"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "지도의 선 읽는 법"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De lijnen op de kaart lezen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Jak czytać linie na mapie"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Como ler as linhas do mapa"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Как читать линии на карте"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Haritadaki çizgileri oku"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看懂地图上的线"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看懂地圖上的線"
           }
         }
       }
@@ -9297,6 +9961,89 @@
         }
       }
     },
+    "Show me my sun" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeig mir meine Sonne"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enséñame mi sol"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Montrez-moi mon soleil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrami il mio sole"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "日当たりを見る"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "내 일조량 보기"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laat mijn zon zien"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pokaż moje słońce"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Mostrar meu sol"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Показать моё солнце"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Güneşimi göster"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看看我的日照"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "看看我的日照"
+          }
+        }
+      }
+    },
     "Shrubs and climbers" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -9459,6 +10206,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "六小時以上。番茄、甜椒和多數蔬菜都要這個時長。"
+          }
+        }
+      }
+    },
+    "Skip" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Überspringen"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Omitir"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Passer"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salta"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "スキップ"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "건너뛰기"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sla over"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pomiń"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pular"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пропустить"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Atla"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳过"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "跳過"
           }
         }
       }
@@ -10293,6 +11123,89 @@
         }
       }
     },
+    "Sunplot counts the hours of direct sunlight a spot really gets, once the roofs and trees have taken their share." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot zählt die Stunden direkter Sonne, die eine Stelle wirklich bekommt, nachdem Dächer und Bäume ihren Anteil genommen haben."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot cuenta las horas de sol directo que un punto recibe de verdad, una vez que los tejados y los árboles se han llevado su parte."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot compte les heures de soleil direct qu’un emplacement reçoit vraiment, une fois que les toits et les arbres ont pris leur part."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot conta le ore di sole diretto che un punto riceve davvero, una volta che tetti e alberi si sono presi la loro parte."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplotは、屋根や木立が取り分を持っていったあとに、その場所へ実際に届く直射日光の時間を数えます。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot은 지붕과 나무가 제 몫을 가져간 뒤, 그 자리에 실제로 닿는 직사광선 시간을 셉니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot telt de uren directe zon die een plek echt krijgt, nadat de daken en bomen hun deel hebben genomen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot liczy godziny bezpośredniego słońca, które miejsce naprawdę dostaje, gdy dachy i drzewa wezmą już swoją część."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Sunplot conta as horas de sol direto que um ponto realmente recebe, depois que os telhados e as árvores levam a sua parte."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot считает часы прямого солнца, которые точка действительно получает, когда крыши и деревья уже взяли своё."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot, çatılar ve ağaçlar paylarını aldıktan sonra bir noktaya gerçekten ulaşan doğrudan güneş saatlerini sayar."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 会数出一个地点真正能晒到的直射阳光小时数，先把屋顶和树木挡掉的那一份扣掉。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 會數出一個地點真正曬得到的直射陽光時數，先把屋頂和樹木擋掉的那一份扣掉。"
+          }
+        }
+      }
+    },
     "Sunplot needs a position to work out where the sun travels overhead." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -10372,6 +11285,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot 需要一個位置，才能算出太陽從上空怎麼走。"
+          }
+        }
+      }
+    },
+    "Sunplot needs your position to work out where the sun travels overhead. It stays on this phone — there is no server to send it to." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot braucht deinen Standort, um den Lauf der Sonne über dir zu berechnen. Er bleibt auf diesem Telefon — es gibt keinen Server, an den er gehen könnte."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot necesita tu posición para calcular por dónde pasa el sol. Se queda en este teléfono: no hay ningún servidor al que enviarla."
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot a besoin de votre position pour calculer où passe le soleil au-dessus de vous. Elle reste sur ce téléphone : il n’y a aucun serveur où l’envoyer."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot ha bisogno della tua posizione per calcolare dove passa il sole sopra di te. Resta su questo telefono: non c'è alcun server a cui mandarla."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplotは、太陽が頭上をどう通るかを計算するために位置情報が必要です。位置はこの端末の中だけで使われ、送信先のサーバーはありません。"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot은 해가 머리 위를 어디로 지나는지 계산하기 위해 위치가 필요합니다. 위치는 이 기기 안에만 있고, 보낼 서버도 없습니다."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot heeft je positie nodig om te berekenen waar de zon overheen trekt. Die blijft op deze telefoon — er is geen server om haar naartoe te sturen."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot potrzebuje twojej pozycji, żeby wyliczyć, którędy słońce przechodzi nad głową. Zostaje na tym telefonie — nie ma serwera, do którego mogłaby trafić."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "O Sunplot precisa da sua posição para calcular por onde o sol passa. Ela fica neste telefone — não há servidor para onde enviá-la."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot нужна ваша геопозиция, чтобы рассчитать путь солнца над вами. Она остаётся на этом телефоне — сервера, куда её отправлять, нет."
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot, güneşin tepeden nereden geçtiğini hesaplamak için konumuna ihtiyaç duyar. Konum bu telefonda kalır; gönderilecek bir sunucu yoktur."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 需要你的位置，才能算出太阳从头顶怎么走。位置只留在这部手机上，没有任何服务器可以发送。"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot 需要你的位置，才能算出太陽從頭頂怎麼走。位置只留在這支手機上，沒有任何伺服器可以傳送。"
           }
         }
       }
@@ -12036,6 +13032,89 @@
         }
       }
     },
+    "The yellow line is the sun's path" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Die gelbe Linie ist der Weg der Sonne"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La línea amarilla es el recorrido del sol"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La ligne jaune est la course du soleil"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "La linea gialla è il percorso del sole"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黄色い線は太陽の通り道です"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "노란 선은 해의 경로입니다"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "De gele lijn is de baan van de zon"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Żółta linia to droga słońca"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A linha amarela é o caminho do sol"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жёлтая линия — путь солнца"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sarı çizgi güneşin yoludur"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黄色的线是太阳的轨迹"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "黃色的線是太陽的軌跡"
+          }
+        }
+      }
+    },
     "This device cannot report which way it is pointing." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -12862,6 +13941,89 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "描出天際線"
+          }
+        }
+      }
+    },
+    "Trace what is in the way" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zeichne nach, was im Weg steht"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traza lo que se interpone"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tracez ce qui fait obstacle"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Traccia ciò che si mette di mezzo"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "さえぎるものをなぞる"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "가로막는 것을 그리세요"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Teken na wat in de weg staat"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Obrysuj to, co stoi na drodze"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Trace o que está no caminho"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Обведите то, что мешает"
+          }
+        },
+        "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yolda duranı çiz"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描出挡在中间的东西"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "描出擋在中間的東西"
           }
         }
       }

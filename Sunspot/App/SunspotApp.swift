@@ -7,6 +7,7 @@ struct SunspotApp: App {
     @State private var store: SpotStore
     @State private var purchases: Purchases
     @State private var alerts: SunAlerts
+    @State private var introduction: IntroductionFlow
 
     init() {
         // Before anything reads the archive: `SpotStore` loads it the moment it is built, so
@@ -14,10 +15,14 @@ struct SunspotApp: App {
         // nothing unless the screenshot script asked for it, and does not exist in a release.
         Demo.prepareIfRequested()
 
+        let store = SpotStore()
         _location = State(initialValue: LocationProvider())
-        _store = State(initialValue: SpotStore())
+        _store = State(initialValue: store)
         _purchases = State(initialValue: Purchases())
         _alerts = State(initialValue: SunAlerts())
+        // Decided here, once the archive has been read: somebody who already has spots is not
+        // somebody who has just arrived.
+        _introduction = State(initialValue: IntroductionFlow(hasSpots: !store.spots.isEmpty))
     }
 
     var body: some Scene {
@@ -27,6 +32,7 @@ struct SunspotApp: App {
                 .environment(store)
                 .environment(purchases)
                 .environment(alerts)
+                .environment(introduction)
         }
     }
 }
@@ -52,6 +58,7 @@ private struct RootView: View {
     @Environment(SpotStore.self) private var store
     @Environment(Purchases.self) private var purchases
     @Environment(SunAlerts.self) private var alerts
+    @Environment(IntroductionFlow.self) private var introduction
 
     @State private var tab = MainTab(demoScreen: Demo.screen)
 
@@ -60,6 +67,38 @@ private struct RootView: View {
     private let tick = Timer.publish(every: 30, on: .main, in: .common).autoconnect()
 
     var body: some View {
+        ZStack {
+            tabs
+                // Everything behind the tour is out of reach, to a finger and to VoiceOver alike.
+                .accessibilityHidden(introduction.isPresented)
+
+            if introduction.isPresented {
+                IntroductionView(startPage: introduction.startPage, isFirstRun: introduction.isFirstRun) {
+                    finishIntroduction()
+                }
+                .transition(.opacity)
+                .zIndex(1)
+            }
+        }
+        // The tour fills the screen edge to edge, and a status bar on top of a night sky is
+        // dark text on dark paint in light mode.
+        .statusBarHidden(introduction.isPresented)
+    }
+
+    /// Closes the tour, and on the first run goes on to ask where the person is — the question
+    /// the tour exists to prepare them for. A beat after the fade, so the system dialog does not
+    /// arrive on top of a page that is still leaving.
+    private func finishIntroduction() {
+        let wasFirstRun = introduction.isFirstRun
+        withAnimation(.easeInOut(duration: 0.45)) { introduction.finish() }
+        guard wasFirstRun else { return }
+        Task {
+            try? await Task.sleep(for: .milliseconds(500))
+            location.start()
+        }
+    }
+
+    private var tabs: some View {
         // The classic tab API rather than iOS 18's `Tab`: this app has no reason to shut
         // out a phone that is two years old, and plenty of the people it is for are using one.
         TabView(selection: $tab) {
@@ -81,7 +120,8 @@ private struct RootView: View {
             // where it is in order to place the first one. Starting location services anyway
             // puts the "in use" arrow in the status bar of every frame in the store listing,
             // which reads as tracking to somebody deciding whether to download a garden app.
-            if !Demo.isRunning { location.start() }
+            // On a first run the tour starts it, once it has explained why.
+            if !Demo.isRunning && !introduction.isFirstRun { location.start() }
             purchases.startListening()
             await purchases.load()
             await alerts.reschedule(for: store.spots)

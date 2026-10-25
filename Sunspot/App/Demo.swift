@@ -27,6 +27,9 @@ enum Demo {
         case todayLocked = "today-locked"
         /// Things reached from Today, which the run cannot tap its way to.
         case plants, compare, paywall
+        /// The first-launch tour, on the page `-SunspotIntroPage` names. Only for looking at it:
+        /// no store listing has it in a frame.
+        case intro
     }
 
     /// True while the app is being driven by the screenshot script.
@@ -48,6 +51,28 @@ enum Demo {
         return Screen(rawValue: arguments[index + 1]) ?? .today
         #else
         return nil
+        #endif
+    }
+
+    /// The page of the tour a run was asked to open on, or nil when it was not asked for the tour.
+    static var introPage: Int? {
+        #if DEBUG
+        guard screen == .intro else { return nil }
+        let arguments = ProcessInfo.processInfo.arguments
+        guard let index = arguments.firstIndex(of: "-SunspotIntroPage"), index + 1 < arguments.count else { return 0 }
+        return Int(arguments[index + 1]) ?? 0
+        #else
+        return nil
+        #endif
+    }
+
+    /// Whether the tour should look as it does on a first launch — Skip at the top, the question
+    /// about location at the end — rather than as the replay from the menu.
+    static var introIsFirstRun: Bool {
+        #if DEBUG
+        return ProcessInfo.processInfo.arguments.contains("-SunspotIntroFirstRun")
+        #else
+        return false
         #endif
     }
 
