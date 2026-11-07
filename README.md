@@ -41,10 +41,10 @@ that never expires.
 | Saving spots and their skylines | ✅ |
 | Home-screen widget | ✅ |
 | A word before the sun arrives | ✅ |
-| Paywall — one purchase, StoreKit 2, no middleman | ✅ bought on a real phone |
+| Paywall — one purchase, StoreKit 2 decides who has paid; RevenueCat only watches | ✅ bought on a real phone |
 | English, German, French | ✅ 199 strings, checked against the keys the app really asks for |
 | App Store screenshots | ✅ generated; the Sky frame wants a real garden behind it |
-| Privacy manifest, app and widget | ✅ nothing collected, one API declared |
+| Privacy manifest, app and widget | ✅ purchase history and advertising data (RevenueCat), neither linked nor tracking |
 | Export compliance, device family, version | ✅ no non-exempt encryption, iPhone, 1.0 |
 
 On a first real tracing session the app captured 860 directions covering 217° of horizon —
@@ -141,9 +141,14 @@ no longer produces a diff and regenerating no longer undoes what Xcode just save
 StoreKit configuration path in it has always been correct; what used to change underneath it
 was the formatting of the file around it.
 
-There is no analytics, no account, no server and no third-party SDK. Nothing the app works
-out leaves the phone, which is why the privacy manifest declares one API and no collected
-data at all.
+There is no analytics, no account and no server of our own. Nothing the app works out — the
+location, the spots, the traced skylines — leaves the phone. The one third-party SDK is
+RevenueCat (`purchases-ios`), in observer mode: StoreKit 2 still decides who has paid, and
+`PurchaseTracker` only tells RevenueCat about a purchase and, once per install, hands it Apple's
+AdServices token so an Apple Ads campaign can be credited. That is exactly what the privacy
+manifest, the App Privacy answers and the privacy policy on the site declare: purchase history
+and advertising data, neither linked to the person nor used for tracking. The public SDK key is
+`REVENUECAT_PUBLIC_KEY` in `Tools/make-project.py`; empty, the build reports nothing.
 
 The screenshot set is seeded from a launch argument rather than by tapping through the app,
 so it can be thrown away and shot again from scratch whenever a screen moves. The same

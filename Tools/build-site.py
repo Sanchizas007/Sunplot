@@ -32,7 +32,7 @@ REPO = "https://github.com/Sanchizas007/Sunplot"
 # the store listing, the licence in the repository and these pages must all name the same one.
 LICENSOR = "Olexandr Zhovnir"
 SITE = "https://sanchizas007.github.io/Sunplot"
-UPDATED = "7 October 2026"
+UPDATED = "7 November 2026"
 
 ROOT = Path(__file__).resolve().parent.parent
 STRINGS = ROOT / "Tools" / "site-strings"

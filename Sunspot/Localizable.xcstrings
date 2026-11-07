@@ -11289,85 +11289,85 @@
         }
       }
     },
-    "Sunplot needs your position to work out where the sun travels overhead. It stays on this phone — there is no server to send it to." : {
+    "Sunplot needs your position to work out where the sun travels overhead. It never leaves this phone." : {
       "extractionState" : "manual",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot braucht deinen Standort, um den Lauf der Sonne über dir zu berechnen. Er bleibt auf diesem Telefon — es gibt keinen Server, an den er gehen könnte."
+            "value" : "Sunplot braucht deinen Standort, um den Lauf der Sonne über dir zu berechnen. Er verlässt dieses Telefon nie."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot necesita tu posición para calcular por dónde pasa el sol. Se queda en este teléfono: no hay ningún servidor al que enviarla."
+            "value" : "Sunplot necesita tu posición para calcular por dónde pasa el sol. No sale nunca de este teléfono."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot a besoin de votre position pour calculer où passe le soleil au-dessus de vous. Elle reste sur ce téléphone : il n’y a aucun serveur où l’envoyer."
+            "value" : "Sunplot a besoin de votre position pour calculer où passe le soleil au-dessus de vous. Elle ne quitte jamais ce téléphone."
           }
         },
         "it" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot ha bisogno della tua posizione per calcolare dove passa il sole sopra di te. Resta su questo telefono: non c'è alcun server a cui mandarla."
+            "value" : "Sunplot ha bisogno della tua posizione per calcolare dove passa il sole sopra di te. Non lascia mai questo telefono."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplotは、太陽が頭上をどう通るかを計算するために位置情報が必要です。位置はこの端末の中だけで使われ、送信先のサーバーはありません。"
+            "value" : "Sunplotは、太陽が頭上をどう通るかを計算するために位置情報が必要です。位置情報がこの端末の外に出ることはありません。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot은 해가 머리 위를 어디로 지나는지 계산하기 위해 위치가 필요합니다. 위치는 이 기기 안에만 있고, 보낼 서버도 없습니다."
+            "value" : "Sunplot은 해가 머리 위를 어디로 지나는지 계산하기 위해 위치가 필요합니다. 위치는 이 기기 밖으로 나가지 않습니다."
           }
         },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot heeft je positie nodig om te berekenen waar de zon overheen trekt. Die blijft op deze telefoon — er is geen server om haar naartoe te sturen."
+            "value" : "Sunplot heeft je positie nodig om te berekenen waar de zon overheen trekt. Die verlaat deze telefoon nooit."
           }
         },
         "pl" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot potrzebuje twojej pozycji, żeby wyliczyć, którędy słońce przechodzi nad głową. Zostaje na tym telefonie — nie ma serwera, do którego mogłaby trafić."
+            "value" : "Sunplot potrzebuje twojej pozycji, żeby wyliczyć, którędy słońce przechodzi nad głową. Nigdy nie opuszcza tego telefonu."
           }
         },
         "pt-BR" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O Sunplot precisa da sua posição para calcular por onde o sol passa. Ela fica neste telefone — não há servidor para onde enviá-la."
+            "value" : "O Sunplot precisa da sua posição para calcular por onde o sol passa. Ela nunca sai deste telefone."
           }
         },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot нужна ваша геопозиция, чтобы рассчитать путь солнца над вами. Она остаётся на этом телефоне — сервера, куда её отправлять, нет."
+            "value" : "Sunplot нужна ваша геопозиция, чтобы рассчитать путь солнца над вами. Она никогда не покидает этот телефон."
           }
         },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot, güneşin tepeden nereden geçtiğini hesaplamak için konumuna ihtiyaç duyar. Konum bu telefonda kalır; gönderilecek bir sunucu yoktur."
+            "value" : "Sunplot, güneşin tepeden nereden geçtiğini hesaplamak için konumuna ihtiyaç duyar. Konum bu telefondan hiç çıkmaz."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot 需要你的位置，才能算出太阳从头顶怎么走。位置只留在这部手机上，没有任何服务器可以发送。"
+            "value" : "Sunplot 需要你的位置，才能算出太阳从头顶怎么走。位置绝不会离开这部手机。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Sunplot 需要你的位置，才能算出太陽從頭頂怎麼走。位置只留在這支手機上，沒有任何伺服器可以傳送。"
+            "value" : "Sunplot 需要你的位置，才能算出太陽從頭頂怎麼走。位置絕不會離開這支手機。"
           }
         }
       }

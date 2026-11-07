@@ -138,7 +138,7 @@
   "Sunflowers": "해바라기",
   "Sunplot counts the hours of direct sunlight a spot really gets, once the roofs and trees have taken their share.": "Sunplot은 지붕과 나무가 제 몫을 가져간 뒤, 그 자리에 실제로 닿는 직사광선 시간을 셉니다.",
   "Sunplot needs a position to work out where the sun travels overhead.": "Sunplot은 해가 어디를 지나는지 계산하기 위해 위치가 필요합니다.",
-  "Sunplot needs your position to work out where the sun travels overhead. It stays on this phone — there is no server to send it to.": "Sunplot은 해가 머리 위를 어디로 지나는지 계산하기 위해 위치가 필요합니다. 위치는 이 기기 안에만 있고, 보낼 서버도 없습니다.",
+  "Sunplot needs your position to work out where the sun travels overhead. It never leaves this phone.": "Sunplot은 해가 머리 위를 어디로 지나는지 계산하기 위해 위치가 필요합니다. 위치는 이 기기 밖으로 나가지 않습니다.",
   "Sweep along the tops of the roofs and trees": "지붕과 나무의 꼭대기를 따라 그으세요",
   "Sweetcorn": "단옥수수",
   "Tell me when the sun arrives": "해가 들면 알려 주기",

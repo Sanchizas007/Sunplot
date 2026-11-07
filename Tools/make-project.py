@@ -14,9 +14,17 @@ APP = "Sunspot"
 BUNDLE_ID = "app.sunplot"
 DEPLOYMENT_TARGET = "17.0"
 SWIFT_VERSION = "6.0"
-MARKETING_VERSION = "1.2"
+MARKETING_VERSION = "1.3"
+BUILD_NUMBER = "4"
 # Apple developer team, needed to sign for a real device. Same account as Sunfold.
 DEVELOPMENT_TEAM = "3M856J997X"
+
+# RevenueCat's public SDK key for the Sunplot (App Store) app, from the app's page in the
+# RevenueCat dashboard. Public on purpose: it ships inside every copy of the app, and all it
+# lets anybody do is report a purchase to the owner's own project. Empty means the build does
+# not report at all, which is what a fork, a test run and a build made before the key was
+# fetched should do. The secret keys (`sk_`) never belong here.
+REVENUECAT_PUBLIC_KEY = "appl_PtbpGPIyxfJuavfzSfRojsexrzj"
 
 # Stable object ids. The prefix keeps them recognisably ours in diffs.
 def oid(n: int) -> str:
@@ -30,6 +38,9 @@ IDS = {name: oid(i) for i, name in enumerate([
     "testConfigList", "projectDebug", "projectRelease", "appDebug", "appRelease",
     "testDebug", "testRelease", "localPackage", "solarProduct", "solarBuildFile",
     "testDependency", "testProxy", "solarProductTest", "solarBuildFileTest", "storekitFile", "storekitBuildFile", "testResourcesPhase", "widgetTarget", "widgetProduct", "widgetSyncGroup", "widgetSourcesPhase", "widgetFrameworksPhase", "widgetResourcesPhase", "widgetConfigList", "widgetDebug", "widgetRelease", "widgetDependency", "widgetProxy", "embedPhase", "widgetEmbedFile", "solarProductWidget", "solarBuildFileWidget", "widgetInfoFile", "appEntitlements", "widgetEntitlements", "spotProductApp", "spotBuildFileApp", "spotProductWidget", "spotBuildFileWidget", "spotProductTest", "spotBuildFileTest", "storekitAppBuildFile",
+    # Appended, never inserted: ids are numbered by position, and every one above is already
+    # written into the project file Xcode has open.
+    "rcPackage", "rcProduct", "rcBuildFile", "appInfoFile",
 ], start=1)}
 
 I = IDS
@@ -58,9 +69,16 @@ PROJECT_COMMON = {
 APP_COMMON = {
     "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
     "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
-    "CURRENT_PROJECT_VERSION": "3",
+    "CURRENT_PROJECT_VERSION": BUILD_NUMBER,
     "MARKETING_VERSION": MARKETING_VERSION,
     "GENERATE_INFOPLIST_FILE": "YES",
+    # Read by `PurchaseTracker` from the bundle. A build setting rather than a constant in the
+    # source so that the key is one line in one place, and so that a build without it simply
+    # has nothing to report to. It reaches the bundle through a small Info.plist that Xcode
+    # merges into the generated one: `INFOPLIST_KEY_` only carries the keys Apple knows about,
+    # and a custom one is dropped without a word.
+    "RC_PUBLIC_API_KEY": f'"{REVENUECAT_PUBLIC_KEY}"',
+    "INFOPLIST_FILE": f"Config/{APP}-Info.plist",
     "INFOPLIST_KEY_UIApplicationSceneManifest_Generation": "YES",
     "INFOPLIST_KEY_UILaunchScreen_Generation": "YES",
     # Portrait and nothing else. Landscape was declared and never once looked at: the Sky
@@ -90,8 +108,8 @@ APP_COMMON = {
     # to put back, on the day it is actually wanted and tested.
     "TARGETED_DEVICE_FAMILY": "1",
     # Otherwise every upload stops to ask the export compliance question by hand. The answer
-    # is no: the app makes no network requests of its own and uses nothing beyond the
-    # encryption inside Apple's own frameworks.
+    # is no: the only network requests are RevenueCat's, over the system's own HTTPS, and
+    # nothing here uses encryption beyond what is inside Apple's own frameworks.
     "INFOPLIST_KEY_ITSAppUsesNonExemptEncryption": "NO",
     "CODE_SIGN_STYLE": "Automatic",
     "DEVELOPMENT_TEAM": DEVELOPMENT_TEAM,
@@ -100,7 +118,7 @@ APP_COMMON = {
 
 WIDGET_COMMON = {
     "ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME": "AccentColor",
-    "CURRENT_PROJECT_VERSION": "3",
+    "CURRENT_PROJECT_VERSION": BUILD_NUMBER,
     "MARKETING_VERSION": MARKETING_VERSION,
     # A widget extension needs a real Info.plist: its NSExtension entry is a nested
     # dictionary, and the generated-plist build settings cannot express one.
@@ -149,6 +167,7 @@ pbxproj = f"""// !$*UTF8*$!
 		{I['spotBuildFileApp']} /* SpotKit in Frameworks */ = {{isa = PBXBuildFile; productRef = {I['spotProductApp']} /* SpotKit */; }};
 		{I['spotBuildFileWidget']} /* SpotKit in Frameworks */ = {{isa = PBXBuildFile; productRef = {I['spotProductWidget']} /* SpotKit */; }};
 		{I['spotBuildFileTest']} /* SpotKit in Frameworks */ = {{isa = PBXBuildFile; productRef = {I['spotProductTest']} /* SpotKit */; }};
+		{I['rcBuildFile']} /* RevenueCat in Frameworks */ = {{isa = PBXBuildFile; productRef = {I['rcProduct']} /* RevenueCat */; }};
 		{I['widgetEmbedFile']} /* {APP}Widgets.appex in Embed Foundation Extensions */ = {{isa = PBXBuildFile; fileRef = {I['widgetProduct']} /* {APP}Widgets.appex */; settings = {{ATTRIBUTES = (RemoveHeadersOnCopy, ); }}; }};
 /* End PBXBuildFile section */
 
@@ -175,6 +194,7 @@ pbxproj = f"""// !$*UTF8*$!
 		{I['storekitFile']} /* {APP}.storekit */ = {{isa = PBXFileReference; lastKnownFileType = text; name = {APP}.storekit; path = Config/{APP}.storekit; sourceTree = "<group>"; }};
 		{I['widgetProduct']} /* {APP}Widgets.appex */ = {{isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = {APP}Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; }};
 		{I['widgetInfoFile']} /* {APP}Widgets-Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "{APP}Widgets-Info.plist"; path = "Config/{APP}Widgets-Info.plist"; sourceTree = "<group>"; }};
+		{I['appInfoFile']} /* {APP}-Info.plist */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "{APP}-Info.plist"; path = "Config/{APP}-Info.plist"; sourceTree = "<group>"; }};
 		{I['appEntitlements']} /* {APP}.entitlements */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = {APP}.entitlements; path = Config/{APP}.entitlements; sourceTree = "<group>"; }};
 		{I['widgetEntitlements']} /* {APP}Widgets.entitlements */ = {{isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = {APP}Widgets.entitlements; path = Config/{APP}Widgets.entitlements; sourceTree = "<group>"; }};
 /* End PBXFileReference section */
@@ -192,6 +212,7 @@ pbxproj = f"""// !$*UTF8*$!
 			files = (
 				{I['solarBuildFile']} /* SolarCore in Frameworks */,
 				{I['spotBuildFileApp']} /* SpotKit in Frameworks */,
+				{I['rcBuildFile']} /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		}};
@@ -224,6 +245,7 @@ pbxproj = f"""// !$*UTF8*$!
 				{I['testSyncGroup']} /* {APP}Tests */,
 				{I['storekitFile']} /* {APP}.storekit */,
 				{I['widgetInfoFile']} /* {APP}Widgets-Info.plist */,
+				{I['appInfoFile']} /* {APP}-Info.plist */,
 				{I['appEntitlements']} /* {APP}.entitlements */,
 				{I['widgetEntitlements']} /* {APP}Widgets.entitlements */,
 				{I['productsGroup']} /* Products */,
@@ -264,6 +286,7 @@ pbxproj = f"""// !$*UTF8*$!
 			packageProductDependencies = (
 				{I['solarProduct']} /* SolarCore */,
 				{I['spotProductApp']} /* SpotKit */,
+				{I['rcProduct']} /* RevenueCat */,
 			);
 			productName = {APP};
 			productReference = {I['appProduct']} /* {APP}.app */;
@@ -364,6 +387,7 @@ pbxproj = f"""// !$*UTF8*$!
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				{I['localPackage']} /* XCLocalSwiftPackageReference "Packages/SolarCore" */,
+				{I['rcPackage']} /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = {I['productsGroup']} /* Products */;
@@ -558,6 +582,17 @@ pbxproj = f"""// !$*UTF8*$!
 		}};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		{I['rcPackage']} /* XCRemoteSwiftPackageReference "purchases-ios" */ = {{
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {{
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.98.0;
+			}};
+		}};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		{I['solarProduct']} /* SolarCore */ = {{
 			isa = XCSwiftPackageProductDependency;
@@ -574,6 +609,11 @@ pbxproj = f"""// !$*UTF8*$!
 		{I['spotProductApp']} /* SpotKit */ = {{isa = XCSwiftPackageProductDependency; productName = SpotKit; }};
 		{I['spotProductWidget']} /* SpotKit */ = {{isa = XCSwiftPackageProductDependency; productName = SpotKit; }};
 		{I['spotProductTest']} /* SpotKit */ = {{isa = XCSwiftPackageProductDependency; productName = SpotKit; }};
+		{I['rcProduct']} /* RevenueCat */ = {{
+			isa = XCSwiftPackageProductDependency;
+			package = {I['rcPackage']} /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		}};
 /* End XCSwiftPackageProductDependency section */
 	}};
 	rootObject = {I['project']} /* Project object */;

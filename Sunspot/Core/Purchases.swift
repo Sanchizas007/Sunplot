@@ -5,9 +5,10 @@ import WidgetKit
 
 /// One thing to buy, once, for good.
 ///
-/// No RevenueCat: a single non-consumable is a hundred lines of StoreKit, and a service that
-/// takes a percentage of every sale for the rest of the app's life is a strange price to pay
-/// for that.
+/// StoreKit decides who has paid: a single non-consumable is a hundred lines of it, and it
+/// answers offline, from the phone's own receipt. RevenueCat stands to one side in observer
+/// mode and is only told what happened (`PurchaseTracker`), so that the sales show up in the
+/// owner's charts. It never decides who is let in, and nothing here waits for it.
 @MainActor
 @Observable
 final class Purchases {
@@ -76,6 +77,7 @@ final class Purchases {
         // A screenshot run has no store to listen to, and an endless task started for a
         // single frame would outlive it.
         guard Demo.pretendedPurchase == nil, updates == nil else { return }
+        PurchaseTracker.start()
         updates = Task { [weak self] in
             for await update in Transaction.updates {
                 guard case let .verified(transaction) = update else { continue }
@@ -142,9 +144,13 @@ final class Purchases {
         defer { isWorking = false }
 
         do {
-            switch try await product.purchase() {
+            let result = try await product.purchase()
+            switch result {
             case .success(let verification):
                 if case let .verified(transaction) = verification {
+                    // Told on the side, not waited for: the person has paid and is unlocked the
+                    // moment the store says so, whatever RevenueCat's servers are doing.
+                    Task { await PurchaseTracker.record(result) }
                     await transaction.finish()
                     await refreshEntitlement()
                 } else {
@@ -171,6 +177,7 @@ final class Purchases {
 
         do {
             try await AppStore.sync()
+            Task { await PurchaseTracker.restored() }
             await refreshEntitlement()
             if state != .unlocked {
                 lastError = String(localized: "No earlier purchase found on this Apple Account.")

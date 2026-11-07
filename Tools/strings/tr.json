@@ -138,7 +138,7 @@
   "Sunflowers": "Ayçiçekleri",
   "Sunplot counts the hours of direct sunlight a spot really gets, once the roofs and trees have taken their share.": "Sunplot, çatılar ve ağaçlar paylarını aldıktan sonra bir noktaya gerçekten ulaşan doğrudan güneş saatlerini sayar.",
   "Sunplot needs a position to work out where the sun travels overhead.": "Sunplot, güneşin tepeden nereden geçtiğini hesaplamak için bir konuma ihtiyaç duyar.",
-  "Sunplot needs your position to work out where the sun travels overhead. It stays on this phone — there is no server to send it to.": "Sunplot, güneşin tepeden nereden geçtiğini hesaplamak için konumuna ihtiyaç duyar. Konum bu telefonda kalır; gönderilecek bir sunucu yoktur.",
+  "Sunplot needs your position to work out where the sun travels overhead. It never leaves this phone.": "Sunplot, güneşin tepeden nereden geçtiğini hesaplamak için konumuna ihtiyaç duyar. Konum bu telefondan hiç çıkmaz.",
   "Sweep along the tops of the roofs and trees": "Çatıların ve ağaçların tepesi boyunca kaydır",
   "Sweetcorn": "Tatlı mısır",
   "Tell me when the sun arrives": "Güneş gelince haber ver",

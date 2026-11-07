@@ -138,7 +138,7 @@
   "Sunflowers": "ヒマワリ",
   "Sunplot counts the hours of direct sunlight a spot really gets, once the roofs and trees have taken their share.": "Sunplotは、屋根や木立が取り分を持っていったあとに、その場所へ実際に届く直射日光の時間を数えます。",
   "Sunplot needs a position to work out where the sun travels overhead.": "Sunplotは、太陽がどこを通るか計算するために場所が必要です。",
-  "Sunplot needs your position to work out where the sun travels overhead. It stays on this phone — there is no server to send it to.": "Sunplotは、太陽が頭上をどう通るかを計算するために位置情報が必要です。位置はこの端末の中だけで使われ、送信先のサーバーはありません。",
+  "Sunplot needs your position to work out where the sun travels overhead. It never leaves this phone.": "Sunplotは、太陽が頭上をどう通るかを計算するために位置情報が必要です。位置情報がこの端末の外に出ることはありません。",
   "Sweep along the tops of the roofs and trees": "屋根と木立のてっぺんをなぞってください",
   "Sweetcorn": "スイートコーン",
   "Tell me when the sun arrives": "日が差したら知らせる",

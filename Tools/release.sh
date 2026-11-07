@@ -30,16 +30,22 @@ mkdir -p "$BUILD"
 # Every part of the store listing is settled somewhere else, but these two are settled here
 # and a wrong one is discovered by Apple rather than by us.
 VERSION=$(grep -oE 'MARKETING_VERSION = "[^"]+"' "$ROOT/Tools/make-project.py" | head -1 | cut -d'"' -f2)
-NUMBER=$(grep -oE '"CURRENT_PROJECT_VERSION": "[^"]+"' "$ROOT/Tools/make-project.py" | head -1 | cut -d'"' -f4)
+NUMBER=$(grep -oE '^BUILD_NUMBER = "[^"]+"' "$ROOT/Tools/make-project.py" | head -1 | cut -d'"' -f2)
 print() { printf "%s\n" "$1"; }
 
 print "==> Sunplot $VERSION ($NUMBER)"
 print "    App Store Connect отклоняет повторную выгрузку с тем же номером сборки."
-print "    Новая попытка = новый номер: CURRENT_PROJECT_VERSION в Tools/make-project.py."
+print "    Новая попытка = новый номер: BUILD_NUMBER в Tools/make-project.py."
 print ""
 
 print "==> Общая проверка"
-"$ROOT/Tools/check.sh"
+# SKIP_CHECK=1 — когда check.sh только что прошёл целиком и второй полный прогон (с тестами на
+# симуляторе, это минуты) ничего не добавит. Сам архив всё равно собирается с нуля.
+if [ "${SKIP_CHECK:-}" = "1" ]; then
+    print "    пропущена по SKIP_CHECK=1"
+else
+    "$ROOT/Tools/check.sh"
+fi
 
 print ""
 print "==> Архив"
@@ -87,11 +93,18 @@ codesign -d --entitlements - "$APP" 2>/dev/null | grep -A 3 "application-groups"
 codesign -d --entitlements - "$APP" 2>/dev/null | grep -A 2 "get-task-allow" | grep -q "false" \
     && print "    подпись дистрибуции ✅" || print "    🔴 подпись НЕ дистрибуционная — Apple такой пакет не примет"
 MANIFESTS=$(find "$APP" -name "PrivacyInfo.xcprivacy" | wc -l | tr -d " ")
-if [ "$MANIFESTS" = "2" ]; then
-    print "    манифестов приватности: 2 ✅"
+# Три: приложение, виджет и комплект RevenueCat (его собственный манифест лежит в
+# RevenueCat_RevenueCat.bundle). Меньше — значит, что-то из этого не попало в пакет.
+if [ "$MANIFESTS" = "3" ]; then
+    print "    манифестов приватности: 3 ✅"
 else
-    print "    🔴 манифестов приватности: $MANIFESTS, а нужно два — приложение и виджет"
+    print "    🔴 манифестов приватности: $MANIFESTS, а нужно три — приложение, виджет и RevenueCat"
 fi
+KEY=$(plutil -extract RCPublicAPIKey raw "$APP/Info.plist" 2>/dev/null || true)
+case "$KEY" in
+    appl_*) print "    ключ RevenueCat в пакете: ${KEY:0:9}… ✅" ;;
+    *)      print "    🔴 ключа RevenueCat в пакете нет — сборка ничего не станет сообщать (REVENUECAT_PUBLIC_KEY в Tools/make-project.py)" ;;
+esac
 
 if [ "$MODE" != "--validate" ] && [ "$MODE" != "--upload" ]; then
     print ""

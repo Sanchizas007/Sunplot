@@ -82,7 +82,7 @@ enum IntroPage: Int, CaseIterable, Identifiable {
         case .map:
             "Orange is where the sun arrives from, pink is where it leaves, yellow is where it is now. Slide the time to move through the day."
         case .place:
-            "Sunplot needs your position to work out where the sun travels overhead. It stays on this phone — there is no server to send it to."
+            "Sunplot needs your position to work out where the sun travels overhead. It never leaves this phone."
         }
     }
 }

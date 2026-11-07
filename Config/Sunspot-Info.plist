@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!--
+	  Only what the generated Info.plist cannot say. Xcode builds the rest of the app's
+	  Info.plist from the INFOPLIST_KEY_ settings and merges this file into it; a custom key
+	  cannot be written as such a setting, and the build setting below is the one
+	  `Tools/make-project.py` fills in.
+
+	  The key is RevenueCat's public SDK key for the app, public on purpose, or empty. Empty
+	  means this build reports nothing to RevenueCat.
+	-->
+	<key>RCPublicAPIKey</key>
+	<string>$(RC_PUBLIC_API_KEY)</string>
+</dict>
+</plist>

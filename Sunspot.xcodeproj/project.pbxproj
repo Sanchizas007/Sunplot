@@ -14,6 +14,7 @@
 		5U0000000000000000000035 /* SpotKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5U0000000000000000000034 /* SpotKit */; };
 		5U0000000000000000000037 /* SpotKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5U0000000000000000000036 /* SpotKit */; };
 		5U0000000000000000000039 /* SpotKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5U0000000000000000000038 /* SpotKit */; };
+		5U000000000000000000003D /* RevenueCat in Frameworks */ = {isa = PBXBuildFile; productRef = 5U000000000000000000003C /* RevenueCat */; };
 		5U000000000000000000002E /* SunspotWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 5U0000000000000000000023 /* SunspotWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		5U000000000000000000001F /* Sunspot.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Sunspot.storekit; path = Config/Sunspot.storekit; sourceTree = "<group>"; };
 		5U0000000000000000000023 /* SunspotWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SunspotWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		5U0000000000000000000031 /* SunspotWidgets-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SunspotWidgets-Info.plist"; path = "Config/SunspotWidgets-Info.plist"; sourceTree = "<group>"; };
+		5U000000000000000000003E /* Sunspot-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Sunspot-Info.plist"; path = "Config/Sunspot-Info.plist"; sourceTree = "<group>"; };
 		5U0000000000000000000032 /* Sunspot.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Sunspot.entitlements; path = Config/Sunspot.entitlements; sourceTree = "<group>"; };
 		5U0000000000000000000033 /* SunspotWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SunspotWidgets.entitlements; path = Config/SunspotWidgets.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -57,6 +59,7 @@
 			files = (
 				5U000000000000000000001A /* SolarCore in Frameworks */,
 				5U0000000000000000000035 /* SpotKit in Frameworks */,
+				5U000000000000000000003D /* RevenueCat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +92,7 @@
 				5U000000000000000000000E /* SunspotTests */,
 				5U000000000000000000001F /* Sunspot.storekit */,
 				5U0000000000000000000031 /* SunspotWidgets-Info.plist */,
+				5U000000000000000000003E /* Sunspot-Info.plist */,
 				5U0000000000000000000032 /* Sunspot.entitlements */,
 				5U0000000000000000000033 /* SunspotWidgets.entitlements */,
 				5U0000000000000000000003 /* Products */,
@@ -129,6 +133,7 @@
 			packageProductDependencies = (
 				5U0000000000000000000019 /* SolarCore */,
 				5U0000000000000000000034 /* SpotKit */,
+				5U000000000000000000003C /* RevenueCat */,
 			);
 			productName = Sunspot;
 			productReference = 5U0000000000000000000006 /* Sunspot.app */;
@@ -229,6 +234,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				5U0000000000000000000018 /* XCLocalSwiftPackageReference "Packages/SolarCore" */,
+				5U000000000000000000003B /* XCRemoteSwiftPackageReference "purchases-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5U0000000000000000000003 /* Products */;
@@ -372,9 +378,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 3;
-				MARKETING_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 4;
+				MARKETING_VERSION = 1.3;
 				GENERATE_INFOPLIST_FILE = YES;
+				RC_PUBLIC_API_KEY = "appl_PtbpGPIyxfJuavfzSfRojsexrzj";
+				INFOPLIST_FILE = Config/Sunspot-Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait";
@@ -398,9 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 3;
-				MARKETING_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 4;
+				MARKETING_VERSION = 1.3;
 				GENERATE_INFOPLIST_FILE = YES;
+				RC_PUBLIC_API_KEY = "appl_PtbpGPIyxfJuavfzSfRojsexrzj";
+				INFOPLIST_FILE = Config/Sunspot-Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait";
@@ -423,8 +433,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 3;
-				MARKETING_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 4;
+				MARKETING_VERSION = 1.3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Config/SunspotWidgets-Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = app.sunplot.widgets;
@@ -442,8 +452,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CURRENT_PROJECT_VERSION = 3;
-				MARKETING_VERSION = 1.2;
+				CURRENT_PROJECT_VERSION = 4;
+				MARKETING_VERSION = 1.3;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Config/SunspotWidgets-Info.plist;
 				PRODUCT_BUNDLE_IDENTIFIER = app.sunplot.widgets;
@@ -537,6 +547,17 @@
 		};
 /* End XCLocalSwiftPackageReference section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		5U000000000000000000003B /* XCRemoteSwiftPackageReference "purchases-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RevenueCat/purchases-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.98.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		5U0000000000000000000019 /* SolarCore */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -553,6 +574,11 @@
 		5U0000000000000000000034 /* SpotKit */ = {isa = XCSwiftPackageProductDependency; productName = SpotKit; };
 		5U0000000000000000000036 /* SpotKit */ = {isa = XCSwiftPackageProductDependency; productName = SpotKit; };
 		5U0000000000000000000038 /* SpotKit */ = {isa = XCSwiftPackageProductDependency; productName = SpotKit; };
+		5U000000000000000000003C /* RevenueCat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5U000000000000000000003B /* XCRemoteSwiftPackageReference "purchases-ios" */;
+			productName = RevenueCat;
+		};
 /* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5U0000000000000000000001 /* Project object */;

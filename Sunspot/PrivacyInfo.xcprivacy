@@ -3,11 +3,16 @@
 <plist version="1.0">
 <dict>
 	<!--
-	  Sunspot collects nothing. No account, no analytics, no advertising, no
-	  server of its own and no third-party SDK in the binary: the spot, the
-	  traced skyline and the position it was traced at never leave the device.
-	  The only thing declared below is an API Apple asks to be accounted for
-	  whatever it is used on.
+	  Sunspot itself collects nothing: no account, no analytics, no advertising, no server of
+	  its own. The spot, the traced skyline and the position it was traced at never leave the
+	  device.
+
+	  The one third party in the binary is the RevenueCat SDK. It watches the one purchase
+	  (purchase history, under an anonymous app user ID it generates) and, once per install,
+	  passes on Apple's AdServices token so that RevenueCat can say which Apple Ads campaign
+	  brought the person (advertising data). Neither is linked to the person and neither is used
+	  for tracking: no IDFA, no App Tracking Transparency prompt. The two entries below say the
+	  same as the App Privacy answers in App Store Connect and the privacy policy on the site.
 	-->
 
 	<key>NSPrivacyTracking</key>
@@ -17,7 +22,33 @@
 	<array/>
 
 	<key>NSPrivacyCollectedDataTypes</key>
-	<array/>
+	<array>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypePurchaseHistory</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+				<string>NSPrivacyCollectedDataTypePurposeAppFunctionality</string>
+			</array>
+		</dict>
+		<dict>
+			<key>NSPrivacyCollectedDataType</key>
+			<string>NSPrivacyCollectedDataTypeAdvertisingData</string>
+			<key>NSPrivacyCollectedDataTypeLinked</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypeTracking</key>
+			<false/>
+			<key>NSPrivacyCollectedDataTypePurposes</key>
+			<array>
+				<string>NSPrivacyCollectedDataTypePurposeAnalytics</string>
+			</array>
+		</dict>
+	</array>
 
 	<key>NSPrivacyAccessedAPITypes</key>
 	<array>
@@ -27,13 +58,18 @@
 			<key>NSPrivacyAccessedAPITypeReasons</key>
 			<array>
 				<!--
-				  Which spot is being looked at, and whether the purchase has
-				  been made. Both are written by the app and read by the widget
-				  through the App Group they share, and neither is read from
-				  anywhere else. There is no CA92.1 here because the app never
-				  touches its own standard defaults.
+				  Which spot is being looked at, and whether the purchase has been made. Both
+				  are written by the app and read by the widget through the App Group they
+				  share, and neither is read from anywhere else.
 				-->
 				<string>1C8F.1</string>
+				<!--
+				  The app's own code never touches its standard defaults; the RevenueCat SDK
+				  does, to keep its own cache of what it has already been told, and that cache
+				  is read by nothing else. Declared here because the SDK is linked into this
+				  binary.
+				-->
+				<string>CA92.1</string>
 			</array>
 		</dict>
 	</array>
