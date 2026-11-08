@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "직사광선 %@",
+  "%@ today": "오늘 %@",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%lld분 전 — 내일 %@쯤.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "반양지",
   "exposure.partSun.meaning": "강낭콩, 당근, 대부분의 허브에는 충분합니다.",
   "full sun": "양지",
+  "full sun %@": "양지 %@",
   "hours of sun": "햇빛 시간",
   "hours.short": "%@시간",
+  "never reaches full sun": "양지가 되는 날이 없음",
+  "nothing at all %@": "해가 전혀 안 드는 기간 %@",
   "of direct sun — %@": "직사광선 — %@",
   "open sky": "가리는 것 없음",
   "open sky — not traced yet": "가리는 것 없음 — 아직 그리지 않음",

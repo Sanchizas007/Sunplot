@@ -130,14 +130,16 @@ private struct Row: View {
     }
 
     private var summary: String {
-        var parts = [reading.exposure.name + " today"]
+        // Every piece is a localised string of its own: this line was once glued together from
+        // English words, and a Japanese reader got "今日は… today · full sun …".
+        var parts = [String(localized: "\(reading.exposure.name) today")]
         if let season = reading.season {
-            parts.append("full sun \(Format.dateRange(season, in: reading.spot.timeZone))")
+            parts.append(String(localized: "full sun \(Format.dateRange(season, in: reading.spot.timeZone))"))
         } else {
-            parts.append("never reaches full sun")
+            parts.append(String(localized: "never reaches full sun"))
         }
         if let blackout = reading.blackout {
-            parts.append("nothing at all \(Format.dateRange(blackout, in: reading.spot.timeZone))")
+            parts.append(String(localized: "nothing at all \(Format.dateRange(blackout, in: reading.spot.timeZone))"))
         }
         return parts.joined(separator: " · ")
     }

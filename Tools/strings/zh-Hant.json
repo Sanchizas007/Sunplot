@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "直射陽光 %@",
+  "%@ today": "今天%@",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "提前 %lld 分鐘 — 明天 %@ 左右。",
@@ -212,8 +213,11 @@
   "exposure.partSun": "半日照",
   "exposure.partSun.meaning": "夠四季豆、胡蘿蔔和多數香草用。",
   "full sun": "全日照",
+  "full sun %@": "全日照 %@",
   "hours of sun": "日照小時",
   "hours.short": "%@ 小時",
+  "never reaches full sun": "從未達到全日照",
+  "nothing at all %@": "完全無日照 %@",
   "of direct sun — %@": "直射陽光 — %@",
   "open sky": "沒有遮蔽",
   "open sky — not traced yet": "沒有遮蔽 — 還沒描過",

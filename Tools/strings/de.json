@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ direkte Sonne",
+  "%@ today": "%@ heute",
   "%@ – %@": "%1$@ – %2$@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%1$lld Minuten vorher — morgen gegen %2$@.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "halbsonnig",
   "exposure.partSun.meaning": "Reicht für Bohnen, Karotten und die meisten Kräuter.",
   "full sun": "volle Sonne",
+  "full sun %@": "volle Sonne %@",
   "hours of sun": "Sonnenstunden",
   "hours.short": "%@ Std",
+  "never reaches full sun": "erreicht nie volle Sonne",
+  "nothing at all %@": "gar keine Sonne %@",
   "of direct sun — %@": "direkte Sonne — %@",
   "open sky": "freier Himmel",
   "open sky — not traced yet": "freier Himmel — noch nicht nachgezeichnet",

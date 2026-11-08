@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "app",
+  "%@ today": "app",
   "%@ – %@": "app",
   "%@+": "app",
   "%lld minutes before — around %@ tomorrow.": "app",
@@ -212,8 +213,11 @@
   "exposure.partSun": "kit",
   "exposure.partSun.meaning": "kit",
   "full sun": "app",
+  "full sun %@": "app",
   "hours of sun": "app",
   "hours.short": "kit",
+  "never reaches full sun": "app",
+  "nothing at all %@": "app",
   "of direct sun — %@": "app",
   "open sky": "app",
   "open sky — not traced yet": "app",

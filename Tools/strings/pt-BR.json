@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ de sol direto",
+  "%@ today": "%@ hoje",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%lld minutos antes: amanhã por volta das %@.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "sol parcial",
   "exposure.partSun.meaning": "Dá para feijão, cenoura e quase todas as ervas.",
   "full sun": "sol pleno",
+  "full sun %@": "sol pleno %@",
   "hours of sun": "horas de sol",
   "hours.short": "%@ h",
+  "never reaches full sun": "nunca chega ao sol pleno",
+  "nothing at all %@": "nenhum sol %@",
   "of direct sun — %@": "de sol direto — %@",
   "open sky": "céu aberto",
   "open sky — not traced yet": "céu aberto: ainda sem traçado",

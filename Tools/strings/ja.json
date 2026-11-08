@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "直射日光 %@",
+  "%@ today": "今日は%@",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%lld分前 — 明日の%@ごろ。",
@@ -212,8 +213,11 @@
   "exposure.partSun": "半日陽",
   "exposure.partSun.meaning": "インゲン、ニンジン、多くのハーブには十分。",
   "full sun": "終日陽",
+  "full sun %@": "終日陽 %@",
   "hours of sun": "日照時間",
   "hours.short": "%@時間",
+  "never reaches full sun": "終日陽にはなりません",
+  "nothing at all %@": "日が全く当たらない期間 %@",
   "of direct sun — %@": "の直射日光 — %@",
   "open sky": "さえぎるものなし",
   "open sky — not traced yet": "さえぎるものなし — 未記録",

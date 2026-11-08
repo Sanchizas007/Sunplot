@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ прямого солнца",
+  "%@ today": "%@ сегодня",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "За %lld мин до этого — завтра около %@.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "неполное солнце",
   "exposure.partSun.meaning": "Хватит фасоли, моркови и большинству трав.",
   "full sun": "полное солнце",
+  "full sun %@": "полное солнце %@",
   "hours of sun": "часов солнца",
   "hours.short": "%@ ч",
+  "never reaches full sun": "полного солнца не бывает",
+  "nothing at all %@": "совсем без солнца %@",
   "of direct sun — %@": "прямого солнца — %@",
   "open sky": "открытое небо",
   "open sky — not traced yet": "открытое небо — горизонт не обведён",

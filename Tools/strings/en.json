@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ of direct sun",
+  "%@ today": "%@ today",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%lld minutes before — around %@ tomorrow.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "part sun",
   "exposure.partSun.meaning": "Enough for beans, carrots and most herbs.",
   "full sun": "full sun",
+  "full sun %@": "full sun %@",
   "hours of sun": "hours of sun",
   "hours.short": "%@h",
+  "never reaches full sun": "never reaches full sun",
+  "nothing at all %@": "nothing at all %@",
   "of direct sun — %@": "of direct sun — %@",
   "open sky": "open sky",
   "open sky — not traced yet": "open sky — not traced yet",

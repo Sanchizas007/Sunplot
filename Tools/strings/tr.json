@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ doğrudan güneş",
+  "%@ today": "bugün %@",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%lld dakika önce — yarın %@ civarı.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "kısmi güneş",
   "exposure.partSun.meaning": "Fasulye, havuç ve otların çoğu için yeter.",
   "full sun": "tam güneş",
+  "full sun %@": "tam güneş %@",
   "hours of sun": "güneş saati",
   "hours.short": "%@ sa",
+  "never reaches full sun": "hiçbir zaman tam güneş almaz",
+  "nothing at all %@": "hiç güneş yok %@",
   "of direct sun — %@": "doğrudan güneş — %@",
   "open sky": "açık gökyüzü",
   "open sky — not traced yet": "açık gökyüzü — henüz çizilmedi",

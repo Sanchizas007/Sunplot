@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ de soleil direct",
+  "%@ today": "%@ aujourd’hui",
   "%@ – %@": "%1$@ – %2$@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%1$lld minutes avant — vers %2$@ demain.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "mi-soleil",
   "exposure.partSun.meaning": "Suffisant pour les haricots, les carottes et la plupart des herbes.",
   "full sun": "plein soleil",
+  "full sun %@": "plein soleil %@",
   "hours of sun": "heures de soleil",
   "hours.short": "%@ h",
+  "never reaches full sun": "n’atteint jamais le plein soleil",
+  "nothing at all %@": "aucun soleil %@",
   "of direct sun — %@": "de soleil direct — %@",
   "open sky": "ciel dégagé",
   "open sky — not traced yet": "ciel dégagé — pas encore tracé",

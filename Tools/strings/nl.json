@@ -1,5 +1,6 @@
 {
   "%@ of direct sun": "%@ directe zon",
+  "%@ today": "%@ vandaag",
   "%@ – %@": "%@ – %@",
   "%@+": "%@+",
   "%lld minutes before — around %@ tomorrow.": "%lld minuten van tevoren — morgen rond %@.",
@@ -212,8 +213,11 @@
   "exposure.partSun": "halve zon",
   "exposure.partSun.meaning": "Genoeg voor bonen, wortels en de meeste kruiden.",
   "full sun": "volle zon",
+  "full sun %@": "volle zon %@",
   "hours of sun": "uren zon",
   "hours.short": "%@ u",
+  "never reaches full sun": "bereikt nooit volle zon",
+  "nothing at all %@": "helemaal geen zon %@",
   "of direct sun — %@": "directe zon — %@",
   "open sky": "open hemel",
   "open sky — not traced yet": "open hemel — nog niet getekend",
