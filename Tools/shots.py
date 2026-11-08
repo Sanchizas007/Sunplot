@@ -210,10 +210,10 @@ def wrap_characters(draw, text, font, width):
     return best[1] if best else [text]
 
 
-def phone(canvas, shot, top):
+def phone(canvas, shot, top, body_fraction=0.80):
     """The capture inside a drawn iPhone, its bottom running off the frame."""
     width, height = canvas.size
-    body_width = round(width * 0.80)
+    body_width = round(width * body_fraction)
     bezel = round(width * 0.013)
     screen_width = body_width - bezel * 2
     scale = screen_width / shot.width
@@ -249,37 +249,91 @@ def phone(canvas, shot, top):
     return canvas
 
 
+TEMPLATES = OUT / "templates" / "plates"   # фон каждого кадра: сад из шаблонов ChatGPT без текста (Tools/make-plates.py)
+PHONE_FRACTION = 0.822                      # на 2% шире телефона на шаблонах: наш закрывает нарисованный
+PHONE_TOP = 425                             # одинаково во всех шести кадрах
+
+
+def swoosh(width):
+    """A gold brush stroke, thick in the middle and tapering at both ends, drawn at 4x and shrunk."""
+    scale = 4
+    w, h = round(width * scale), round(width * 0.075 * scale)
+    mask = Image.new("L", (w, h), 0)
+    draw = ImageDraw.Draw(mask)
+    top, bottom = [], []
+    steps = 120
+    for i in range(steps + 1):
+        s = i / steps
+        thickness = (math.sin(math.pi * s) ** 0.7) * h * 0.40 + 1
+        centre = h * 0.55 - math.sin(math.pi * s) * h * 0.10 - (s ** 3) * h * 0.18
+        top.append((s * w, centre - thickness / 2))
+        bottom.append((s * w, centre + thickness / 2))
+    draw.polygon(top + bottom[::-1], fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(scale * 0.6))
+    colour = Image.new("RGB", (w, h))
+    paint = ImageDraw.Draw(colour)
+    for x in range(w):
+        k = x / w
+        paint.line([(x, 0), (x, h)], fill=(255, round(196 + 36 * k), round(24 + 70 * k)))
+    out = Image.new("RGBA", (w, h))
+    out.paste(colour, (0, 0), mask)
+    return out.resize((round(width), round(h / scale)), Image.LANCZOS)
+
+
+def draw_text(canvas, xy, text, font, fill, stroke, anchor="ma"):
+    """White lettering with a thin deep-blue edge and a soft shadow, so it reads on any part of the sky."""
+    shadow = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).text((xy[0], xy[1] + font.size * 0.04), text, font=font, fill=(8, 40, 100, 120), anchor=anchor)
+    canvas.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(font.size * 0.05)))
+    ImageDraw.Draw(canvas).text(xy, text, font=font, fill=fill, anchor=anchor,
+                                stroke_width=max(1, round(font.size * 0.012)), stroke_fill=stroke)
+
+
 def compose(raw_path, title, subtitle, out_path, language):
     shot = Image.open(raw_path).convert("RGB")
     width, height = SIZE
-    canvas = backdrop(width, height)
-    draw = ImageDraw.Draw(canvas)
-    margin = width * 0.06
+    plate = TEMPLATES / f"{out_path.stem}.png"
+    canvas = (Image.open(plate).convert("RGB") if plate.exists() else backdrop(width, height)).convert("RGBA")
+    probe = ImageDraw.Draw(canvas)
+    margin = width * 0.07
+    room = PHONE_TOP - 38          # the lettering has to end above the phone
 
-    size = round(height * 0.056)
+    # Title: two lines at most, as large as the room allows.
+    size = round(height * 0.052)
     while True:
         font = caption_font(language, size)
-        lines = wrap(draw, title, font, width - margin * 2, language)
-        if len(lines) <= 2 or size <= height * 0.043:
+        lines = wrap(probe, title, font, width - margin * 2, language)
+        small = round(height * 0.0215)
+        sub_font = body_font(language, small)
+        sub_lines = wrap(probe, subtitle, sub_font, width - margin * 2, language)
+        while len(sub_lines) > 1 and small > height * 0.0165:
+            small -= 2
+            sub_font = body_font(language, small)
+            sub_lines = wrap(probe, subtitle, sub_font, width - margin * 2, language)
+        title_h = round(size * 1.12) * len(lines)
+        sub_h = round(small * 1.32) * len(sub_lines)
+        block = title_h + round(size * 0.42) + sub_h      # title, the stroke, the subtitle
+        if (len(lines) <= 2 and block <= room - 30) or size <= height * 0.036:
             break
         size -= 4
-    y = round(height * 0.045)
-    line_height = round(size * 1.12)
+
+    y = max(34, round((room - block) / 2 + 24))
+    widest = 0
     for line in lines:
-        draw.text((width / 2, y), line, font=font, fill="white", anchor="ma",
-                  stroke_width=max(1, round(size * 0.012)), stroke_fill=(16, 72, 136))
-        y += line_height
+        draw_text(canvas, (width / 2, y), line, font, "white", (14, 70, 150))
+        widest = max(widest, probe.textlength(line, font=font))
+        y += round(size * 1.12)
+    stroke = swoosh(min(width - margin * 2, max(width * 0.30, widest * 0.62)))
+    canvas.alpha_composite(stroke, (round((width - stroke.width) / 2), round(y + size * 0.03)))
+    y += round(size * 0.42)
+    for line in sub_lines:
+        draw_text(canvas, (width / 2, y), line, sub_font, (244, 249, 255), (14, 70, 150))
+        y += round(small * 1.32)
 
-    y += round(height * 0.006)
-    small = round(height * 0.0225)
-    while draw.textlength(subtitle, font=body_font(language, small)) > width - margin * 2 and small > height * 0.017:
-        small -= 2
-    draw.text((width / 2, y), subtitle, font=body_font(language, small), fill=(238, 246, 255), anchor="ma")
-    y += round(small * 1.5)
-
-    phone(canvas, shot, top=max(y + round(height * 0.018), round(height * 0.205)))
+    rgb = canvas.convert("RGB")
+    phone(rgb, shot, top=PHONE_TOP, body_fraction=PHONE_FRACTION)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    canvas.save(out_path, "PNG", optimize=True)
+    rgb.save(out_path, "PNG", optimize=True)
 
 
 # MARK: - the simulator
