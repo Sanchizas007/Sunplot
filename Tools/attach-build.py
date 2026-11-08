@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Waits for the uploaded build to finish processing and attaches it to the editable version.
 
-    ASC_KEY_ID=… ASC_ISSUER_ID=… python3 Tools/attach-build.py [--minutes 45]
+    ASC_KEY_ID=… ASC_ISSUER_ID=… python3 Tools/attach-build.py [--minutes 45] [--build 5]
 
 Apple needs a few minutes to process an upload; until then the build does not exist for the
 API. Once it is VALID this attaches it to the version being prepared, which is the one thing
@@ -29,6 +29,7 @@ def main():
     versions, _ = asc.get_all(f"/v1/apps/{app['id']}/appStoreVersions", params={"filter[platform]": "IOS"})
     version = next(v for v in versions if v["attributes"]["appStoreState"] in EDITABLE)
     wanted = version["attributes"]["versionString"]
+    number = sys.argv[sys.argv.index("--build") + 1] if "--build" in sys.argv else None
     print(f"{app['attributes']['name']} {wanted}: {version['attributes']['appStoreState']}", flush=True)
 
     deadline = time.time() + minutes * 60
@@ -37,7 +38,8 @@ def main():
             "filter[app]": app["id"], "sort": "-uploadedDate", "limit": 10,
             "fields[builds]": "version,processingState,uploadedDate",
             "filter[preReleaseVersion.version]": wanted})
-        ready = [b for b in builds if b["attributes"]["processingState"] == "VALID"]
+        ready = [b for b in builds if b["attributes"]["processingState"] == "VALID"
+                 and (number is None or b["attributes"]["version"] == number)]
         if ready:
             build = ready[0]
             break
