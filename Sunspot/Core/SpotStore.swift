@@ -151,6 +151,18 @@ final class SpotStore {
         followsClock = false
     }
 
+    /// Moves to a calendar day in the spot's own time zone, keeping the minute of the day. Only a
+    /// screenshot run asks for it; an ordinary launch never leaves today.
+    func jump(toYear year: Int, month: Int, day: Int) {
+        guard let spot else { return }
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = spot.timeZone
+        guard let start = calendar.date(from: DateComponents(timeZone: spot.timeZone, year: year, month: month, day: day))
+        else { return }
+        viewedDate = start.addingTimeInterval(Double(viewedMinuteOfDay) * 60)
+        followsClock = false
+    }
+
     /// Returns to following the clock.
     func returnToNow() {
         viewedDate = .now

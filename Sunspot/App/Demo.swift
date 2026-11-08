@@ -105,6 +105,10 @@ enum Demo {
     /// sets that do not match, and neither of them saying anything about the app.
     static let momentOfDay = 13 * 60 + 30
 
+    /// The day every frame is shot on — the day the first set was made — so a language shot in
+    /// November still shows October light, and the figures in the captions agree across the set.
+    static let shotYear = 2026, shotMonth = 10, shotDay = 7
+
     /// Where the Sky screen's camera is pointing for its frame, in degrees from true north,
     /// and how far above the horizontal.
     ///
@@ -371,6 +375,61 @@ enum Demo {
                           GeoCoordinate(latitude: 25.1177, longitude: 121.5307),
                           GeoCoordinate(latitude: 25.1185, longitude: 121.5311)],
                   timeZone: TimeZone(identifier: "Asia/Taipei") ?? .current)
+        case "uk":
+            Place(spots: [GeoCoordinate(latitude: 50.5190, longitude: 30.3580),   // Pushcha-Vodytsia, Kyiv
+                          GeoCoordinate(latitude: 50.5187, longitude: 30.3587),
+                          GeoCoordinate(latitude: 50.5195, longitude: 30.3591)],
+                  timeZone: TimeZone(identifier: "Europe/Kyiv") ?? .current)
+        case "sv":
+            Place(spots: [GeoCoordinate(latitude: 59.3480, longitude: 17.9170),   // Södra Ängby, Stockholm
+                          GeoCoordinate(latitude: 59.3477, longitude: 17.9177),
+                          GeoCoordinate(latitude: 59.3485, longitude: 17.9181)],
+                  timeZone: TimeZone(identifier: "Europe/Stockholm") ?? .current)
+        case "da":
+            Place(spots: [GeoCoordinate(latitude: 55.7310, longitude: 12.5680),   // Hellerup, Copenhagen
+                          GeoCoordinate(latitude: 55.7307, longitude: 12.5687),
+                          GeoCoordinate(latitude: 55.7315, longitude: 12.5691)],
+                  timeZone: TimeZone(identifier: "Europe/Copenhagen") ?? .current)
+        case "nb":
+            Place(spots: [GeoCoordinate(latitude: 59.9455, longitude: 10.6870),   // Slemdal, Oslo
+                          GeoCoordinate(latitude: 59.9452, longitude: 10.6877),
+                          GeoCoordinate(latitude: 59.9460, longitude: 10.6881)],
+                  timeZone: TimeZone(identifier: "Europe/Oslo") ?? .current)
+        case "fi":
+            Place(spots: [GeoCoordinate(latitude: 60.1985, longitude: 24.8780),   // Munkkiniemi, Helsinki
+                          GeoCoordinate(latitude: 60.1982, longitude: 24.8787),
+                          GeoCoordinate(latitude: 60.1990, longitude: 24.8791)],
+                  timeZone: TimeZone(identifier: "Europe/Helsinki") ?? .current)
+        case "cs":
+            Place(spots: [GeoCoordinate(latitude: 50.1087, longitude: 14.4003),   // Baba, Prague
+                          GeoCoordinate(latitude: 50.1084, longitude: 14.4010),
+                          GeoCoordinate(latitude: 50.1092, longitude: 14.4014)],
+                  timeZone: TimeZone(identifier: "Europe/Prague") ?? .current)
+        case "sk":
+            Place(spots: [GeoCoordinate(latitude: 48.1690, longitude: 17.0780),   // Kramáre, Bratislava
+                          GeoCoordinate(latitude: 48.1687, longitude: 17.0787),
+                          GeoCoordinate(latitude: 48.1695, longitude: 17.0791)],
+                  timeZone: TimeZone(identifier: "Europe/Bratislava") ?? .current)
+        case "hu":
+            Place(spots: [GeoCoordinate(latitude: 47.5170, longitude: 19.0190),   // Pasarét, Budapest
+                          GeoCoordinate(latitude: 47.5167, longitude: 19.0197),
+                          GeoCoordinate(latitude: 47.5175, longitude: 19.0201)],
+                  timeZone: TimeZone(identifier: "Europe/Budapest") ?? .current)
+        case "ro":
+            Place(spots: [GeoCoordinate(latitude: 44.4695, longitude: 26.0810),   // Primăverii, Bucharest
+                          GeoCoordinate(latitude: 44.4692, longitude: 26.0817),
+                          GeoCoordinate(latitude: 44.4700, longitude: 26.0821)],
+                  timeZone: TimeZone(identifier: "Europe/Bucharest") ?? .current)
+        case "el":
+            Place(spots: [GeoCoordinate(latitude: 38.0745, longitude: 23.8085),   // Kifissia, Athens
+                          GeoCoordinate(latitude: 38.0742, longitude: 23.8092),
+                          GeoCoordinate(latitude: 38.0750, longitude: 23.8096)],
+                  timeZone: TimeZone(identifier: "Europe/Athens") ?? .current)
+        case "id":
+            Place(spots: [GeoCoordinate(latitude: -6.1960, longitude: 106.8350),   // Menteng, Jakarta
+                          GeoCoordinate(latitude: -6.1963, longitude: 106.8357),
+                          GeoCoordinate(latitude: -6.1955, longitude: 106.8361)],
+                  timeZone: TimeZone(identifier: "Asia/Jakarta") ?? .current)
         default:
             Place(spots: [GeoCoordinate(latitude: 51.5590, longitude: -0.1720),
                           GeoCoordinate(latitude: 51.5587, longitude: -0.1713),
@@ -397,6 +456,17 @@ enum Demo {
         case "tr":      ["Arka tarh", "Duvar kenarı", "Balkon"]
         case "zh-Hans": ["后院的地", "墙边一条", "阳台"]
         case "zh-Hant": ["後院的地", "牆邊一條", "陽台"]
+        case "uk":      ["Дальня грядка", "Смуга біля стіни", "Балкон"]
+        case "sv":      ["Bädden längst bak", "Remsan vid väggen", "Balkong"]
+        case "da":      ["Bedet bagest", "Stribe ved muren", "Altan"]
+        case "nb":      ["Bedet bakerst", "Stripe ved veggen", "Balkong"]
+        case "fi":      ["Takapenkki", "Kaista seinän vieressä", "Parveke"]
+        case "cs":      ["Záhon vzadu", "Pruh u zdi", "Balkon"]
+        case "sk":      ["Záhon vzadu", "Pás pri stene", "Balkón"]
+        case "hu":      ["Hátsó ágyás", "Fal menti sáv", "Erkély"]
+        case "ro":      ["Stratul din fund", "Fâșia de lângă zid", "Balcon"]
+        case "el":      ["Το παρτέρι στο βάθος", "Η λωρίδα στον τοίχο", "Μπαλκόνι"]
+        case "id":      ["Bedengan belakang", "Jalur di tepi tembok", "Balkon"]
         default:        ["Back bed", "Wall border", "Balcony"]
         }
     }
@@ -436,6 +506,9 @@ private struct DemoState: ViewModifier {
                 guard Demo.isRunning else { return }
                 // Every frame shot at the same time of day, so the set is one afternoon in
                 // one garden rather than a scrapbook.
+                // And on the same day: the store's "now" is the real clock, and a run in November
+                // would put a garden at sixty degrees north into the light of a Nordic winter.
+                store.jump(toYear: Demo.shotYear, month: Demo.shotMonth, day: Demo.shotDay)
                 store.scrub(toMinuteOfDay: Demo.momentOfDay)
                 // Not `.plants`: that one is a push, and Today opens it from its own path.
                 switch Demo.screen {

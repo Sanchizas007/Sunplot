@@ -64,7 +64,7 @@ struct CompareSpots: View {
     private func compare() async {
         let spots = store.spots
         let year = Calendar.current.component(.year, from: .now)
-        let now = Date()
+        let now = store.viewedDate
 
         let computed = await Task.detached(priority: .userInitiated) { () -> [Reading] in
             spots.map { spot in
