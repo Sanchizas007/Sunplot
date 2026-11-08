@@ -3,7 +3,7 @@
 
   ASC_KEY_ID=… ASC_ISSUER_ID=… python3 Tools/asc-listing.py [--version 1.1] [--skip-screenshots]
 
-Sets, for all fifteen store locales: name, subtitle, privacy policy URL, description,
+Sets, for all twenty-six store locales: name, subtitle, privacy policy URL, description,
 keywords, promotional text, what's new and support URL (texts live in store/listing.py),
 plus the screenshots from screenshots/6.1/<language>/; and once per app the categories,
 the age rating questionnaire (nothing applies, 4+) and the copyright line.

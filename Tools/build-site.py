@@ -38,11 +38,14 @@ ROOT = Path(__file__).resolve().parent.parent
 STRINGS = ROOT / "Tools" / "site-strings"
 # English sits at the root; every other language gets a folder named after it, and those
 # folder names are what store/listing.py points each store locale at.
-LANGUAGES = ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt-BR", "ru", "tr", "zh-Hans", "zh-Hant"]
+LANGUAGES = ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt-BR", "ru", "tr", "zh-Hans", "zh-Hant",
+             "uk", "sv", "da", "nb", "fi", "cs", "sk", "hu", "ro", "el", "id"]
 ENDONYM = {
     "en": "English", "de": "Deutsch", "es": "Español", "fr": "Français", "it": "Italiano",
     "ja": "日本語", "ko": "한국어", "nl": "Nederlands", "pl": "Polski", "pt-BR": "Português",
     "ru": "Русский", "tr": "Türkçe", "zh-Hans": "简体中文", "zh-Hant": "繁體中文",
+    "uk": "Українська", "sv": "Svenska", "da": "Dansk", "nb": "Norsk", "fi": "Suomi", "cs": "Čeština",
+    "sk": "Slovenčina", "hu": "Magyar", "ro": "Română", "el": "Ελληνικά", "id": "Indonesia",
 }
 PREFIX = {language: ("" if language == "en" else f"{language}/") for language in LANGUAGES}
 TEXT = {language: json.loads((STRINGS / f"{language}.json").read_text(encoding="utf-8"))
