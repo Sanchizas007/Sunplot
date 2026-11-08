@@ -243,9 +243,73 @@ enum Demo {
         0.4 * (1 + sin(azimuth / 6))
     }
 
+    /// The skyline in the photograph the Sky screen shows in place of a camera: the roof of the
+    /// shed and the tops of the trees behind it, as directions from where the phone stands.
+    /// Written by Tools/make-standin-sky.py, which reads them off the photo with the same
+    /// projection the app draws with — so the traced line lands on the roof and the crowns.
+    // BEGIN photo ridge — written by Tools/make-standin-sky.py, do not edit by hand
+    private static let photoRidge: [(azimuth: Double, elevation: Double)] = [
+        (171, 17.68),
+        (172.5, 17.81),
+        (174, 17.92),
+        (175.5, 18.02),
+        (177, 18.11),
+        (178.5, 18.19),
+        (180, 18.26),
+        (181.5, 18.33),
+        (183, 18.39),
+        (184.5, 18.43),
+        (186, 18.46),
+        (187.5, 18.48),
+        (189, 18.45),
+        (190.5, 18.49),
+        (192, 19.26),
+        (193.5, 19.43),
+        (195, 19.40),
+        (196.5, 16.97),
+        (198, 16.45),
+        (199.5, 16.62),
+        (201, 16.59),
+        (202.5, 17.03),
+        (204, 19.61),
+        (205.5, 20.58),
+        (207, 20.93),
+        (208.5, 20.83),
+        (210, 19.47)
+    ]
+    // END photo ridge
+
+    /// The garden's skyline with the part the Sky screen looks at swapped for the photograph's,
+    /// and faded back into the made-up one over six degrees either side, so nothing out of
+    /// frame jumps. The hours on every screen are counted from the result.
+    private static func withPhotoRidge(_ base: [HorizonProfile.Sample]) -> [HorizonProfile.Sample] {
+        guard let first = photoRidge.first, let last = photoRidge.last else { return base }
+        return base.map { sample in
+            let outside = max(first.azimuth - sample.azimuth, sample.azimuth - last.azimuth, 0)
+            let weight = max(0, 1 - outside / 6)
+            guard weight > 0 else { return sample }
+            return HorizonProfile.Sample(
+                azimuth: sample.azimuth,
+                elevation: sample.elevation * (1 - weight) + photoElevation(at: sample.azimuth) * weight
+            )
+        }
+    }
+
+    private static func photoElevation(at azimuth: Double) -> Double {
+        guard let first = photoRidge.first, let last = photoRidge.last else { return 0 }
+        if azimuth <= first.azimuth { return first.elevation }
+        if azimuth >= last.azimuth { return last.elevation }
+        for index in 1..<photoRidge.count where photoRidge[index].azimuth >= azimuth {
+            let before = photoRidge[index - 1], after = photoRidge[index]
+            let t = (azimuth - before.azimuth) / (after.azimuth - before.azimuth)
+            return before.elevation * (1 - t) + after.elevation * t
+        }
+        return last.elevation
+    }
+
     /// A back garden: next door's tree to the east, a terrace of houses across the south that
     /// the midsummer sun clears and the December sun never does, our own house to the west.
-    private static let gardenSkyline = skyline(
+    private static let gardenSkyline = withPhotoRidge(skyline(
         envelope: [4, 4, 5, 6, 8, 12, 18, 24, 26, 28, 25, 20,
                    16, 15, 15, 16, 16, 16, 16, 16, 16, 18, 22, 26,
                    30, 32, 32, 30, 26, 20, 14, 10, 7, 5, 4, 4]
@@ -258,7 +322,7 @@ enum Demo {
             detail += 3.0 * sin((azimuth - 62) / 72 * .pi * 3)
         }
         return detail + hedge(azimuth)
-    }
+    })
 
     /// The border on the other side of the same garden, tight against the wall. Everything
     /// stands a little higher from here, which is the whole point of the app: a few metres is

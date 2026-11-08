@@ -4,6 +4,7 @@
   python3 Tools/shots.py                  build, capture everything, compose
   python3 Tools/shots.py --frame-only     recompose from the captures already taken
   python3 Tools/shots.py --only en,ja     some languages
+  python3 Tools/shots.py --screens 02-sky  one screen in every language
   python3 Tools/shots.py --review         the paywall for the in-app purchase form (6.5")
 
 Output (git-ignored): `screenshots/6.1/<language>/NN-name.png` ready to upload, and the
@@ -30,6 +31,7 @@ import math
 import os
 import pathlib
 import random
+import shutil
 import subprocess
 import sys
 import time
@@ -384,6 +386,10 @@ def capture(udid, language, screen, target, expect=SIZE):
     container = pathlib.Path(run("xcrun", "simctl", "get_app_container", udid, BUNDLE, "data").stdout.strip())
     marker = container / "tmp" / "sunplot-shot.json"
     marker.unlink(missing_ok=True)
+    # The Sky screen has no lens in a simulator: it shows this picture when it finds it.
+    standin = OUT / "standin-sky.jpg"
+    if standin.exists():
+        shutil.copy(standin, container / "tmp" / "sunplot-standin-sky.jpg")
     target.parent.mkdir(parents=True, exist_ok=True)
     run("xcrun", "simctl", "io", udid, "screenshot", "--type=png", str(target))
     before = fingerprint(target)  # whatever is on screen now: the home screen, or the last frame
@@ -454,6 +460,9 @@ def main():
         return
     only = sys.argv[sys.argv.index("--only") + 1] if "--only" in sys.argv else None
     languages = only.split(",") if only else list(LOCALES)
+    # --screens 02-sky reshoots one screen in every language, for a change that touches only it.
+    wanted = sys.argv[sys.argv.index("--screens") + 1].split(",") if "--screens" in sys.argv else None
+    screens = [pair for pair in SCREENS if wanted is None or pair[0] in wanted]
     figures = {}
     figures_path = OUT / "raw" / "figures.json"
     if figures_path.exists():
@@ -464,7 +473,7 @@ def main():
         udid = device_udid(DEVICE)
         prepare(udid)
         for language in languages:
-            for name, screen in SCREENS:
+            for name, screen in screens:
                 target = OUT / "raw" / language / f"{name}.png"
                 hours = capture(udid, language, screen, target)
                 if name == "01-today" and hours:
@@ -475,7 +484,7 @@ def main():
 
     done = 0
     for language in languages:
-        for name, _ in SCREENS:
+        for name, _ in screens:
             raw = OUT / "raw" / language / f"{name}.png"
             if not raw.exists():
                 continue

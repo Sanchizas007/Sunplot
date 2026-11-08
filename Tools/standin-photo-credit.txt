@@ -1,0 +1,9 @@
+Background of the Sky screen in screenshot runs (simulator only, never shipped in the app):
+
+  "The sun is setting over a small house" by John Benitez (@johnnybenitez_), Cuthbert, GA, USA
+  https://unsplash.com/photos/the-sun-is-setting-over-a-small-house-CVgGXV8eJ1o
+  Free to use under the Unsplash License (https://unsplash.com/license): commercial use, no
+  permission or attribution required. Credit kept here anyway.
+
+The original is not in the repository; Tools/make-standin-sky.py expects it at
+screenshots/source/standin-photo.jpg (download the "Download free" original from the page above).

@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import SpotKit
 import SolarCore
 
@@ -52,18 +53,13 @@ struct SkyView: View {
         switch camera.state {
         case .running:
             #if targetEnvironment(simulator)
-            // No lens here, so the sky is drawn rather than filmed. The gradient runs from a
-            // deep zenith to the pale band that sits over every real horizon, which is what
-            // makes the yellow arc legible against it.
-            LinearGradient(
-                stops: [
-                    .init(color: Color(red: 0.16, green: 0.29, blue: 0.51), location: 0),
-                    .init(color: Color(red: 0.36, green: 0.51, blue: 0.68), location: 0.45),
-                    .init(color: Color(red: 0.68, green: 0.77, blue: 0.83), location: 0.86),
-                    .init(color: Color(red: 0.82, green: 0.85, blue: 0.86), location: 1)
-                ],
-                startPoint: .top, endPoint: .bottom
-            )
+            // No lens here, so the view is a picture rather than a film: the one Tools/shots.py
+            // leaves in the temp folder, or, without it, a sky drawn at dusk.
+            if let picture = StandInPicture.image {
+                Color.clear.overlay { Image(uiImage: picture).resizable().scaledToFill() }.clipped()
+            } else {
+                StandInSky()
+            }
             #else
             CameraPreview(session: camera.session)
             #endif
@@ -221,6 +217,8 @@ private struct Overlay: View {
     /// filled in rather than plotted. On a device this never runs — there is a lens.
     private func drawStandInSkyline(in context: inout GraphicsContext) {
         #if targetEnvironment(simulator)
+        // A picture already shows the trees and roofs the traced line follows.
+        guard StandInPicture.image == nil else { return }
         let horizon = spot.effectiveHorizon
         guard !horizon.samples.isEmpty else { return }
 
@@ -250,7 +248,7 @@ private struct Overlay: View {
             for point in run { path.addLine(to: point) }
             path.addLine(to: CGPoint(x: last.x, y: below))
             path.closeSubpath()
-            context.fill(path, with: .color(Color(red: 0.11, green: 0.15, blue: 0.14)))
+            context.fill(path, with: .color(Color(red: 0.06, green: 0.09, blue: 0.19)))
         }
         #endif
     }
@@ -369,3 +367,59 @@ private struct Message: View {
         }
     }
 }
+
+#if targetEnvironment(simulator)
+/// The picture a screenshot run stands in for the lens, if there is one: a photograph cut to the
+/// screen by Tools/make-standin-sky.py, which also puts the photograph's skyline into the demo
+/// garden so the traced line lands on it. Tools/shots.py copies it next to the app's other
+/// temporary files before each launch.
+private enum StandInPicture {
+    static let image = UIImage(contentsOfFile: NSTemporaryDirectory() + "sunplot-standin-sky.jpg")
+}
+
+/// What a lens would have shown at the end of a clear day, for the runs that have no lens:
+/// deep blue overhead, a violet band, and a warm glow sitting on the horizon with a few
+/// streaks of cloud lit from below. Drawn in the frame's own proportions, so the glow lands
+/// where the stand-in skyline's ridge is. On a device this never runs — there is a camera.
+private struct StandInSky: View {
+    /// Position across and down (0...1), width as a share of the frame, and how opaque.
+    private let clouds: [(x: Double, y: Double, width: Double, opacity: Double, tilt: Double)] = [
+        (0.28, 0.19, 0.80, 0.10, -4), (0.72, 0.27, 0.70, 0.16, 3),
+        (0.40, 0.35, 0.90, 0.28, -2), (0.80, 0.42, 0.60, 0.38, 2),
+        (0.20, 0.46, 0.55, 0.36, -3)
+    ]
+
+    var body: some View {
+        GeometryReader { geometry in
+            let size = geometry.size
+            ZStack {
+                LinearGradient(
+                    stops: [
+                        .init(color: Color(red: 0.07, green: 0.15, blue: 0.42), location: 0),
+                        .init(color: Color(red: 0.17, green: 0.27, blue: 0.62), location: 0.26),
+                        .init(color: Color(red: 0.46, green: 0.42, blue: 0.76), location: 0.40),
+                        .init(color: Color(red: 0.96, green: 0.58, blue: 0.55), location: 0.49),
+                        .init(color: Color(red: 1.00, green: 0.75, blue: 0.36), location: 0.55),
+                        .init(color: Color(red: 1.00, green: 0.82, blue: 0.48), location: 1)
+                    ],
+                    startPoint: .top, endPoint: .bottom
+                )
+                RadialGradient(
+                    colors: [Color(red: 1, green: 0.80, blue: 0.40).opacity(0.8), .clear],
+                    center: UnitPoint(x: 0.82, y: 0.53),
+                    startRadius: 0, endRadius: size.width * 0.95
+                )
+                ForEach(clouds.indices, id: \.self) { index in
+                    let cloud = clouds[index]
+                    Capsule()
+                        .fill(Color(red: 1, green: 0.66, blue: 0.58).opacity(cloud.opacity))
+                        .frame(width: size.width * cloud.width, height: size.height * 0.022)
+                        .rotationEffect(.degrees(cloud.tilt))
+                        .blur(radius: 14)
+                        .position(x: size.width * cloud.x, y: size.height * cloud.y)
+                }
+            }
+        }
+    }
+}
+#endif
