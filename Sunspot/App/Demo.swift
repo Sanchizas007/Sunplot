@@ -456,7 +456,7 @@ enum Demo {
         case "tr":      ["Arka tarh", "Duvar kenarı", "Balkon"]
         case "zh-Hans": ["后院的地", "墙边一条", "阳台"]
         case "zh-Hant": ["後院的地", "牆邊一條", "陽台"]
-        case "uk":      ["Дальня грядка", "Смуга біля стіни", "Балкон"]
+        case "uk":      ["Далека грядка", "Смуга біля стіни", "Балкон"]
         case "sv":      ["Bädden längst bak", "Remsan vid väggen", "Balkong"]
         case "da":      ["Bedet bagest", "Stribe ved muren", "Altan"]
         case "nb":      ["Bedet bakerst", "Stripe ved veggen", "Balkong"]

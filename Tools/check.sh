@@ -88,7 +88,8 @@ else
 fi
 
 step "тесты приложения      "
-UDID=$(xcrun simctl list devices available -j | python3 -c "
+UDID="${SUNPLOT_TEST_DEVICE:-}"   # a dedicated simulator, when another job has the usual one
+[[ -n "$UDID" ]] || UDID=$(xcrun simctl list devices available -j | python3 -c "
 import json,sys
 d=json.load(sys.stdin)['devices']
 for rt in sorted(d, reverse=True):
@@ -99,7 +100,7 @@ for rt in sorted(d, reverse=True):
 if [[ -z "$UDID" ]]; then
   print "⚠ нет симулятора iPhone — пропущено"
 # Язык тестов задан явно: они сверяют английские строки, а симулятор берёт язык системы —
-# с четырнадцатью языками в сборке тот же тест падал бы на русской машине и проходил на
+# с двадцатью пятью языками в сборке тот же тест падал бы на русской машине и проходил на
 # английской.
 elif xcodebuild -project Sunspot.xcodeproj -scheme Sunspot \
        -destination "id=$UDID" -testLanguage en -testRegion GB test > "$LOG" 2>&1; then

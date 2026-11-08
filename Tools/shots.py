@@ -23,7 +23,7 @@ another app's name in the status bar, a 12-hour clock under a German locale.
 
 The screens come from the debug build's demo mode, so every language shows the same garden.
 The first caption carries the figure the app itself printed in that language (the app writes
-it next to its ready marker), rather than an English number typed into fourteen files.
+it next to its ready marker), rather than an English number typed into twenty-five files.
 """
 import json
 import math

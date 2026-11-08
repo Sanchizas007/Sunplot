@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Builds the pages that must exist before Sunplot can be submitted — in fourteen languages.
+"""Builds the pages that must exist before Sunplot can be submitted — in twenty-five languages.
 
     python3 Tools/build-site.py
 
@@ -9,7 +9,7 @@ Output goes to docs/, which is what GitHub Pages serves from this repository:
     docs/privacy/index.html         privacy policy            (App Review will not accept a
     docs/support/index.html         support contact            submission without reachable
     docs/terms/index.html           terms, Apple's licence     privacy and support URLs)
-    docs/<language>/…               the same three pages in each of the other thirteen
+    docs/<language>/…               the same three pages in each of the other twenty-four
 
 Texts live one file per language in `Tools/site-strings/`; the addresses are wired into
 store/listing.py, which points every store locale at its own language.

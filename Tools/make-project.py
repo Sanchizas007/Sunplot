@@ -15,7 +15,7 @@ BUNDLE_ID = "app.sunplot"
 DEPLOYMENT_TARGET = "17.0"
 SWIFT_VERSION = "6.0"
 MARKETING_VERSION = "1.3"
-BUILD_NUMBER = "4"
+BUILD_NUMBER = "5"
 # Apple developer team, needed to sign for a real device. Same account as Sunfold.
 DEVELOPMENT_TEAM = "3M856J997X"
 
