@@ -175,7 +175,11 @@ def upload_screenshots(localization, folder):
         sys.exit(f"no screenshots in {(SHOTS / folder).relative_to(ROOT)}: run Tools/shots.py")
     current, _ = asc.get_all(f"/v1/appScreenshotSets/{screenshot_set}/appScreenshots")
     done = [item for item in current if (item["attributes"].get("assetDeliveryState") or {}).get("state") == "COMPLETE"]
-    if len(done) == len(files) == len(current):
+    # The same names and the same bytes, not merely the same count: a redrawn set with the same six
+    # file names used to be reported as "already there" and the old pictures stayed in the store.
+    stored = sorted((item["attributes"]["fileName"], item["attributes"].get("sourceFileChecksum")) for item in done)
+    wanted_set = sorted((path.name, hashlib.md5(path.read_bytes()).hexdigest()) for path in files)
+    if len(done) == len(current) and stored == wanted_set:
         return 0
     for item in current:
         asc.request("DELETE", f"/v1/appScreenshots/{item['id']}")

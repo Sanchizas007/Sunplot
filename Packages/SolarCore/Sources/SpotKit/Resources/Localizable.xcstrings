@@ -4,10 +4,28 @@
     "angle.belowHorizon" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pod obzorem"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "under horisonten"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "unter dem Horizont"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "κάτω από τον ορίζοντα"
           }
         },
         "en" : {
@@ -22,10 +40,28 @@
             "value" : "bajo el horizonte"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "taivaanrannan alapuolella"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sous l’horizon"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "a horizont alatt"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "di bawah cakrawala"
           }
         },
         "it" : {
@@ -46,6 +82,12 @@
             "value" : "지평선 아래"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "under horisonten"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -64,16 +106,40 @@
             "value" : "abaixo do horizonte"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sub orizont"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "за горизонтом"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pod obzorom"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "under horisonten"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ufkun altında"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "під горизонтом"
           }
         },
         "zh-Hans" : {
@@ -93,10 +159,28 @@
     "compass.e" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "východ"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "øst"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Osten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ανατολή"
           }
         },
         "en" : {
@@ -111,10 +195,28 @@
             "value" : "este"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "itä"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "est"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kelet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "timur"
           }
         },
         "it" : {
@@ -135,6 +237,12 @@
             "value" : "동쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "øst"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,16 +261,40 @@
             "value" : "leste"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "est"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "восток"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "východ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "öster"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "doğu"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "схід"
           }
         },
         "zh-Hans" : {
@@ -182,10 +314,28 @@
     "compass.n" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sever"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nord"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Norden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "βορράς"
           }
         },
         "en" : {
@@ -200,10 +350,28 @@
             "value" : "norte"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "pohjoinen"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "nord"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "észak"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "utara"
           }
         },
         "it" : {
@@ -224,6 +392,12 @@
             "value" : "북쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nord"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -242,16 +416,40 @@
             "value" : "norte"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nord"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "север"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sever"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "norr"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "kuzey"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "північ"
           }
         },
         "zh-Hans" : {
@@ -271,10 +469,28 @@
     "compass.ne" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "severovýchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nordøst"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nordosten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "βορειοανατολικά"
           }
         },
         "en" : {
@@ -289,10 +505,28 @@
             "value" : "noreste"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "koillinen"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "nord-est"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "északkelet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "timur laut"
           }
         },
         "it" : {
@@ -313,6 +547,12 @@
             "value" : "북동쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nordøst"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -331,16 +571,40 @@
             "value" : "nordeste"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nord-est"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "северо-восток"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "severovýchod"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nordost"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "kuzeydoğu"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "північний схід"
           }
         },
         "zh-Hans" : {
@@ -360,10 +624,28 @@
     "compass.nw" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "severozápad"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nordvest"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Nordwesten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "βορειοδυτικά"
           }
         },
         "en" : {
@@ -378,10 +660,28 @@
             "value" : "noroeste"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "luode"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "nord-ouest"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "északnyugat"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "barat laut"
           }
         },
         "it" : {
@@ -402,6 +702,12 @@
             "value" : "북서쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nordvest"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -420,16 +726,40 @@
             "value" : "noroeste"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nord-vest"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "северо-запад"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "severozápad"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nordväst"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "kuzeybatı"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "північний захід"
           }
         },
         "zh-Hans" : {
@@ -449,10 +779,28 @@
     "compass.s" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "jih"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "syd"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Süden"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "νότος"
           }
         },
         "en" : {
@@ -467,10 +815,28 @@
             "value" : "sur"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "etelä"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sud"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "dél"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "selatan"
           }
         },
         "it" : {
@@ -491,6 +857,12 @@
             "value" : "남쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sør"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -509,16 +881,40 @@
             "value" : "sul"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sud"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "юг"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "juh"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "söder"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "güney"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "південь"
           }
         },
         "zh-Hans" : {
@@ -538,10 +934,28 @@
     "compass.se" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "jihovýchod"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sydøst"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Südosten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "νοτιοανατολικά"
           }
         },
         "en" : {
@@ -556,10 +970,28 @@
             "value" : "sureste"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "kaakko"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sud-est"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "délkelet"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tenggara"
           }
         },
         "it" : {
@@ -580,6 +1012,12 @@
             "value" : "남동쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sørøst"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -598,16 +1036,40 @@
             "value" : "sudeste"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sud-est"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "юго-восток"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "juhovýchod"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sydost"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "güneydoğu"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "південний схід"
           }
         },
         "zh-Hans" : {
@@ -627,10 +1089,28 @@
     "compass.sw" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "jihozápad"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sydvest"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Südwesten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "νοτιοδυτικά"
           }
         },
         "en" : {
@@ -645,10 +1125,28 @@
             "value" : "suroeste"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "lounas"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "sud-ouest"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "délnyugat"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "barat daya"
           }
         },
         "it" : {
@@ -669,6 +1167,12 @@
             "value" : "남서쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sørvest"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -687,16 +1191,40 @@
             "value" : "sudoeste"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sud-vest"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "юго-запад"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "juhozápad"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sydväst"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "güneybatı"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "південний захід"
           }
         },
         "zh-Hans" : {
@@ -716,10 +1244,28 @@
     "compass.w" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "západ"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vest"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Westen"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "δύση"
           }
         },
         "en" : {
@@ -734,10 +1280,28 @@
             "value" : "oeste"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "länsi"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "ouest"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nyugat"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "barat"
           }
         },
         "it" : {
@@ -758,6 +1322,12 @@
             "value" : "서쪽"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vest"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -776,16 +1346,40 @@
             "value" : "oeste"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "vest"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "запад"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "západ"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "väster"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "batı"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "захід"
           }
         },
         "zh-Hans" : {
@@ -805,7 +1399,25 @@
     "compass.withBearing" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
         "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
+        "el" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ (%2$d°)"
@@ -823,7 +1435,25 @@
             "value" : "%1$@ (%2$d°)"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
         "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
+        "id" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ (%2$d°)"
@@ -847,6 +1477,12 @@
             "value" : "%1$@ (%2$d°)"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -865,13 +1501,37 @@
             "value" : "%1$@ (%2$d°)"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ (%2$d°)"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
         "tr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ (%2$d°)"
+          }
+        },
+        "uk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%1$@ (%2$d°)"
@@ -894,10 +1554,28 @@
     "dateRange.allYear" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "celý rok"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hele året"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "das ganze Jahr"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "όλο το έτος"
           }
         },
         "en" : {
@@ -912,10 +1590,28 @@
             "value" : "todo el año"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "koko vuoden"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "toute l’année"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "egész évben"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "sepanjang tahun"
           }
         },
         "it" : {
@@ -936,6 +1632,12 @@
             "value" : "일 년 내내"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hele året"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -954,16 +1656,40 @@
             "value" : "o ano todo"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tot anul"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "весь год"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "celý rok"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "hela året"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "bütün yıl"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "увесь рік"
           }
         },
         "zh-Hans" : {
@@ -983,10 +1709,28 @@
     "duration.hours" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d h"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d t"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d Std"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d ώ"
           }
         },
         "en" : {
@@ -1001,10 +1745,28 @@
             "value" : "%d h"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d t"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d h"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d ó"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d j"
           }
         },
         "it" : {
@@ -1025,6 +1787,12 @@
             "value" : "%d시간"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d t"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1043,16 +1811,40 @@
             "value" : "%d h"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d h"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d ч"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d h"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d tim"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d sa"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d г"
           }
         },
         "zh-Hans" : {
@@ -1072,10 +1864,28 @@
     "duration.hoursMinutes" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d h %d min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d t %d min"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d Std %d Min"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d ώ %d λ"
           }
         },
         "en" : {
@@ -1090,10 +1900,28 @@
             "value" : "%d h %d min"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d t %d min"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d h %d min"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d ó %d p"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d j %d mnt"
           }
         },
         "it" : {
@@ -1114,6 +1942,12 @@
             "value" : "%d시간 %d분"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d t %d min"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1132,16 +1966,40 @@
             "value" : "%d h %d min"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d h %d min"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d ч %d мин"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d h %d min"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d tim %d min"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d sa %d dk"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d г %d хв"
           }
         },
         "zh-Hans" : {
@@ -1161,10 +2019,28 @@
     "duration.minutes" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d Min"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d λ"
           }
         },
         "en" : {
@@ -1179,10 +2055,28 @@
             "value" : "%d min"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d min"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d p"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d mnt"
           }
         },
         "it" : {
@@ -1203,6 +2097,12 @@
             "value" : "%d분"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1221,16 +2121,40 @@
             "value" : "%d min"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d мин"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d min"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d dk"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%d хв"
           }
         },
         "zh-Hans" : {
@@ -1250,10 +2174,28 @@
     "duration.none" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "žádné"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ingen"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "keine"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "καθόλου"
           }
         },
         "en" : {
@@ -1268,10 +2210,28 @@
             "value" : "nada"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ei lainkaan"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "aucune"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "nincs"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "tidak ada"
           }
         },
         "it" : {
@@ -1292,6 +2252,12 @@
             "value" : "없음"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ingen"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1310,16 +2276,40 @@
             "value" : "nada"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "niciuna"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "нет"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "žiadne"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ingen"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "yok"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "немає"
           }
         },
         "zh-Hans" : {
@@ -1339,10 +2329,28 @@
     "exposure.fullShade" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "plný stín"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "fuld skygge"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "voller Schatten"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "πλήρης σκιά"
           }
         },
         "en" : {
@@ -1357,10 +2365,28 @@
             "value" : "sombra total"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "täysi varjo"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "pleine ombre"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teljes árnyék"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teduh penuh"
           }
         },
         "it" : {
@@ -1381,6 +2407,12 @@
             "value" : "음지"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "full skygge"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1399,16 +2431,40 @@
             "value" : "sombra total"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "umbră deplină"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "полная тень"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "plný tieň"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "full skugga"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "tam gölge"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "густа тінь"
           }
         },
         "zh-Hans" : {
@@ -1428,10 +2484,28 @@
     "exposure.fullShade.meaning" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Kapradiny a bohyšky. Ovoce tu nedozraje."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bregner og funkier. Frugt modner ikke her."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Farne und Funkien. Früchte reifen hier nicht."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φτέρες και χόστες. Τα φρούτα δεν ωριμάζουν εδώ."
           }
         },
         "en" : {
@@ -1446,10 +2520,28 @@
             "value" : "Helechos y hostas. Aquí la fruta no madura."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saniaisia ja päivänliljoja. Hedelmät eivät kypsy täällä."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fougères et hostas. Aucun fruit ne mûrira ici."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Páfrányok és árnyliliomok. A gyümölcs itt nem érik be."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pakis dan hosta. Buah tidak akan matang di sini."
           }
         },
         "it" : {
@@ -1470,6 +2562,12 @@
             "value" : "고사리와 비비추. 여기서 열매는 익지 않습니다."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bregner og funkia. Frukt modnes ikke her."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1488,16 +2586,40 @@
             "value" : "Samambaias e hostas. Aqui a fruta não amadurece."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ferigi și hosta. Fructele nu se coc aici."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Папоротники и хосты. Плоды здесь не вызреют."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Papraď a hosty. Ovocie tu nedozrie."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ormbunkar och funkior. Frukt mognar inte här."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Eğrelti otu ve hosta. Burada meyve olgunlaşmaz."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Папороті та хости. Плоди тут не достигнуть."
           }
         },
         "zh-Hans" : {
@@ -1517,10 +2639,28 @@
     "exposure.fullSun" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "plné slunce"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "fuld sol"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "volle Sonne"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "πλήρης ήλιος"
           }
         },
         "en" : {
@@ -1535,10 +2675,28 @@
             "value" : "sol pleno"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "täysi aurinko"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "plein soleil"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teljes napfény"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "matahari penuh"
           }
         },
         "it" : {
@@ -1559,6 +2717,12 @@
             "value" : "양지"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "full sol"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1577,16 +2741,40 @@
             "value" : "sol pleno"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "soare plin"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "полное солнце"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "plné slnko"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "full sol"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "tam güneş"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "повне сонце"
           }
         },
         "zh-Hans" : {
@@ -1606,10 +2794,28 @@
     "exposure.fullSun.meaning" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rajčata, papriky, levandule, většina zeleniny."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomater, peberfrugt, lavendel, de fleste grøntsager."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tomaten, Paprika, Lavendel, die meisten Gemüsesorten."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ντομάτες, πιπεριές, λεβάντα, τα περισσότερα λαχανικά."
           }
         },
         "en" : {
@@ -1624,10 +2830,28 @@
             "value" : "Tomates, pimientos, lavanda, casi todas las hortalizas."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomaatit, paprikat, laventeli, useimmat vihannekset."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Tomates, poivrons, lavande, la plupart des légumes."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paradicsom, paprika, levendula, a legtöbb zöldség."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomat, paprika, lavender, sebagian besar sayuran."
           }
         },
         "it" : {
@@ -1648,6 +2872,12 @@
             "value" : "토마토, 피망, 라벤더 등 대부분의 채소."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomater, paprika, lavendel, de fleste grønnsaker."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1666,16 +2896,40 @@
             "value" : "Tomate, pimentão, lavanda, quase toda hortaliça."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Roșii, ardei, lavandă, majoritatea legumelor."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Помидоры, перец, лаванда, большинство овощей."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paradajky, papriky, levanduľa, väčšina zeleniny."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tomater, paprika, lavendel, de flesta grönsaker."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Domates, biber, lavanta, sebzelerin çoğu."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Помідори, перець, лаванда, більшість овочів."
           }
         },
         "zh-Hans" : {
@@ -1695,10 +2949,28 @@
     "exposure.partShade" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "polostín"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "halvskygge"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "halbschattig"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "μισοσκιά"
           }
         },
         "en" : {
@@ -1713,10 +2985,28 @@
             "value" : "media sombra"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "puolivarjo"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "mi-ombre"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "félárnyék"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "teduh sebagian"
           }
         },
         "it" : {
@@ -1737,6 +3027,12 @@
             "value" : "반음지"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "halvskygge"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1755,16 +3051,40 @@
             "value" : "meia-sombra"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "semiumbră"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "лёгкая тень"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "polotieň"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "halvskugga"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "yarı gölge"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "півтінь"
           }
         },
         "zh-Hans" : {
@@ -1784,10 +3104,28 @@
     "exposure.partShade.meaning" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listová zelenina a keře snášející stín."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bladgrønt og skyggetålende buske."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Blattgemüse und schattenverträgliche Sträucher."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Φυλλώδη λαχανικά και θάμνοι που αντέχουν τη σκιά."
           }
         },
         "en" : {
@@ -1802,10 +3140,28 @@
             "value" : "Hojas verdes y arbustos que aguantan sombra."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Lehtivihannekset ja varjoa sietävät pensaat."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Légumes-feuilles et arbustes tolérant l’ombre."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Leveles zöldségek és árnyéktűrő cserjék."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sayuran berdaun dan semak yang tahan teduh."
           }
         },
         "it" : {
@@ -1826,6 +3182,12 @@
             "value" : "잎채소와 그늘에 강한 관목."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bladgrønt og skyggetålende busker."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1844,16 +3206,40 @@
             "value" : "Folhosas e arbustos que aguentam sombra."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verdețuri cu frunze și arbuști care suportă umbra."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Листовая зелень и теневыносливые кусты."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Listová zelenina a kry znášajúce tieň."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bladgrönsaker och skuggtåliga buskar."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Yapraklı yeşillikler ve gölgeye dayanan çalılar."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Листові салати та тіньовитривалі чагарники."
           }
         },
         "zh-Hans" : {
@@ -1873,10 +3259,28 @@
     "exposure.partSun" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "polosluní"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "delvis sol"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "halbsonnig"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "μερικός ήλιος"
           }
         },
         "en" : {
@@ -1891,10 +3295,28 @@
             "value" : "sol parcial"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "osittainen aurinko"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "mi-soleil"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "részleges napfény"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "matahari sebagian"
           }
         },
         "it" : {
@@ -1915,6 +3337,12 @@
             "value" : "반양지"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "delvis sol"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -1933,16 +3361,40 @@
             "value" : "sol parcial"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "soare parțial"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "неполное солнце"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "čiastočné slnko"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "delvis sol"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "kısmi güneş"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "неповне сонце"
           }
         },
         "zh-Hans" : {
@@ -1962,10 +3414,28 @@
     "exposure.partSun.meaning" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stačí na fazole, mrkev a většinu bylinek."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nok til bønner, gulerødder og de fleste krydderurter."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Reicht für Bohnen, Karotten und die meisten Kräuter."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Αρκεί για φασόλια, καρότα και τα περισσότερα βότανα."
           }
         },
         "en" : {
@@ -1980,10 +3450,28 @@
             "value" : "Suficiente para judías, zanahorias y casi todas las hierbas."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Riittää pavuille, porkkanoille ja useimmille yrteille."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Suffisant pour les haricots, les carottes et la plupart des herbes."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Elég babnak, sárgarépának és a legtöbb fűszernövénynek."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cukup untuk buncis, wortel, dan sebagian besar herba."
           }
         },
         "it" : {
@@ -2004,6 +3492,12 @@
             "value" : "강낭콩, 당근, 대부분의 허브에는 충분합니다."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Nok til bønner, gulrøtter og de fleste krydderurter."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2022,16 +3516,40 @@
             "value" : "Dá para feijão, cenoura e quase todas as ervas."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ajunge pentru fasole, morcovi și majoritatea ierburilor aromatice."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Хватит фасоли, моркови и большинству трав."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stačí na fazuľu, mrkvu a väčšinu bylinok."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Räcker för bönor, morötter och de flesta kryddor."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Fasulye, havuç ve otların çoğu için yeter."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Достатньо для квасолі, моркви й більшості трав."
           }
         },
         "zh-Hans" : {
@@ -2051,10 +3569,28 @@
     "hours.short" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ h"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ t"
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ Std"
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ώ"
           }
         },
         "en" : {
@@ -2069,10 +3605,28 @@
             "value" : "%@ h"
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ t"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ h"
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ ó"
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ j"
           }
         },
         "it" : {
@@ -2093,6 +3647,12 @@
             "value" : "%@시간"
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ t"
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -2111,16 +3671,40 @@
             "value" : "%@ h"
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ h"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ ч"
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ h"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ tim"
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "%@ sa"
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ г"
           }
         },
         "zh-Hans" : {

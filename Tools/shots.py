@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""App Store screenshots: six screens × fourteen languages, framed and captioned.
+"""App Store screenshots: six screens × twenty-five languages, framed and captioned.
 
   python3 Tools/shots.py                  build, capture everything, compose
   python3 Tools/shots.py --frame-only     recompose from the captures already taken
@@ -27,6 +27,7 @@ it next to its ready marker), rather than an English number typed into fourteen 
 """
 import json
 import math
+import os
 import pathlib
 import random
 import subprocess
@@ -41,7 +42,7 @@ CAPTIONS = json.loads((ROOT / "Tools" / "screenshots" / "captions.json").read_te
 DERIVED = pathlib.Path("/tmp/sunplot-shots-dd")  # a path without spaces: xcodebuild needs one
 APP = DERIVED / "Build/Products/Debug-iphonesimulator/Sunspot.app"
 BUNDLE = "app.sunplot"
-DEVICE = "iPhone 17"
+DEVICE = os.environ.get("SUNPLOT_SIMULATOR", "iPhone 17")   # a dedicated, already booted simulator, when another job is using the usual one
 SIZE = (1206, 2622)
 REVIEW_DEVICE = "iPhone 14 Plus"
 REVIEW_SIZE = (1284, 2778)
@@ -50,6 +51,8 @@ LOCALES = {
     "en": "en_GB", "de": "de_DE", "es": "es_ES", "fr": "fr_FR", "it": "it_IT", "ja": "ja_JP",
     "ko": "ko_KR", "nl": "nl_NL", "pl": "pl_PL", "pt-BR": "pt_BR", "ru": "ru_RU",
     "tr": "tr_TR", "zh-Hans": "zh_CN", "zh-Hant": "zh_TW",
+    "uk": "uk_UA", "sv": "sv_SE", "da": "da_DK", "nb": "nb_NO", "fi": "fi_FI", "cs": "cs_CZ",
+    "sk": "sk_SK", "hu": "hu_HU", "ro": "ro_RO", "el": "el_GR", "id": "id_ID",
 }
 # en_GB rather than en_US on purpose: the status bar then shows a 24-hour clock, the same as
 # every other language in the set, and the frames match each other.

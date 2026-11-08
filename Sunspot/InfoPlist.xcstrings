@@ -4,10 +4,28 @@
     "NSCameraUsageDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot používá fotoaparát, abyste mohli obkreslit střechy a stromy kolem místa."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot bruger kameraet, så du kan aftegne tage og træer omkring et sted."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot nutzt die Kamera, damit du Dächer und Bäume rund um eine Stelle nachzeichnen kannst."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το Sunplot χρησιμοποιεί την κάμερα για να σχεδιάσεις τις στέγες και τα δέντρα γύρω από ένα σημείο."
           }
         },
         "en" : {
@@ -22,10 +40,28 @@
             "value" : "Sunplot usa la cámara para que puedas trazar los tejados y árboles alrededor de un punto."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot käyttää kameraa, jotta voit piirtää paikan ympärillä olevat katot ja puut."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot utilise l’appareil photo pour vous permettre de tracer les toits et les arbres autour d’un emplacement."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Sunplot a kamerát használja, hogy körberajzolhasd a hely körüli tetőket és fákat."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot memakai kamera agar kamu bisa menggambar atap dan pohon di sekitar sebuah titik."
           }
         },
         "it" : {
@@ -46,6 +82,12 @@
             "value" : "Sunplot은 자리 주변의 지붕과 나무를 그릴 수 있도록 카메라를 사용합니다."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot bruker kameraet slik at du kan tegne av tak og trær rundt et sted."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -64,16 +106,40 @@
             "value" : "O Sunplot usa a câmera para você traçar os telhados e as árvores em volta de um ponto."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot folosește camera ca să poți trasa acoperișurile și copacii din jurul unui loc."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot использует камеру, чтобы вы могли обвести крыши и деревья вокруг точки."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot používa fotoaparát, aby ste mohli obkresliť strechy a stromy okolo miesta."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot använder kameran så att du kan rita av taken och träden runt en plats."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot, bir noktanın çevresindeki çatıları ve ağaçları çizebilmen için kamerayı kullanır."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot використовує камеру, щоб ви могли обвести дахи й дерева навколо точки."
           }
         },
         "zh-Hans" : {
@@ -93,10 +159,28 @@
     "NSLocationWhenInUseUsageDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot potřebuje vaši polohu, aby vypočítal, jak slunce nad tímto místem putuje."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot har brug for din position for at regne ud, hvordan solen bevæger sig over dette sted."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot braucht deinen Standort, um den Sonnenlauf über dieser Stelle zu berechnen."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το Sunplot χρειάζεται την τοποθεσία σου για να υπολογίσει πώς κινείται ο ήλιος πάνω από αυτό το σημείο."
           }
         },
         "en" : {
@@ -111,10 +195,28 @@
             "value" : "Sunplot necesita tu ubicación para calcular por dónde pasa el sol sobre este punto."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot tarvitsee sijaintisi laskeakseen, miten aurinko kulkee tämän paikan yllä."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot a besoin de votre position pour calculer la course du soleil au-dessus de cet endroit."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Sunplotnak szüksége van a helyzetedre, hogy kiszámítsa, hogyan halad a nap e hely felett."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot memerlukan lokasimu untuk menghitung bagaimana matahari bergerak di atas titik ini."
           }
         },
         "it" : {
@@ -135,6 +237,12 @@
             "value" : "Sunplot은 이 자리 위로 해가 지나는 길을 계산하기 위해 위치가 필요합니다."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot trenger posisjonen din for å regne ut hvordan solen beveger seg over dette stedet."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,16 +261,40 @@
             "value" : "O Sunplot precisa da sua localização para calcular por onde o sol passa sobre este ponto."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot are nevoie de locația ta ca să calculeze cum călătorește soarele deasupra acestui loc."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot нужна ваша геопозиция, чтобы рассчитать путь солнца над этой точкой."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot potrebuje vašu polohu, aby vypočítal, ako slnko nad týmto miestom putuje."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot behöver din plats för att räkna ut hur solen färdas över den här platsen."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot, güneşin bu noktanın üstünden nereden geçtiğini hesaplamak için konumunu kullanır."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot потрібна ваша геолокація, щоб розрахувати, як сонце рухається над цією точкою."
           }
         },
         "zh-Hans" : {
@@ -182,10 +314,28 @@
     "NSMotionUsageDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot zjišťuje, kam telefon míří, aby dráha slunce seděla s tím, co vidí fotoaparát."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot aflæser, hvilken vej telefonen peger, så solens bane flugter med det, kameraet ser."
+          }
+        },
         "de" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot liest aus, wohin das Telefon zeigt, damit der Sonnenlauf zum Kamerabild passt."
+          }
+        },
+        "el" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Το Sunplot διαβάζει προς τα πού δείχνει το τηλέφωνο, ώστε η διαδρομή του ήλιου να συμπίπτει με ό,τι βλέπει η κάμερα."
           }
         },
         "en" : {
@@ -200,10 +350,28 @@
             "value" : "Sunplot lee hacia dónde apunta el teléfono para que el recorrido del sol coincida con lo que ve la cámara."
           }
         },
+        "fi" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot lukee, mihin suuntaan puhelin osoittaa, jotta auringon reitti osuu yksiin kameran näkemän kanssa."
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot lit l’orientation du téléphone pour aligner la course du soleil sur ce que voit l’appareil photo."
+          }
+        },
+        "hu" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A Sunplot leolvassa, merre mutat a telefon, hogy a nap útja egybeessen azzal, amit a kamera lát."
+          }
+        },
+        "id" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot membaca arah yang ditunjuk ponsel agar jalur matahari sejajar dengan yang dilihat kamera."
           }
         },
         "it" : {
@@ -224,6 +392,12 @@
             "value" : "Sunplot은 해의 경로를 카메라 화면과 맞추기 위해 기기가 향한 방향을 읽습니다."
           }
         },
+        "nb" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot leser av hvilken vei telefonen peker, slik at solbanen flukter med det kameraet ser."
+          }
+        },
         "nl" : {
           "stringUnit" : {
             "state" : "translated",
@@ -242,16 +416,40 @@
             "value" : "O Sunplot lê para onde o telefone aponta, assim o caminho do sol coincide com o que a câmera vê."
           }
         },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot citește încotro e orientat telefonul, ca traseul soarelui să se potrivească cu ce vede camera."
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot определяет, куда направлен телефон, чтобы путь солнца совпал с тем, что видит камера."
           }
         },
+        "sk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot zisťuje, kam telefón mieri, aby dráha slnka sedela s tým, čo vidí fotoaparát."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot läser av åt vilket håll telefonen pekar så att solens bana linjerar med det kameran ser."
+          }
+        },
         "tr" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Sunplot, güneşin yolu kameranın gördüğüyle örtüşsün diye telefonun hangi yöne baktığını okur."
+          }
+        },
+        "uk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sunplot зчитує, куди спрямовано телефон, щоб шлях сонця збігався з тим, що бачить камера."
           }
         },
         "zh-Hans" : {

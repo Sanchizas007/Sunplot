@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Single source of truth for every user-facing string, in fourteen languages.
+"""Single source of truth for every user-facing string, in twenty-five languages.
 
 Translations live one file per language in `Tools/strings/`; `en.json` is the master and
 its keys are the text as written in the code (except the SpotKit and InfoPlist keys,
@@ -32,8 +32,8 @@ CATALOGS = {
     "info": ROOT / "Sunspot" / "InfoPlist.xcstrings",
 }
 
-# The fourteen languages of the app: the universal thirteen plus Turkish.
-LANGUAGES = ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt-BR", "ru", "tr", "zh-Hans", "zh-Hant"]
+# The twenty-five languages of the app: the universal thirteen, Turkish, and eleven more (Ukrainian, Swedish, Danish, Norwegian Bokmål, Finnish, Czech, Slovak, Hungarian, Romanian, Greek, Indonesian).
+LANGUAGES = ["en", "de", "es", "fr", "it", "ja", "ko", "nl", "pl", "pt-BR", "ru", "tr", "zh-Hans", "zh-Hant", "uk", "sv", "da", "nb", "fi", "cs", "sk", "hu", "ro", "el", "id"]
 TRANSLATED = [language for language in LANGUAGES if language != "en"]
 
 # Positional and plain placeholders both appear here: %@ %lld %d %1$@ %2$d.
@@ -52,8 +52,8 @@ UNTRANSLATED_OK = {
     "duration.minutes": {"de", "nl", "fr", "it", "es", "pt-BR", "tr", "pl"},
     # Words a language spells exactly as the English does. Checked one by one: anything
     # else still in English is a translation somebody forgot.
-    "Aubergine": {"de", "fr"},
-    "Clematis": {"de", "es", "it", "nl", "pt-BR", "tr"},
+    "Aubergine": {"de", "fr", "sv", "da", "nb"},
+    "Clematis": {"de", "es", "it", "nl", "pt-BR", "tr", "da"},
     "Courgettes": {"fr", "nl"},
     "Direction": {"fr"},
     "Fruit": {"nl"},
@@ -62,18 +62,23 @@ UNTRANSLATED_OK = {
     "Hydrangea": {"it"},
     "Impatiens": {"es", "fr", "it", "pt-BR"},
     "Name": {"de"},
-    "Oregano": {"de", "nl", "pl", "tr"},
+    "Oregano": {"de", "nl", "pl", "tr", "sv", "da", "nb", "fi", "cs", "sk", "ro", "id"},
+    "Lavender": {"id"},
+    "Mint": {"id"},
+    "Rosemary": {"id"},
+    "Sage": {"id"},
     "Roses": {"fr"},
     "compass.w": {"nl"},
 }
 
 SCRIPTS = {
     "cyrillic": re.compile(r"[Ѐ-ӿ]"),
+    "greek": re.compile(r"[Ͱ-Ͽἀ-῿]"),
     "cjk": re.compile(r"[一-鿿]"),
     "kana": re.compile(r"[぀-ヿ]"),
     "hangul": re.compile(r"[가-힯]"),
 }
-EXPECTED_SCRIPT = {"ru": "cyrillic", "ja": "kana", "ko": "hangul", "zh-Hans": "cjk", "zh-Hant": "cjk"}
+EXPECTED_SCRIPT = {"ru": "cyrillic", "uk": "cyrillic", "el": "greek", "ja": "kana", "ko": "hangul", "zh-Hans": "cjk", "zh-Hant": "cjk"}
 # Simplified forms that must never appear in the traditional Chinese file. Listed one by
 # one because the two scripts share most characters and a blanket check is impossible.
 SIMPLIFIED_ONLY = "阳时间东开关闭这样树园让种过点击继续购买试书许启长语设备记录档线边现实为专业历观测阴响应该从术经无灯叶结处变够们还个发丰产验认识车门问题数据图风电网页选择钟墙药爱农么岛"
